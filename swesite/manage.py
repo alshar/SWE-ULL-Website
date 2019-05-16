@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-"""Django's command-line utility for administrative tasks."""
+"""
+Django's command-line utility for administrative tasks.
+manage.py script is used to create applications, work with databases, and start the development web server.
+"""
 import os
 import sys
 

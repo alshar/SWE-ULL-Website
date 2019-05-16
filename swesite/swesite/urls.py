@@ -12,6 +12,9 @@ Class-based views
 Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+
+urls.py defines the site url-to-view mappings. While this could contain all the url mapping code,
+it is more common to delegate some of the mapping to particular applications.
 """
 from django.contrib import admin
 from django.urls import path
