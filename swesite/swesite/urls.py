@@ -16,9 +16,27 @@ Including another URLconf
 urls.py defines the site url-to-view mappings. While this could contain all the url mapping code,
 it is more common to delegate some of the mapping to particular applications.
 """
+
+
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('pointstracker', include('pointstracker.urls')),
+
+
 ]
+
+"""
+what include() does:
+    anything after site.com/pointstracker will be "chopped off"
+    and sent to pointstracker.urls to be processed. 
+    Why do it this way? Abstraction. It's easier to do this 
+    then have a massive url mapper in the main file 
+"""
+
+"""
+path()'s arguments and what they do, found at the bottom of this page:
+https://docs.djangoproject.com/en/2.2/intro/tutorial01/
+"""
