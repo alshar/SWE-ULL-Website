@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/master/LICENSE)
  */
 
+
 body {
   font-size: 20px;
   color: #212529;
@@ -166,6 +167,7 @@ img::-moz-selection {
   }
 }
 
+
 header.masthead {
   margin-bottom: 50px;
   background: no-repeat center center;
@@ -184,6 +186,7 @@ header.masthead .overlay {
   background-color: #212529;
   opacity: 0.5;
 }
+
 
 
 header.masthead .page-heading,
@@ -272,6 +275,7 @@ header.masthead .gradient {
     -webkit-animation: Gradient 30s ease infinite;
     -moz-animation: Gradient 30s ease infinite;
     animation: Gradient 30s ease infinite;
+
 }
 
 @-webkit-keyframes Gradient {
@@ -318,6 +322,7 @@ header.masthead .gradient {
     font-size: 30px;
   }
 }
+
 
 .post-preview > a {
   color: #212529;
