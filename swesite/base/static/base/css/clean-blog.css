@@ -187,7 +187,7 @@ header.masthead {
     background-color: #868e96;
     background-attachment: scroll;
     position: relative;
-    background-size: cover;
+
 }
 
 header.masthead .overlay {
@@ -277,7 +277,6 @@ header.masthead .post-heading .meta a {
 }
 
 
-
 header.masthead .gradient {
     position: absolute;
     top: 0;
@@ -289,7 +288,7 @@ header.masthead .gradient {
     -webkit-animation: Gradient 30s ease infinite;
     -moz-animation: Gradient 30s ease infinite;
     animation: Gradient 30s ease infinite;
-
+    opacity: 0.8;
 }
 
 @-webkit-keyframes Gradient {
