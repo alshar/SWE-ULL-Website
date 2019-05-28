@@ -74,18 +74,21 @@
 </nav>
 
 <!-- Page Header -->
-<header class="masthead" style="background-image: {% block headerBackground %} url('{% static 'base/img/swe-bug-pattern-purple.jpg' %}') {% endblock %}">
+<header class="masthead"
+        style="background-image: {% block headerBackground %} url('{% static 'base/img/swe-bug-pattern-purple.jpg' %}') {% endblock %}">
     <div class="gradient"></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-md-10 mx-auto">
                 <div class="site-heading">
                     {% block headerHeading %}<h1>Aspire / Advance / Achieve</h1>{% endblock %}
-                    {% block headerSubheading %}<span class="subheading">Society of Women Engineers is a national nonprofit organization which strives to highlight the achievements of women as leaders and engineers.</span>
-                    <br>{% endblock %}
-                    {% block headerButton %}<div class="clearfix">
-                        <div class="headerButton"><a class="btn btn-primary" href="#">Get Involved</a></div>
-                    </div> {% endblock %}
+                    {% block headerSubheading %}
+                        <span class="subheading">Society of Women Engineers is a national nonprofit organization which strives to highlight the achievements of women as leaders and engineers.</span>
+                        <br>{% endblock %}
+                    {% block headerButton %}
+                        <div class="clearfix">
+                            <div class="headerButton"><a class="btn btn-primary" href="#">Get Involved</a></div>
+                        </div> {% endblock %}
                 </div>
             </div>
         </div>
@@ -97,19 +100,45 @@
 <!-- Main Content -->
 <div class="container">
     <div class="whitespace">
-        <img class="img-fluid mx-auto d-block" style="height: 175px" src="{% static 'base/img/girls.png' %}" alt="Three girls holding hands">
+        <img class="img-fluid mx-auto d-block" style="height: 175px" src="{% static 'base/img/girls.png' %}"
+             alt="Three girls holding hands">
         <br>
         <br>
-        <h4 class="post-subtitle text-center">Our mission is to empower women to achieve full potential in careers as engineers and leaders, expand the image of the engineering and technology professions as a positive force in improving the quality of life, and demonstrate the value of diversity and inclusion.
-          </h4>
+        <h4 class="post-subtitle text-center">Our mission is to empower women to achieve full potential in careers as
+            engineers and leaders, expand the image of the engineering and technology professions as a positive force in
+            improving the quality of life, and demonstrate the value of diversity and inclusion.
+        </h4>
     </div>
 </div>
+
 <div class="container-fluid" style="background-color: #F5F5F5">
     <div class="whitespace">
-    <img class="img-fluid mx-auto d-block" style="height: 200px" src="{% static 'base/img/donate-hands.png' %}">
+        <img class="img-fluid mx-auto d-block" style="height: 200px" src="{% static 'base/img/donate-hands.png' %}"
+             alt="Three girls holding hands">
+        <br>
+        <br>
+        <div class="container">
+            <div class="col justify-content-center">
+                <div class="row">
+                    <h4 class="post-subtitle text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aenean
+                        ullamcorper arcu eget
+                        nisl elementum vulputate. Integer sollicitudin feugiat risus ac varius. Nulla laoreet risus
+                        orci,
+                        sed
+                        accumsan risus ultrices eu. Mauris vitae vehicula turpis. Aliquam viverra dui sit amet risus
+                        elementum
+                        sagittis. In at finibus sem. Vivamus vestibulum est ut diam commodo, non placerat orci laoreet.
+                        Nam
+                        semper
+                        ac orci eget</h4>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <a href="https://paypal.me/pools/c/85xf3dRwCl" class="donateButton">Donate </a>
+                </div>
+            </div>
+        </div>
 
-
-</form>
     </div>
 </div>
 
