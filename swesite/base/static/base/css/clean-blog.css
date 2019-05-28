@@ -27,8 +27,21 @@ h4,
 h5,
 h6 {
     font-weight: 800;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
+
+h1 {
+    font-weight: 800;
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    color: #777777;
+}
+
 
 a {
     color: #212529;
@@ -245,6 +258,7 @@ header.masthead .site-heading .subheading {
     header.masthead .page-heading h1,
     header.masthead .site-heading h1 {
         font-size: 60px;
+        color: white;
     }
 }
 
@@ -283,7 +297,7 @@ header.masthead .gradient {
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(-45deg, #4169E1, #23A6D5, #9932CC, #551A8B, #551A8B);
+    background: linear-gradient(-45deg, #fcff34, #cec51a, #9932CC, #551a8b, #551A8B);
     background-size: 500% 500%;
     -webkit-animation: Gradient 30s ease infinite;
     -moz-animation: Gradient 30s ease infinite;
