@@ -53,6 +53,10 @@ a:focus, a:hover {
     color: #6a348b;
 }
 
+.mission {
+    margin: 6% 6% 13% 6%;
+}
+
 blockquote {
     font-style: italic;
     color: #868e96;
