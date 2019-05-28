@@ -8,9 +8,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
     <title> {% block title %} SWE | University of Louisiana at Lafayette {% endblock %}</title>
 
     {% load static %}
+
+    <link rel="shortcut icon" href="{% static 'base/img/favicon.ico' %}">
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'base/vendor/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
@@ -93,7 +96,7 @@
 
 <!-- Main Content -->
 <div class="container">
-    <div class="mission">
+    <div class="pageBlock">
     <img class="img-fluid mx-auto d-block" style="height: 175px" src="{% static 'base/img/girls.png' %}">
     <br>
     <br>
