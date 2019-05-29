@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-    <title> {% block title %} SWE | University of Louisiana at Lafayette {% endblock %}</title>
+    <title> {% block title %} SWE - University of Louisiana at Lafayette {% endblock %}</title>
 
     {% load static %}
 
@@ -37,7 +37,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="/">
             <div class="swelogonav"><img src="{% static 'base/img/swe-white-logo.png' %}" height="27"></div>
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -75,13 +75,15 @@
 
 <!-- Page Header -->
 <header class="masthead"
-        style="background-image: {% block headerBackground %} url('{% static 'base/img/swe-bug-pattern-purple.jpg' %}') {% endblock %}">
-    <div class="gradient"></div>
+        style="background-image:{% block headerBackground %}url(' {% static 'base/img/swe-bug-pattern-purple.jpg' %} '){% endblock %}">
+    {% block gradient %}
+        <div class="gradient"></div>
+    {% endblock %}
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-md-10 mx-auto">
                 <div class="site-heading">
-                    {% block headerHeading %}<h1>Aspire / Advance / Achieve</h1>{% endblock %}
+                    <h1>{% block headerHeading %}Aspire / Advance / Achieve{% endblock %}</h1>
                     {% block headerSubheading %}
                         <span class="subheading">Society of Women Engineers is a national nonprofit organization which strives to highlight the achievements of women as leaders and engineers.</span>
                         <br>{% endblock %}

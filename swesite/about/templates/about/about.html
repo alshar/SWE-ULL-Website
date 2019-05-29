@@ -1,14 +1,15 @@
 {% extends "base/baseindex.html" %}
 
-{% block description %} "SWE ULL | Point Tracker" {% endblock %}
+{% load static %}
 
-{% block title %} "SWE ULL | Points Tracker" {% endblock %}
+{% block description %} About | SWE - University of Louisiana at Lafayette {% endblock %}
 
-{#TODO load static files from base #}
-{# {% load static %} <link rel="stylesheet" type="text/css" href="{% static 'base/basestyles.css' %}">    #}
+{% block title %} About | SWE - University of Louisiana at Lafayette {% endblock %}
 
-{% block body %}
 
-    <h1>Points Tracker Login Page!</h1>
+{% block headerBackground %} url(' {% static 'about/group.jpg' %} ') {% endblock %}
 
-{% endblock %} 
+{# This page will not have a gradient over the masthead, so leave this empty #}
+{% block gradient %} {% endblock %}
+
+{% block headerHeading %} About Us {% endblock %}
