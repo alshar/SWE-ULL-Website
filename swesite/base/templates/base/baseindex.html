@@ -84,9 +84,12 @@
             <div class="col-lg-10 col-md-10 mx-auto">
                 <div class="site-heading">
                     <h1>{% block headerHeading %}Aspire / Advance / Achieve{% endblock %}</h1>
-                    {% block headerSubheading %}
-                        <span class="subheading">Society of Women Engineers is a national nonprofit organization which strives to highlight the achievements of women as leaders and engineers.</span>
-                        <br>{% endblock %}
+                    <span class="subheading">
+                            {% block headerSubheading %}
+                                Society of Women Engineers is a national nonprofit organization which strives to
+                                highlight the achievements of women as leaders and engineers.{% endblock %}
+                    </span>
+                    <br>
                     {% block headerButton %}
                         <div class="clearfix">
                             <div class="headerButton"><a class="btn btn-primary" href="#">Get Involved</a></div>
