@@ -91,15 +91,15 @@
                     </span>
                     <br>
                     {% block headerButton %}
-                    <div class="clearfix">
-                        <div class="headerButton">
-                            <a class="btn btn-primary" href="#">
-                                {% block headerButtonText %}
-                                    Get Involved
-                                {% endblock %}
-                            </a>
+                        <div class="clearfix">
+                            <div class="headerButton">
+                                <a class="btn btn-primary" href="#">
+                                    {% block headerButtonText %}
+                                        Get Involved
+                                    {% endblock %}
+                                </a>
+                            </div>
                         </div>
-                    </div>
                     {% endblock %}
                 </div>
             </div>
@@ -115,7 +115,8 @@
 
 <div class="container">
     <div class="whitespace">
-        <img class="img-fluid mx-auto d-block" style="height: 175px" src="{% static 'base/img/girls.png' %}"
+        <img class="img-fluid mx-auto d-block" style="height: 175px"
+             src="{% block firstBlockImage %}{% static 'base/img/girls.png' %} {% endblock %}"
              alt="Three girls holding hands">
         <br>
         <br>
@@ -217,18 +218,22 @@
         <div class="container">
             <div class="col">
                 <div class="row justify-content-center">
-                    <h4>Thank you to our Sponsors!</h4>
+                    <h4 class="post-subtitle text-center">Thank you to our Sponsors!</h4>
                 </div>
                 <br>
                 <div class="row justify-content-center">
                     <img class="img-fluid mx-auto d-block" src="{% static 'base/img/sponsors/ragincajun.png' %}"
+                         style="height: 175px"
                          title="ULL College of Engineering">
-                    <img class="img-fluid mx-auto d-block" src="{% static 'base/img/sponsors/kona.png' %}"
-                         title="Kona Ice of Acadiana">
                     <img class="img-fluid mx-auto d-block" src="{% static 'base/img/sponsors/jaks.jpg' %}"
+                         style="height: 175px"
                          title="Jak's Donuts">
                     <img class="img-fluid mx-auto d-block" src="{% static 'base/img/sponsors/sierra.jpg' %}"
+                         style="height: 155px"
                          title="Sierra Hamilton">
+                    <img class="img-fluid mx-auto d-block" src="{% static 'base/img/sponsors/kona.png' %}"
+                         style="height: 155px"
+                         title="Kona Ice of Acadiana">
                 </div>
             </div>
         </div>

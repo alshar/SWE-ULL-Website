@@ -2,27 +2,39 @@
 
 {% load static %}
 
-{% block description %} About | SWE - University of Louisiana at Lafayette {% endblock %}
+{% block description %}
+    About | SWE - University of Louisiana at Lafayette
+{% endblock %}
 
-{% block title %} About | SWE - University of Louisiana at Lafayette {% endblock %}
+{% block title %}
+    About | SWE - University of Louisiana at Lafayette
+{% endblock %}
 
-
-{% block headerBackground %} url(' {% static 'about/group.jpg' %} ') {% endblock %}
+{% block headerBackground %}
+    url(' {% static 'about/group.jpg' %} ')
+{% endblock %}
 
 {# this page will not have a gradient over the masthead, so leave this empty #}
 {% block gradient %} {% endblock %}
 
-{% block headerHeading %} About Us {% endblock %}
-
-{% block headerSubheading %}
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tellus augue, feugiat at
-    tincidunt ac, pretium vel arcu. Sed odio velit, dictum eu blandit ac, tincidunt at leo. Nullam blandit pretium nisi,
-    imperdiet condimentum massa dictum eget. Quisque vulputate, eros in facilisis tincidunt, quam mi aliquet lectus, vel
-    sagittis dui erat ac libero. Suspendisse pote
+{% block headerHeading %}
+    About Us
 {% endblock %}
 
-{% block firstBlockComment %} <!--Local Mission Block--> {% endblock %}
+{% block headerSubheading %}
+    Founded 10 years ago, the ULL SWE section aims to ..........
+{% endblock %}
 
 {# this page will not have a button on the masthead, so leave this empty #}
 {% block headerButton %} {% endblock %}
+
+{% block firstBlockComment %}
+    <!--Local Mission Block-->
+{% endblock %}
+
+{% block firstBlockImage %}
+    {% static 'base/img/swe-ull-color-logo.png' %}
+{% endblock %}
+
+
 
