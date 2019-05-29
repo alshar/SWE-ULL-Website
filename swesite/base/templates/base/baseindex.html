@@ -94,7 +94,7 @@
                     <div class="clearfix">
                         <div class="headerButton">
                             <a class="btn btn-primary" href="#">
-                                {% block headerButtontext %}
+                                {% block headerButtonText %}
                                     Get Involved
                                 {% endblock %}
                             </a>
@@ -110,7 +110,8 @@
 
 <!-- Main Content -->
 
-<!--Mission Block-->
+{% block firstBlockComment %}<!--Mission Block-->{% endblock %}
+
 <div class="container">
     <div class="whitespace">
         <img class="img-fluid mx-auto d-block" style="height: 175px" src="{% static 'base/img/girls.png' %}"
