@@ -90,10 +90,16 @@
                                 highlight the achievements of women as leaders and engineers.{% endblock %}
                     </span>
                     <br>
-                    {% block headerButton %}
-                        <div class="clearfix">
-                            <div class="headerButton"><a class="btn btn-primary" href="#">Get Involved</a></div>
-                        </div> {% endblock %}
+
+                    <div class="clearfix">
+                        <div class="headerButton">
+                            <a class="btn btn-primary" href="#">
+                                {% block headerButtontext %}
+                                    Get Involved
+                                {% endblock %}
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
