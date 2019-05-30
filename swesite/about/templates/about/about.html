@@ -49,47 +49,86 @@
 
 
 {# Second Block #}
+<!--TODO set up cards in row/col
+    so that on iPhone landscape there's only one card showing to prevent text from being cut off
+    https://stackoverflow.com/questions/32516886/how-to-make-bootstrap-cards-responsive
+    -->
 {% block secondBlockComment %}<!--Officers Block-->{% endblock %}
 {% block secondBlock %}
-    <div class="container-fluid justify-content-center" style="background-color: #F5F5F5">
+    <div class="container-fluid" style="background-color: #F5F5F5">
         <div class="whitespace">
             <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col">
-                        <h4 class="post-heading">Our Officers</h4>
+                <h4 class="post-heading text-center">Our Officers</h4>
+                <br>
+                <div class="card-deck text-center">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="{% static 'about/officers/adhwa.jpg' %}">
+                        <div class="card-body">
+                            <h5 class="card-title">President</h5>
+                            <p class="card-text">Adhwa Al Uraimi</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="{% static 'about/officers/kenedi.jpg' %}">
+                        <div class="card-body">
+                            <h5 class="card-title">Vice President</h5>
+                            <p class="card-text">Kenedi Habetz</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="{% static 'about/officers/alyssa.jpg' %}">
+                        <div class="card-body">
+                            <h5 class="card-title">Alyssa DeLattre</h5>
+                            <p class="card-text">Secretary</p>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                        <img class="rounded img-fluid" src="{% static 'about/officers/adhwa.jpg' %}">
+                <br>
+                <div class="card-deck text-center">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="{% static 'about/officers/reece.jpg' %}">
+                        <div class="card-body">
+                            <h5 class="card-title">Treasurer</h5>
+                            <p class="card-text">Reece Frederick</p>
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-md-4">
-                        <img class="rounded img-fluid" src="{% static 'about/officers/kenedi.jpg' %}">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="{% static 'about/officers/spencer.jpg' %}">
+                        <div class="card-body">
+                            <h5 class="card-title">Outreach Coordinator</h5>
+                            <p class="card-text">Spencer Kowalski</p>
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-md-4">
-                        <img class="rounded img-fluid" src="{% static 'about/officers/alyssa.jpg' %}">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="{% static 'about/officers/emma.png' %}">
+                        <div class="card-body">
+                            <h5 class="card-title">Fundraising Chair</h5>
+                            <p class="card-text">Emma-Evelyn Armato</p>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                        <img class="rounded img-fluid" src="{% static 'about/officers/reece.jpg' %}">
+                <br>
+                <div class="card-deck text-center">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="{% static 'about/officers/al.jpg' %}">
+                        <div class="card-body">
+                            <h5 class="card-title">Technical Director</h5>
+                            <p class="card-text">Al Sharairi</p>
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-md-4">
-                        <img class="rounded img-fluid" src="{% static 'about/officers/spencer.jpg' %}">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="{% static 'about/officers/ashley.png' %}">
+                        <div class="card-body">
+                            <h5 class="card-title">Adviser</h5>
+                            <p class="card-text">Ashley Picou Mikolajczyk</p>
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-md-4">
-                        <img class="rounded img-fluid" src="{% static 'about/officers/emma.png' %}">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                        <img class="rounded img-fluid" src="{% static 'about/officers/al.jpg' %}">
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <img class="rounded img-fluid" src="{% static 'about/officers/ashley.png' %}">
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <img class="rounded img-fluid" src="{% static 'about/officers/ling.png' %}">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="{% static 'about/officers/ling.png' %}">
+                        <div class="card-body">
+                            <h5 class="card-title">Co-Adviser</h5>
+                            <p class="card-text">Ling "Jessica" Fei, Ph.D.</p>
+                        </div>
                     </div>
                 </div>
             </div>
