@@ -8,17 +8,16 @@
 body {
     font-size: 20px;
     color: #212529;
-    font-family: Lato, 'sans-serif';
+    font-family: 'Lato', sans-serif;
 }
 
 p {
     line-height: 1.5;
     margin: 30px 0;
+    font-family: 'Lato', sans-serif;
 }
 
-p a {
-    text-decoration: underline;
-}
+
 
 h1,
 h2,
@@ -58,6 +57,7 @@ a {
 
 .card a {
     color: #551A8B;
+    font-weight: 800;
 }
 
 .card a:hover {
@@ -66,6 +66,10 @@ a {
 
 a:focus, a:hover {
     color: #6a348b;
+}
+
+.officerButton{
+    color: #212529;
 }
 
 .whitespace {
