@@ -57,7 +57,7 @@
 {% block secondBlock %}
     <div class="container-fluid" style="background-color: #F5F5F5">
         <div class="whitespace">
-            <div class="container">
+            <div class="container text-center">
                 <h3 class="post-heading">Our Officers</h3>
                 <br>
                 <div class="card-deck">
@@ -120,15 +120,26 @@
                              src="{% static 'about/officers/al.jpg' %}">
                         <div class="card-body">
                             <h5 class="card-title">Technical Director</h5>
-                            <p class="card-subtitle">
-                                Al Sharairi &nbsp;
-                                <a href="https://www.linkedin.com/in/al-sharairi/" target="_blank">
-                                    <i class="fab fa-linkedin officerButton"></i>
-                                </a>
-                            </p>
+                            <p class="card-subtitle">Al Sharairi</p>
                             <p class="card-text">
                                 <i class="fa fa-graduation-cap"></i> <span> Computer Science</span>
                             </p>
+                            <!--
+                            <a class="float-left" href="mailto:asharairi@gmail.com" target="_blank">
+                                <i class="fa fa-envelope officerButton"></i>
+                            </a>
+                            <a class="float-right" href="https://www.linkedin.com/in/al-sharairi/" target="_blank">
+                                <i class="fab fa-linkedin officerButton"></i>
+                            </a>
+                               -->
+                            <div class="button-group d-flex" role="group">
+                                <a class="btn btn-outline-dark w-100" href="mailto:asharairi@gmail.com">
+                                    <i class="fa fa-envelope officerButton"></i>
+                                </a>
+                                <a class="btn btn-outline-dark w-100" href="https://www.linkedin.com/in/al-sharairi/" target="_blank">
+                                    <i class="fab fa-linkedin officerButton"></i>
+                                </a>
+                            </div>
 
                         </div>
                     </div>
