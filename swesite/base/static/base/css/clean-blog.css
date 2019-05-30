@@ -18,7 +18,6 @@ p {
 }
 
 
-
 h1,
 h2,
 h3,
@@ -68,8 +67,17 @@ a:focus, a:hover {
     color: #6a348b;
 }
 
-.officerButton{
-    color: #212529;
+.fa-envelope {
+    color: white;
+}
+
+.fa-linkedin {
+    color: white;
+}
+
+
+.officerContainer p {
+    margin: 18px;
 }
 
 .whitespace {
