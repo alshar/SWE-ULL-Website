@@ -76,7 +76,7 @@ a:focus, a:hover {
 }
 
 
-.officerContainer p {
+.officerContainer p + p {
     margin: 18px;
 }
 
