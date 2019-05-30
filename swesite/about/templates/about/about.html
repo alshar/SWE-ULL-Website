@@ -51,15 +51,57 @@
 {# Second Block #}
 {% block secondBlockComment %}<!--Officers Block-->{% endblock %}
 {% block secondBlock %}
-
+    <div class="container-fluid justify-content-center" style="background-color: #F5F5F5">
+        <div class="whitespace">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col">
+                        <h4 class="post-heading">Our Officers</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <img class="rounded img-fluid" src="{% static 'about/officers/adhwa.jpg' %}">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img class="rounded img-fluid" src="{% static 'about/officers/kenedi.jpg' %}">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img class="rounded img-fluid" src="{% static 'about/officers/alyssa.jpg' %}">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <img class="rounded img-fluid" src="{% static 'about/officers/reece.jpg' %}">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img class="rounded img-fluid" src="{% static 'about/officers/spencer.jpg' %}">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img class="rounded img-fluid" src="{% static 'about/officers/emma.png' %}">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <img class="rounded img-fluid" src="{% static 'about/officers/al.jpg' %}">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img class="rounded img-fluid" src="{% static 'about/officers/ashley.png' %}">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img class="rounded img-fluid" src="{% static 'about/officers/ling.png' %}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 {# About page only has two sections, so leave these empty #}
-{% block thirdBlock %} {% endblock %}
-{% block fourthBlock %} {% endblock %}
-
-
-
-
-
+{% block thirdBlock %}
+    {% block thirdBlockComment %} {% endblock %}
+{% endblock %}
+{% block fourthBlock %}
+    {% block fourthBlockComment %} {% endblock %}
+{% endblock %}
 

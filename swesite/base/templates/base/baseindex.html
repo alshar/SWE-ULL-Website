@@ -113,141 +113,148 @@
 
 {% block firstBlockComment %}<!--Mission Block-->{% endblock %}
 {% block firstBlock %}
-<div class="container">
-    <div class="whitespace">
-        <img class="img-fluid mx-auto d-block" style="height: 175px"
-             src="{% block firstBlockImage %}{% static 'base/img/girls.png' %}{% endblock %}"
-             alt="Three girls holding hands">
-        <br>
-        <br>
-        <h4 class="post-subtitle text-center">
-            {% block firstBlockText %}
-            Our mission is to empower women to achieve full potential in careers as
-            engineers and leaders, expand the image of the engineering and technology professions as a positive force in
-            improving the quality of life, and demonstrate the value of diversity and inclusion.
-            {% endblock %}
-        </h4>
+    <div class="container">
+        <div class="whitespace">
+            <img class="img-fluid mx-auto d-block" style="height: 175px"
+                 src="{% block firstBlockImage %}{% static 'base/img/girls.png' %}{% endblock %}"
+                 alt="Three girls holding hands">
+            <br>
+            <br>
+            <h4 class="post-subtitle text-center">
+                {% block firstBlockText %}
+                    Our mission is to empower women to achieve full potential in careers as
+                    engineers and leaders, expand the image of the engineering and technology professions as a positive
+                    force in
+                    improving the quality of life, and demonstrate the value of diversity and inclusion.
+                {% endblock %}
+            </h4>
+        </div>
     </div>
-</div>
 {% endblock %}
 
 {% block secondBlockComment %}<!--Card Block-->{% endblock %}
 {% block secondBlock %}
-<div class="container-fluid" style="background-color: #F5F5F5">
-    <div class="whitespace">
-        <div class="container">
-            <div class="card-deck">
-                <div class="card border-#6a348b">
-                    <!--All of the pics have to be the same size for the cards to line up correctly
-                     They're all 300x300 now-->
-                    <img class="card-img-top" src="{% static 'base/img/get-involved.png' %}">
-                    <div class="card-body">
-                        <h5 class="card-title">Get Involved</h5>
-                        <p class="card-text">We take pride in our community outreach and volunteer efforts. Help us give
-                            back to Acadiana by getting involved with SWE. </p>
-                        <br>
-                        <br>
-                        <a href="#" class="card-link">Get Involved →</a>
+    <div class="container-fluid" style="background-color: #F5F5F5">
+        <div class="whitespace">
+            <div class="container">
+                <div class="card-deck">
+                    <div class="card border-#6a348b">
+                        <!--All of the pics have to be the same size for the cards to line up correctly
+                         They're all 300x300 now-->
+                        <img class="card-img-top" src="{% static 'base/img/get-involved.png' %}">
+                        <div class="card-body">
+                            <h5 class="card-title">Get Involved</h5>
+                            <p class="card-text">We take pride in our community outreach and volunteer efforts. Help us
+                                give
+                                back to Acadiana by getting involved with SWE. </p>
+                            <br>
+                            <br>
+                            <a href="#" class="card-link">Get Involved →</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="{% static 'base/img/swe-events.jpg' %}">
-                    <div class="card-body">
-                        <h5 class="card-title">Events</h5>
-                        <p class="card-text">We organize Industry Tours, Resume Workshops, Q&A Sessions, Fundraising
-                            Initiatives, Community Outreach, and much more throughout the semester.</p>
-                        <br>
-                        <a href="#" class="card-link">See Events →</a>
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'base/img/swe-events.jpg' %}">
+                        <div class="card-body">
+                            <h5 class="card-title">Events</h5>
+                            <p class="card-text">We organize Industry Tours, Resume Workshops, Q&A Sessions, Fundraising
+                                Initiatives, Community Outreach, and much more throughout the semester.</p>
+                            <br>
+                            <a href="#" class="card-link">See Events →</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="{% static 'base/img/volunteer-points.jpg' %}">
-                    <div class="card-body">
-                        <h5 class="card-title">Volunteer Points</h5>
-                        <p class="card-text">Earn points by volunteering, attending meetings, and going to events. After
-                            30 points, we'll pay for you to attend the <a href="https://we19.swe.org/">largest career
-                                fair</a> for Female Engineers in the country </p>
-                        <a href="#" class="card-link">Learn More →</a>
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'base/img/volunteer-points.jpg' %}">
+                        <div class="card-body">
+                            <h5 class="card-title">Volunteer Points</h5>
+                            <p class="card-text">Earn points by volunteering, attending meetings, and going to events.
+                                After
+                                30 points, we'll pay for you to attend the <a href="https://we19.swe.org/">largest
+                                    career
+                                    fair</a> for Female Engineers in the country </p>
+                            <a href="#" class="card-link">Learn More →</a>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
     </div>
-</div>
 {% endblock %}
 
 {% block thirdBlockComment%}<!--Donation Block-->{% endblock %}
 {% block thirdBlock %}
-<div class="container">
-    <div class="whitespace">
-        <img class="img-fluid mx-auto d-block" style="height: 200px" src="{% static 'base/img/donate-hands.png' %}">
-        <br>
-        <br>
-        <div class="container">
-            <div class="col justify-content-center">
-                <div class="row">
-                    <h4 class="post-subtitle text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aenean
-                        ullamcorper arcu eget
-                        nisl elementum vulputate. Integer sollicitudin feugiat risus ac varius. Nulla laoreet risus
-                        orci,
-                        sed
-                        accumsan risus ultrices eu. Mauris vitae vehicula turpis. Aliquam viverra dui sit amet risus
-                        elementum
-                        sagittis. In at finibus sem. Vivamus vestibulum est ut diam commodo, non placerat orci laoreet.
-                        Nam
-                        semper
-                        ac orci eget</h4>
-                </div>
-                <div class="row justify-content-center mt-5">
-                    <form id="donateButton" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_donations"/>
-                        <input type="hidden" name="business" value="8S23SYQHZ2M3Q"/>
-                        <input type="hidden" name="item_name"
-                               value="Society of Women Engineers - University of Louisiana At Lafayette"/>
-                        <input type="hidden" name="currency_code" value="USD"/>
-                        <input type="image" src="{% static 'base/img/paypal-donate.png' %}"
-                               border="0" name="submit" title="PayPal - The safer, easier way to pay online!"
-                               alt="Donate with PayPal button"/>
-                        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
-                    </form>
+    <div class="container">
+        <div class="whitespace">
+            <img class="img-fluid mx-auto d-block" style="height: 200px" src="{% static 'base/img/donate-hands.png' %}">
+            <br>
+            <br>
+            <div class="container">
+                <div class="col justify-content-center">
+                    <div class="row">
+                        <h4 class="post-subtitle text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Aenean
+                            ullamcorper arcu eget
+                            nisl elementum vulputate. Integer sollicitudin feugiat risus ac varius. Nulla laoreet risus
+                            orci,
+                            sed
+                            accumsan risus ultrices eu. Mauris vitae vehicula turpis. Aliquam viverra dui sit amet risus
+                            elementum
+                            sagittis. In at finibus sem. Vivamus vestibulum est ut diam commodo, non placerat orci
+                            laoreet.
+                            Nam
+                            semper
+                            ac orci eget</h4>
+                    </div>
+                    <div class="row justify-content-center mt-5">
+                        <form id="donateButton" action="https://www.paypal.com/cgi-bin/webscr" method="post"
+                              target="_top">
+                            <input type="hidden" name="cmd" value="_donations"/>
+                            <input type="hidden" name="business" value="8S23SYQHZ2M3Q"/>
+                            <input type="hidden" name="item_name"
+                                   value="Society of Women Engineers - University of Louisiana At Lafayette"/>
+                            <input type="hidden" name="currency_code" value="USD"/>
+                            <input type="image" src="{% static 'base/img/paypal-donate.png' %}"
+                                   border="0" name="submit" title="PayPal - The safer, easier way to pay online!"
+                                   alt="Donate with PayPal button"/>
+                            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1"
+                                 height="1"/>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
-</div>
 {% endblock %}
 
 {% block fourthBlockComment %}<!--Sponsors Block-->{% endblock %}
 {% block fourthBlock %}
-<div class="container-fluid" style="background-color: #F5F5F5">
-    <div class="whitespace">
-        <div class="container">
-            <div class="col">
-                <div class="row justify-content-center">
-                    <h4 class="post-subtitle text-center">Thank you to our Sponsors!</h4>
-                </div>
-                <br>
-                <div class="row justify-content-center">
-                    <img class="img-fluid mx-auto d-block" src="{% static 'base/img/sponsors/ragincajun.png' %}"
-                         style="height: 175px"
-                         title="ULL College of Engineering">
-                    <img class="img-fluid mx-auto d-block" src="{% static 'base/img/sponsors/jaks.jpg' %}"
-                         style="height: 175px"
-                         title="Jak's Donuts">
-                    <img class="img-fluid mx-auto d-block" src="{% static 'base/img/sponsors/sierra.jpg' %}"
-                         style="height: 155px"
-                         title="Sierra Hamilton">
-                    <img class="img-fluid mx-auto d-block" src="{% static 'base/img/sponsors/kona.png' %}"
-                         style="height: 155px"
-                         title="Kona Ice of Acadiana">
+    <div class="container-fluid" style="background-color: #F5F5F5">
+        <div class="whitespace">
+            <div class="container">
+                <div class="col">
+                    <div class="row justify-content-center">
+                        <h4 class="post-subtitle text-center">Thank you to our Sponsors!</h4>
+                    </div>
+                    <br>
+                    <div class="row justify-content-center">
+                        <img class="img-fluid mx-auto d-block" src="{% static 'base/img/sponsors/ragincajun.png' %}"
+                             style="height: 175px"
+                             title="ULL College of Engineering">
+                        <img class="img-fluid mx-auto d-block" src="{% static 'base/img/sponsors/jaks.jpg' %}"
+                             style="height: 175px"
+                             title="Jak's Donuts">
+                        <img class="img-fluid mx-auto d-block" src="{% static 'base/img/sponsors/sierra.jpg' %}"
+                             style="height: 155px"
+                             title="Sierra Hamilton">
+                        <img class="img-fluid mx-auto d-block" src="{% static 'base/img/sponsors/kona.png' %}"
+                             style="height: 155px"
+                             title="Kona Ice of Acadiana">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 {% endblock %}
 
 <hr>
