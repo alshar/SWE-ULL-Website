@@ -26,7 +26,8 @@ urlpatterns = [
     path('pointstracker', include('pointstracker.urls')),
     path('', include('base.urls')),
     path('about', include('about.urls')),
-    path('getinvolved', include('getinvolved.urls'))
+    path('getinvolved', include('getinvolved.urls')),
+    path('events', include('events.urls'))
 
 
 
