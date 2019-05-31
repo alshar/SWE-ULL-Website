@@ -1,12 +1,68 @@
+{% extends "base/baseindex.html" %}
+
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <img src="{% static 'getinvolved/giheart.png' %}" alt="">
-    <h1>Get Involved Page!</h1>
-</body>
-</html>
+
+{# Meta #}
+{% block description %}
+    Get Involved | SWE - University of Louisiana at Lafayette
+{% endblock %}
+
+{% block title %}
+    Get Involved | SWE - University of Louisiana at Lafayette
+{% endblock %}
+
+
+
+{# Header #}
+{% block headerBackground %}
+    url(' {% static 'getinvolved/header.png' %} ')
+{% endblock %}
+
+{# this page will not have a gradient over the masthead, so leave this empty #}
+{% block gradient %} {% endblock %}
+
+{% block headerHeading %}
+    Get Involved
+{% endblock %}
+
+{% block headerSubheading %}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tellus augue, feugiat at tincidunt ac, pretium vel
+    arcu. Sed odio velit, dictum eu blandit ac orci,
+    sed
+{% endblock %}
+
+{# this page will not have a button on the masthead, so leave this empty #}
+{% block headerButton %} {% endblock %}
+
+
+
+{# First Block #}
+{% block firstBlockComment %}<!--Google Form Block-->{% endblock %}
+
+{% block firstBlockImage %}
+    {% static 'getinvolved/giheart.png' %}
+{% endblock %}
+
+{% block firstBlockText %}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tellus augue, feugiat at tincidunt ac, pretium vel
+    arcu. Sed odio velit, dictum eu blandit ac, tincidunt at leo
+    accumsan risus ultrices eu. Mauris vitae vehicula turpis. Aliquam viverra dui sit amet risus
+    elementum
+    sagittis. In at finibus sem. Viva
+{% endblock %}
+
+
+
+{# Second Block #}
+{% block secondBlockComment %}<!--Gallery Block-->{% endblock %}
+{% block secondBlock %}
+{% endblock %}
+
+{# About page only has two sections, so leave these empty #}
+{% block thirdBlock %}
+    {% block thirdBlockComment %} {% endblock %}
+{% endblock %}
+{% block fourthBlock %}
+    {% block fourthBlockComment %} {% endblock %}
+{% endblock %}
+
