@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+
+def getinvolved(request):
+    return render(request, 'getinvolved/getinvolved.html')
