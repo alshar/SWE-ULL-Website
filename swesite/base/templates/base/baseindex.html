@@ -115,9 +115,11 @@
 {% block firstBlock %}
     <div class="container">
         <div class="whitespace">
-            <img class="img-fluid mx-auto d-block" style="height: 175px"
-                 src="{% block firstBlockImage %}{% static 'base/img/girls.png' %}{% endblock %}"
-                 alt="Three girls holding hands">
+            {% block firstBlockImgTag %}
+                <img class="img-fluid mx-auto d-block" style="height: 175px"
+                     src="{% block firstBlockImage %}{% static 'base/img/girls.png' %}{% endblock %}"
+                     alt="Three girls holding hands">
+            {% endblock %}
             <br>
             <br>
             <h4 class="post-subtitle text-center">
