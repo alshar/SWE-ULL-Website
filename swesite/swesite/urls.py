@@ -23,11 +23,11 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('pointstracker', include('pointstracker.urls')),
+    path('pointstracker/', include('pointstracker.urls')),
     path('', include('base.urls')),
-    path('about', include('about.urls')),
-    path('getinvolved', include('getinvolved.urls')),
-    path('events', include('events.urls'))
+    path('about/', include('about.urls')),
+    path('getinvolved/', include('getinvolved.urls')),
+    path('events/', include('events.urls'))
 
 
 
@@ -35,8 +35,8 @@ urlpatterns = [
 
 """
 what include() does:
-    anything after site.com/pointstracker will be "chopped off"
-    and sent to pointstracker.urls to be processed. 
+    anything after site.com/whatever will be "chopped off"
+    and sent to whatever.urls to be processed. 
     Why do it this way? Abstraction. It's easier to do this 
     then have a massive url mapper in the main file 
 """
