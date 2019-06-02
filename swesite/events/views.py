@@ -8,3 +8,7 @@ def events(request):
 
 def fall18(request):
     return render(request, 'events/fall18gallery.html')
+
+
+def spring18(request):
+    return render(request, 'events/spring18gallery.html')
