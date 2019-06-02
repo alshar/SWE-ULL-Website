@@ -20,32 +20,35 @@
 
 {% block headerHeading %} Fall 2018 Events Gallery {% endblock %}
 
-{# no header, so no subheading, leave this empty #}
+{# no subheading, leave this empty #}
 {% block headerSubheading %} {% endblock %}
 
-{# this page will not have a button on the masthead, so leave this empty #}
-{% block headerButton %} {% endblock %}
+
+{% block headerButton %}
+    <div class="headerButton">
+        <div class="clearfix">
+            <div class="dropdown show">
+                <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    See Other Event Pictures
+                </a>
+                {# ignore can not resolve file error, url will be properly routed #}
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="/events">Spring '19</a>
+                    <a class="dropdown-item" href="/events/spring18">Spring '18</a>
+                </div>
+            </div>
+        </div>
+    </div>
+ {% endblock %}
 
 
 
 {# First Block #}
 {% block firstBlockComment %}<!--Gallery Block-->{% endblock %}
 
-{% block firstBlockImage %}
-    {% static 'events/img/org-sync.png' %}
-{% endblock %}
-
-{% block firstBlockText %}
-    See upcoming events on our
-    <a style="color: #551A8B; font-weight: 800;" href="https://orgsync.com/124699/chapter" target="_blank">OrgSync</a>
-    page
-
-    <br>
-    <br>
-    <br>
-
-    Check out some pictures of our Spring 2019 events!
-{% endblock %}
+{% block firstBlock %} {% endblock %}
 
 
 
@@ -348,4 +351,3 @@
     {% block fourthBlockComment %} {% endblock %}
 {% endblock %}
 
-<!-- CLIFFHANGER: swap Snacks on the Streets images, crop/rotate/etc pictures from all carousels -->
