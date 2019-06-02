@@ -47,8 +47,17 @@
 
 {# First Block #}
 {% block firstBlockComment %}<!--Gallery Block-->{% endblock %}
+{% block firstBlock %}
+    <div class="container">
+        <div class="whitespace">
+            {% block firstBlockImgTag %}{% endblock %}
+            {% block firstBlockText %}{% endblock %}
+            {% block firstBlockImage %}{% endblock %}
 
-{% block firstBlock %} {% endblock %}
+        
+        </div>
+    </div>
+{% endblock %}
 
 
 
