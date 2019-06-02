@@ -81,7 +81,17 @@
 {% block secondBlock %}
     <div class="container-fluid" style="background-color: #F5F5F5">
         <div class="whitespace">
-            <div class="container">
+            <div class="container gallery-container">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-6 justify-content-center">
+                            <a class="lightbox" href="{% static 'events/img/carousel/spring19/first-meeting/fm1.png' %}">
+                                <img src="{% static 'events/img/carousel/spring19/first-meeting/fm1.png' %}" alt="Rails">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--
                 <h4 class="post-subtitle text-center">
                     First General Meeting - 1/23
                 </h4>
@@ -130,6 +140,7 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
+                -->
             </div>
         </div>
     </div>
@@ -376,4 +387,7 @@
     {% block fourthBlockComment %} {% endblock %}
 {% endblock %}
 
-<!-- CLIFFHANGER: swap Snacks on the Streets images, crop/rotate/etc pictures from all carousels -->
+<script src=""></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>

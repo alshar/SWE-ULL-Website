@@ -13,6 +13,7 @@
 
     {% load static %}
 
+
     <link rel="shortcut icon" href="{% static 'base/img/favicon.ico' %}">
 
     <!-- Bootstrap core CSS -->
@@ -27,6 +28,11 @@
 
     <!-- Custom styles for this template -->
     <link href="{% static 'base/css/clean-blog.css' %}" rel="stylesheet">
+
+    <!-- Lightbox CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.css">
+
+
 
 
 </head>
@@ -312,6 +318,12 @@
 
 <!-- Custom scripts for this template -->
 <script src="{% static 'base/js/clean-blog.min.js' %}"></script>
+
+<!-- Script for light box effect on gallery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
 
 
 </body>
