@@ -13,16 +13,14 @@
 {% endblock %}
 
 
-{# no header on this page, leave this empty #}
-{% block headerBackground %} {% endblock %}
 
-{# this page will not have a gradient over the masthead, leave this empty #}
-{% block gradient %} {% endblock %}
-
-{# no header, so no heading, leave this empty #}
-{% block headerHeading %} {% endblock %}
+{# Heading #}
+{# This page uses baseindex.html header image and gradient, so those django blocks aren't in here #}
 
 
+{% block headerHeading %} Fall 2018 Events Gallery {% endblock %}
+
+{# no header, so no subheading, leave this empty #}
 {% block headerSubheading %} {% endblock %}
 
 {# this page will not have a button on the masthead, so leave this empty #}
@@ -31,7 +29,7 @@
 
 
 {# First Block #}
-{% block firstBlockComment %}<!--Current Events Block-->{% endblock %}
+{% block firstBlockComment %}<!--Gallery Block-->{% endblock %}
 
 {% block firstBlockImage %}
     {% static 'events/img/org-sync.png' %}
