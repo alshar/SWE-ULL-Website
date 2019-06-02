@@ -29,16 +29,14 @@ urlpatterns = [
     path('getinvolved/', include('getinvolved.urls')),
     path('events/', include('events.urls'))
 
-
-
 ]
 
 """
 what include() does:
-    anything after site.com/whatever will be "chopped off"
+    anything after site.com/whatever/ will be "chopped off"
     and sent to whatever.urls to be processed. 
     Why do it this way? Abstraction. It's easier to do this 
-    then have a massive url mapper in the main file 
+    than have a massive url mapper in the main file 
 """
 
 """
