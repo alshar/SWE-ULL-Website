@@ -567,8 +567,10 @@ footer .copyright {
 
 .tz-gallery .lightbox img {
     width: 100%;
+    height: 100%;
     border-radius: 0;
     position: relative;
+
 }
 
 .tz-gallery .lightbox:before {
@@ -609,3 +611,7 @@ footer .copyright {
     background-color: transparent !important;
 }
 
+.imgfit {
+    object-fit: cover;
+    width: 100%;
+}
