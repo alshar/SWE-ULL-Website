@@ -46,7 +46,7 @@
 
 
 {# First Block #}
-{% block firstBlockComment %}<!--Gallery Block-->{% endblock %}
+{% block firstBlockComment %}<!--Desc Block-->{% endblock %}
 {# TODO use a different image here, maybe a purple heart with 'what we do' ?? #}
 {% block firstBlockImage %}{% static 'base/img/swe-ull-color-logo.png' %}{% endblock %}
 {# TODO add text along the lines of - beef up resume, blah, blah, but most imporantly help us make a difference (link to get invloved) #}
@@ -63,44 +63,46 @@
     <div class="container-fluid" style="background-color: #F5F5F5">
         <div class="whitespace">
             <h4 class="post-subtitle text-center">
-                First General Meeting - 1/23
+                Kona Ice - 7/25 & 8/22
             </h4>
             <div class="container gallery-container" style="background-color: #F5F5F5">
                 <div class="tz-gallery">
                     <div class="row">
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-12 col-md-12">
                             <a class="lightbox"
-                               href="{% static 'events/img/carousel/spring19/first-meeting/fm1.png' %}">
-                                <img src="{% static 'events/img/carousel/spring19/first-meeting/fm1.png' %}"
-                                     alt="Bridge">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <a class="lightbox"
-                               href="{% static 'events/img/carousel/spring19/first-meeting/fm2.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/first-meeting/fm2.jpg' %}" alt="Park">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <a class="lightbox"
-                               href="{% static 'events/img/carousel/spring19/first-meeting/fm3.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/first-meeting/fm3.jpg' %}"
-                                     alt="Tunnel">
-                            </a>
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <a class="lightbox"
-                               href="{% static 'events/img/carousel/spring19/first-meeting/fm4.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/first-meeting/fm4.jpg' %}"
-                                     alt="Traffic">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-8">
-                            <a class="lightbox"
-                               href="{% static 'events/img/carousel/spring19/first-meeting/fm5.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/first-meeting/fm5.jpg' %}"
+                               href="{% static 'events/img/carousel/fall18/kona-ice/ki1.jpg' %}">
+                                <img style="object-fit: fill"
+                                     src="{% static 'events/img/carousel/fall18/kona-ice/ki1.jpg' %}"
                                      alt="Rails">
                             </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/kona-ice/ki2.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/fall18/kona-ice/ki2.jpg' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/kona-ice/ki3.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/fall18/kona-ice/ki3.jpg' %}">
+                                </a>
+                            </div>
+
+                            <div class="col-sm-3 col-md-3">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/kona-ice/ki4.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/fall18/kona-ice/ki4.jpg' %}"
+                                         alt="Tunnel">
+                                </a>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/kona-ice/ki5.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/fall18/kona-ice/ki5.jpg' %}">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,10 +113,34 @@
     <div class="container">
         <div class="whitespace">
             <h4 class="post-subtitle text-center">
-                BASF Industry Tour - 2/08
+                First General Meeting - 8/30
             </h4>
-            <img class="img-fluid justify-content-center"
-                 src="{% static 'events/img/carousel/spring19/basf/basf1.jpg' %}">
+            <div class="container gallery-container" style="background-color: #F5F5F5">
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/spring19/westlake/wl1.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/spring19/westlake/wl1.jpg' %}">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/spring19/westlake/wl2.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/spring19/westlake/wl2.jpg' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-6" style="object-fit: cover">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/spring19/westlake/wl3.JPG' %}">
+                                    <img src="{% static 'events/img/carousel/spring19/westlake/wl3.JPG' %}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </div>
     </div>
 
@@ -127,25 +153,24 @@
                 <div class="container gallery-container" style="background-color: #F5F5F5">
                     <div class="tz-gallery">
                         <div class="row">
-                            <div class="col-sm-12 col-md-4">
+                            <div class="col-sm-12 col-md-12">
                                 <a class="lightbox"
                                    href="{% static 'events/img/carousel/spring19/westlake/wl1.jpg' %}">
-                                    <img src="{% static 'events/img/carousel/spring19/westlake/wl1.jpg' %}"
-                                         alt="Bridge">
+                                    <img src="{% static 'events/img/carousel/spring19/westlake/wl1.jpg' %}">
                                 </a>
                             </div>
-                            <div class="col-sm-6 col-md-4">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
                                 <a class="lightbox"
                                    href="{% static 'events/img/carousel/spring19/westlake/wl2.jpg' %}">
-                                    <img src="{% static 'events/img/carousel/spring19/westlake/wl2.jpg' %}"
-                                         alt="Park">
+                                    <img src="{% static 'events/img/carousel/spring19/westlake/wl2.jpg' %}">
                                 </a>
                             </div>
-                            <div class="col-sm-12 col-md-4">
+                            <div class="col-sm-6 col-md-6" style="object-fit: cover">
                                 <a class="lightbox"
                                    href="{% static 'events/img/carousel/spring19/westlake/wl3.JPG' %}">
-                                    <img src="{% static 'events/img/carousel/spring19/westlake/wl3.JPG' %}"
-                                         alt="Traffic">
+                                    <img src="{% static 'events/img/carousel/spring19/westlake/wl3.JPG' %}">
                                 </a>
                             </div>
                         </div>
@@ -163,25 +188,24 @@
             <div class="container gallery-container">
                 <div class="tz-gallery">
                     <div class="row">
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-12 col-md-12">
                             <a class="lightbox"
                                href="{% static 'events/img/carousel/spring19/snacks-king-cake/snack1.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/snacks-king-cake/snack1.jpg' %}"
-                                     alt="Bridge">
+                                <img src="{% static 'events/img/carousel/spring19/snacks-king-cake/snack1.jpg' %}">
                             </a>
                         </div>
-                        <div class="col-sm-6 col-md-4">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
                             <a class="lightbox"
                                href="{% static 'events/img/carousel/spring19/snacks-king-cake/snacks2.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/snacks-king-cake/snacks2.jpg' %}"
-                                     alt="Park">
+                                <img src="{% static 'events/img/carousel/spring19/snacks-king-cake/snacks2.jpg' %}">
                             </a>
                         </div>
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-12 col-md-6">
                             <a class="lightbox"
                                href="{% static 'events/img/carousel/spring19/snacks-king-cake/snacks3.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/snacks-king-cake/snacks3.jpg' %}"
-                                     alt="Traffic">
+                                <img src="{% static 'events/img/carousel/spring19/snacks-king-cake/snacks3.jpg' %}">
                             </a>
                         </div>
                     </div>
@@ -199,32 +223,30 @@
                 <div class="container gallery-container" style="background-color: #F5F5F5">
                     <div class="tz-gallery">
                         <div class="row">
-                            <div class="col-sm-12 col-md-4">
+                            <div class="col-sm-12 col-md-6">
                                 <a class="lightbox"
                                    href="{% static 'events/img/carousel/spring19/science-olympiad/so1.jpg' %}">
-                                    <img src="{% static 'events/img/carousel/spring19/science-olympiad/so1.jpg' %}"
-                                         alt="Bridge">
+                                    <img src="{% static 'events/img/carousel/spring19/science-olympiad/so1.jpg' %}">
                                 </a>
                             </div>
-                            <div class="col-sm-6 col-md-4">
+                            <div class="col-sm-12 col-md-6">
                                 <a class="lightbox"
                                    href="{% static 'events/img/carousel/spring19/science-olympiad/so2.jpg' %}">
-                                    <img src="{% static 'events/img/carousel/spring19/science-olympiad/so2.jpg' %}"
-                                         alt="Park">
+                                    <img src="{% static 'events/img/carousel/spring19/science-olympiad/so2.jpg' %}">
                                 </a>
                             </div>
-                            <div class="col-sm-12 col-md-4">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
                                 <a class="lightbox"
                                    href="{% static 'events/img/carousel/spring19/science-olympiad/so4.jpg' %}">
-                                    <img src="{% static 'events/img/carousel/spring19/science-olympiad/so4.jpg' %}"
-                                         alt="Traffic">
+                                    <img src="{% static 'events/img/carousel/spring19/science-olympiad/so4.jpg' %}">
                                 </a>
                             </div>
-                            <div class="col-sm-12 col-md-4">
+                            <div class="col-sm-12 col-md-6">
                                 <a class="lightbox"
                                    href="{% static 'events/img/carousel/spring19/science-olympiad/so5.jpg' %}">
-                                    <img src="{% static 'events/img/carousel/spring19/science-olympiad/so5.jpg' %}"
-                                         alt="Traffic">
+                                    <img src="{% static 'events/img/carousel/spring19/science-olympiad/so5.jpg' %}">
                                 </a>
                             </div>
                         </div>
@@ -232,6 +254,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <div class="container">
@@ -242,38 +265,37 @@
             <div class="container gallery-container">
                 <div class="tz-gallery">
                     <div class="row">
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-12 col-md-12">
                             <a class="lightbox"
                                href="{% static 'events/img/carousel/spring19/big-event/be1.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/big-event/be1.jpg' %}"
-                                     alt="Bridge">
+                                <img src="{% static 'events/img/carousel/spring19/big-event/be1.jpg' %}">
                             </a>
                         </div>
-                        <div class="col-sm-6 col-md-4">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
                             <a class="lightbox"
                                href="{% static 'events/img/carousel/spring19/big-event/be2.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/big-event/be2.jpg' %}"
-                                     alt="Park">
+                                <img src="{% static 'events/img/carousel/spring19/big-event/be2.jpg' %}">
                             </a>
                         </div>
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-4 col-md-4">
                             <a class="lightbox"
                                href="{% static 'events/img/carousel/spring19/big-event/be3.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/big-event/be3.jpg' %}"
-                                     alt="Traffic">
+                                <img src="{% static 'events/img/carousel/spring19/big-event/be3.jpg' %}">
                             </a>
                         </div>
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-4 col-md-4">
                             <a class="lightbox"
                                href="{% static 'events/img/carousel/spring19/big-event/be4.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/big-event/be4.jpg' %}"
-                                     alt="Traffic">
+                                <img src="{% static 'events/img/carousel/spring19/big-event/be4.jpg' %}">
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 {% endblock %}
 
@@ -285,4 +307,4 @@
     {% block fourthBlockComment %} {% endblock %}
 {% endblock %}
 
-{# CLIFFHANGER: download and post images to fall gallery #}
+
