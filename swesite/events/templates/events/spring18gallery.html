@@ -17,7 +17,10 @@
 {# Heading #}
 {# This page uses baseindex.html header image and gradient, so those django blocks aren't in here #}
 
-
+{% block headerBackground %}
+    url(' {% static 'events/img/carousel/spring18/header.JPG' %} ')
+ {% endblock %}
+{% block gradient %}{% endblock %}
 {% block headerHeading %} Spring 2018 Events Gallery {% endblock %}
 
 {# no subheading, leave this empty #}
