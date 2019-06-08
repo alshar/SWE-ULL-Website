@@ -15,8 +15,11 @@
 
 
 {# Heading #}
-{# This page uses baseindex.html header image and gradient, so those django blocks aren't in here #}
+{% block headerBackground %}
+    url(' {% static 'events/img/carousel/fall18/fall18header.jpg' %} ')
+{% endblock %}
 
+{% block gradient %}{% endblock %}
 
 {% block headerHeading %} Fall 2018 Events Gallery {% endblock %}
 
@@ -76,8 +79,7 @@
                             <a class="lightbox"
                                href="{% static 'events/img/carousel/fall18/kona-ice/ki1.jpg' %}">
                                 <img style="object-fit: fill"
-                                     src="{% static 'events/img/carousel/fall18/kona-ice/ki1.jpg' %}"
-                                     alt="Rails">
+                                     src="{% static 'events/img/carousel/fall18/kona-ice/ki1.jpg' %}">
                             </a>
                         </div>
                         <div class="row">
@@ -90,14 +92,16 @@
                             <div class="col-sm-3 col-md-3">
                                 <a class="lightbox"
                                    href="{% static 'events/img/carousel/fall18/kona-ice/ki3.jpg' %}">
-                                    <img src="{% static 'events/img/carousel/fall18/kona-ice/ki3.jpg' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/fall18/kona-ice/ki3.jpg' %}">
                                 </a>
                             </div>
 
                             <div class="col-sm-3 col-md-3">
                                 <a class="lightbox"
                                    href="{% static 'events/img/carousel/fall18/kona-ice/ki4.jpg' %}">
-                                    <img src="{% static 'events/img/carousel/fall18/kona-ice/ki4.jpg' %}"
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/fall18/kona-ice/ki4.jpg' %}"
                                          alt="Tunnel">
                                 </a>
                             </div>
@@ -174,7 +178,8 @@
                             <div class="col-sm-6 col-md-6" style="object-fit: cover">
                                 <a class="lightbox"
                                    href="{% static 'events/img/carousel/fall18/canes/c2.jpg' %}">
-                                    <img src="{% static 'events/img/carousel/fall18/canes/c2.jpg' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/fall18/canes/c2.jpg' %}">
                                 </a>
                             </div>
                         </div>
@@ -221,27 +226,18 @@
                 <div class="container gallery-container" style="background-color: #F5F5F5">
                     <div class="tz-gallery">
                         <div class="row">
-                            <div class="col-sm-12 col-md-12">
+                            <div class="col-sm-6 col-md-6">
                                 <a class="lightbox"
-                                   href="{% static 'events/img/carousel/fall18/snacks-coolpops/snacks1.png' %}">
-                                    <img style="object-fit: fill"
-                                         src="{% static 'events/img/carousel/fall18/snacks-coolpops/snacks1.png' %}"
-                                         alt="Rails">
+                                   href="{% static 'events/img/carousel/fall18/snacks-coolpops/snacks1.jpg' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/fall18/snacks-coolpops/snacks1.jpg' %}">
                                 </a>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-6 col-md-6">
-                                    <a class="lightbox"
-                                       href="{% static 'events/img/carousel/fall18/snacks-coolpops/snacks2.jpg' %}">
-                                        <img src="{% static 'events/img/carousel/fall18/snacks-coolpops/snacks2.jpg' %}">
-                                    </a>
-                                </div>
-                                <div class="col-sm-6 col-md-6">
-                                    <a class="lightbox"
-                                       href="{% static 'events/img/carousel/fall18/snacks-coolpops/snacks3.jpg' %}">
-                                        <img src="{% static 'events/img/carousel/fall18/snacks-coolpops/snacks3.jpg' %}">
-                                    </a>
-                                </div>
+                            <div class="col-sm-6 col-md-6">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/snacks-coolpops/snacks2.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/fall18/snacks-coolpops/snacks2.jpg' %}">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -326,39 +322,36 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
                 vulputate.
             </h6>
+
             <div class="container gallery-container">
                 <div class="tz-gallery">
-                    <div class="container gallery-container">
-                        <div class="tz-gallery">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12">
-                                    <a class="lightbox"
-                                       href="{% static 'events/img/carousel/fall18/girard/g1.jpg' %}">
-                                        <img style="object-fit: fill"
-                                             src="{% static 'events/img/carousel/fall18/girard/g1.jpg' %}"
-                                             alt="Rails">
-                                    </a>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4 col-md-4">
-                                        <a class="lightbox"
-                                           href="{% static 'events/img/carousel/fall18/girard/g2.jpg' %}">
-                                            <img src="{% static 'events/img/carousel/fall18/girard/g2.jpg' %}">
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4 col-md-4">
-                                        <a class="lightbox"
-                                           href="{% static 'events/img/carousel/fall18/girard/g3.jpg' %}">
-                                            <img src="{% static 'events/img/carousel/fall18/girard/g3.jpg' %}">
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4 col-md-4">
-                                        <a class="lightbox"
-                                           href="{% static 'events/img/carousel/fall18/girard/g4.jpg' %}">
-                                            <img src="{% static 'events/img/carousel/fall18/girard/g4.jpg' %}">
-                                        </a>
-                                    </div>
-                                </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/girard/g1.jpg' %}">
+                                <img style="object-fit: fill"
+                                     src="{% static 'events/img/carousel/fall18/girard/g1.jpg' %}"
+                                     alt="Rails">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/girard/g2.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/fall18/girard/g2.jpg' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/girard/g3.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/fall18/girard/g3.jpg' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/girard/g4.jpg' %}">
+                                    <img style="object-fit: cover" src="{% static 'events/img/carousel/fall18/girard/g4.jpg' %}">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -366,6 +359,7 @@
             </div>
         </div>
     </div>
+
 
     <div class="container">
         <div class="whitespace">
@@ -520,13 +514,13 @@
                             <div class="col-sm-6 col-md-6">
                                 <a class="lightbox"
                                    href="{% static 'events/img/carousel/fall18/nasa/nasa2.JPG' %}">
-                                    <img src="{% static 'events/img/carousel/fall18/nasa/nasa2.JPG' %}">
+                                    <img style="object-fit: cover" src="{% static 'events/img/carousel/fall18/nasa/nasa2.JPG' %}">
                                 </a>
                             </div>
                             <div class="col-sm-6 col-md-6">
                                 <a class="lightbox"
                                    href="{% static 'events/img/carousel/fall18/nasa/nasa3.JPG' %}">
-                                    <img src="{% static 'events/img/carousel/fall18/nasa/nasa3.JPG' %}">
+                                    <img style="object-fit: cover" src="{% static 'events/img/carousel/fall18/nasa/nasa3.JPG' %}">
                                 </a>
                             </div>
                         </div>
