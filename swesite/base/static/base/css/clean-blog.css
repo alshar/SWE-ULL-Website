@@ -52,7 +52,10 @@ h6 {
 }
 
 .cursive-font{
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'Indie Flower', cursive;;
+    font-weight: lighter;
+    font-size: 30px;
+    color: #777777;
 }
 
 a {
