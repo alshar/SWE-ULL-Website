@@ -47,8 +47,10 @@
 {# First Block #}
 {% block firstBlockComment %}<!--WE19 Block-->{% endblock %}
 
-{% block firstBlockImage %}
-    {% static 'volunteerpoints/img/we19.jpg' %}
+{% block firstBlockImgTag %}
+                <img class="img-fluid mx-auto d-block" style="height: 125px"
+                     src="{% block firstBlockImage %}{% static 'volunteerpoints/img/we19.jpg' %}{% endblock %}"
+                     alt="SWE 19 logo">
 {% endblock %}
 
 {% block firstBlockText %}
