@@ -1,1 +1,43 @@
 {% extends "base/baseindex.html" %}
+
+{% load static %}
+
+{# Meta #}
+{% block description %}
+    Volunteer Points | SWE - University of Louisiana at Lafayette
+{% endblock %}
+
+{% block title %}
+    Volunteer Points | SWE - University of Louisiana at Lafayette
+{% endblock %}
+
+
+{# Header #}
+{% block headerBackground %}
+    url(' {% static 'events/img/events-header.jpg' %} ')
+{% endblock %}
+
+{# this page will not have a gradient over the masthead, so leave this empty #}
+{% block gradient %} {% endblock %}
+
+{% block headerHeading %}
+    Volunteer Points
+{% endblock %}
+
+{% block headerSubheading %}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tellus augue, feugiat at tincidunt ac, pretium vel
+    arcu. Sed odio velit, dictum eu blandit ac orci,
+    sed
+{% endblock %}
+
+{% block headerButton %}
+    <div class="headerButton">
+        <div class="clearfix">
+            <div class="dropdown show">
+                <a class="btn btn-primary" href="https://google.com" role="button">
+                    Point Tracker
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
