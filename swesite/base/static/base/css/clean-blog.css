@@ -19,8 +19,7 @@ p {
 
 
 h2,
-h3
- {
+h3 {
     font-weight: 800;
     font-family: 'Lato', sans-serif;
 }
@@ -51,7 +50,7 @@ h6 {
     color: #777777;
 }
 
-.cursive-font{
+.cursive-font {
     font-family: 'Indie Flower', cursive;;
     font-weight: lighter;
     font-size: 30px;
@@ -62,6 +61,11 @@ a {
     color: #212529;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
+}
+
+#points-table a {
+    color: #551A8B;
+    font-weight: 800;
 }
 
 .card a {
@@ -395,7 +399,6 @@ header.masthead .gradient {
 }
 
 
-
 .post-preview > a {
     color: #212529;
 }
@@ -542,7 +545,6 @@ footer .copyright {
     font-size: 16px;
     padding: 25px 35px;
 }
-
 
 
 /* Light box/Gallery styles */
