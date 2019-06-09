@@ -48,9 +48,9 @@
 {% block firstBlockComment %}<!--WE19 Block-->{% endblock %}
 
 {% block firstBlockImgTag %}
-                <img class="img-fluid mx-auto d-block" style="height: 125px"
-                     src="{% block firstBlockImage %}{% static 'volunteerpoints/img/we19.jpg' %}{% endblock %}"
-                     alt="SWE 19 logo">
+    <img class="img-fluid mx-auto d-block" style="height: 125px"
+         src="{% block firstBlockImage %}{% static 'volunteerpoints/img/we19.jpg' %}{% endblock %}"
+         alt="SWE 19 logo">
 {% endblock %}
 
 {% block firstBlockText %}
@@ -59,4 +59,20 @@
     sed
 {% endblock %}
 
-{# Add volunteer points table using Bootstrap table #}
+{% block secondBlockComment %}<!--Volunteer Point Table Block-->{% endblock %}
+{% block secondBlock %}
+    <div class="table-responsive">
+        <table class="table">
+            ...
+        </table>
+    </div>
+{% endblock %}
+
+{# fill out bootstrap table #}
+
+{% block thirdBlock %}
+    {% block thirdBlockComment %} {% endblock %}
+{% endblock %}
+{% block fourthBlock %}
+    {% block fourthBlockComment %} {% endblock %}
+{% endblock %}
