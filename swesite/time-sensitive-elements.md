@@ -9,9 +9,9 @@ This is not meant to be a definitive list.
 I could have overlooked something. 
 Please add to this list as needed.
 ~~~
-
-####Homepage:
 ***
+####Homepage:
+
 * Amount of points needed to attend conference & conference link
 ~~~
 Found at:
@@ -27,6 +27,7 @@ Found at:
 </p>
 ~~~
 
+***
+####Volunteer Points Page:
 
-
-* WE19 information
+* Basically the whole apge
