@@ -625,3 +625,9 @@ footer .copyright {
     object-fit: cover;
     width: 100%;
 }
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #551a8b;
+    border-color: #551a8b;
+}
