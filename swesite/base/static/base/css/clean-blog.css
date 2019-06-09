@@ -51,6 +51,9 @@ h6 {
     color: #777777;
 }
 
+.cursive-font{
+    font-family: 'Gochi Hand', cursive;
+}
 
 a {
     color: #212529;
