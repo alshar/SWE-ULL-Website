@@ -15,8 +15,6 @@
 
 
 {# Heading #}
-{# This page uses baseindex.html header image and gradient, so those django blocks aren't in here #}
-
 {% block headerBackground %}
     url(' {% static 'events/img/carousel/spring18/header.JPG' %} ')
  {% endblock %}
@@ -49,13 +47,15 @@
 
 
 {# First Block #}
-{% block firstBlockComment %}<!--Gallery Block-->{% endblock %}
-{# TODO use a different image here, maybe a purple heart with 'what we do' ?? #}
-{% block firstBlockImage %}{% static 'base/img/swe-ull-color-logo.png' %}{% endblock %}
-{# TODO add text along the lines of - beef up resume, blah, blah, but most imporantly help us make a difference (link to get invloved) #}
-{% block firstBlockText %}
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper arcu eget nisl
-    elementum vulput
+{% block firstBlockComment %}<!--Desc Block-->{% endblock %}
+{% block firstBlockImage %}{% static 'getinvolved/heart.png' %}{% endblock %}
+{% block firstBlockTextTag %}
+    <h4 class="post-subtitle text-center cursive-font">
+        Thank you to all our amazing volunteers
+        <br>
+        <br>
+        Without your effort and dedication, none of this would have been possible
+    </h4>
 {% endblock %}
 
 
