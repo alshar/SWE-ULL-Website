@@ -31,3 +31,4 @@ Found at:
 ####Volunteer Points Page:
 
 * Basically the whole apge
+* Fundraising Chair email
