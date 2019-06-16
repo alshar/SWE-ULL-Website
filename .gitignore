@@ -17,8 +17,8 @@ db.sqlite3
 media
 
 # Django Static
-SWE-ULL-Website/static/
-SWE-ULL-Website/staticfiles/
+swesite/static/
+swesite/staticfiles/
 
 ### Django.Python Stack ###
 # Byte-compiled / optimized / DLL files
