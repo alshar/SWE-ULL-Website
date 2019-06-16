@@ -1,6 +1,5 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.template.response import TemplateResponse
 
 
 def baseindex(request):
-    return render(request, 'base/baseindex.html')
+    return TemplateResponse(request, 'base/baseindex.html')
