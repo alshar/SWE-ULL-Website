@@ -1,6 +1,5 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.template.response import TemplateResponse
 
 
-def ptindex(request):
-    return render(request, 'pointstracker/ptlogin.html')
+def pointtracker(request):
+    return TemplateResponse(request, 'pointtracker/pointtracker.html')

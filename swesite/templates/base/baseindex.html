@@ -54,22 +54,22 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/about">
+                    <a class="nav-link" href="{% url 'about' %}">
                         <div class="navButton">About</div>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/getinvolved">
+                    <a class="nav-link" href="{% url 'getinvolved' %}">
                         <div class="navButton">Get Involved</div>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/events">
+                    <a class="nav-link" href="{% url 'events' %}">
                         <div class="navButton">Events</div>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/volunteerpoints">
+                    <a class="nav-link" href="{% url 'volunteerpoints' %}">
                         <div class="navButton">Volunteer Points</div>
                     </a>
                 </li>
@@ -98,7 +98,7 @@
                     {% block headerButton %}
                         <div class="clearfix">
                             <div class="headerButton">
-                                <a class="btn btn-primary" href="/getinvolved">
+                                <a class="btn btn-primary" href="{% url 'getinvolved' %}">
                                     {% block headerButtonText %}
                                         Get Involved
                                     {% endblock %}
@@ -157,7 +157,7 @@
                                 back to Acadiana by getting involved with SWE. </p>
                             <br>
                             <br>
-                            <a href="/getinvolved" class="card-link">Get Involved →</a>
+                            <a href="{% url 'getinvolved' %}" class="card-link">Get Involved →</a>
                         </div>
                     </div>
                     <div class="card">
@@ -167,7 +167,7 @@
                             <p class="card-text">We organize Industry Tours, Resume Workshops, Q&A Sessions, Fundraising
                                 Initiatives, Community Outreach, and much more throughout the semester.</p>
                             <br>
-                            <a href="/events" class="card-link">See Events →</a>
+                            <a href="{% url 'events' %}" class="card-link">See Events →</a>
                         </div>
                     </div>
                     <div class="card">
@@ -178,7 +178,7 @@
                                 After 30 points, we'll pay for you to attend the
                                 <a href="https://we19.swe.org/">largest career fair</a>
                                 for Female Engineers in the country </p>
-                            <a href="/volunteerpoints" class="card-link">Learn More →</a>
+                            <a href="{% url 'volunteerpoints' %}" class="card-link">Learn More →</a>
                         </div>
                     </div>
 
@@ -266,6 +266,7 @@
 
 
 <!-- Footer -->
+{# TODO abstract these before deployment #}
 <footer>
     <div class="container">
         <div class="row">
