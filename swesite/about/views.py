@@ -1,6 +1,5 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.template.response import TemplateResponse
 
 
 def about(request):
-    return render(request, 'about/about.html')
+    return TemplateResponse(request, 'about/about.html')
