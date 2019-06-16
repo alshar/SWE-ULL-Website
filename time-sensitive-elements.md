@@ -29,6 +29,8 @@ Found at:
 
 ***
 ####Volunteer Points Page:
-
-* Basically the whole apge
-* Fundraising Chair email
+* Basically the whole page
+~~~
+Found at:
+../templates/volunteerpoints/volunteerpoints.html
+~~~~
