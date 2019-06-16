@@ -15,7 +15,7 @@ Please add to this list as needed.
 * Amount of points needed to attend conference & conference link
 ~~~
 Found at:
-../swesite/base/templates/base/baseindex.html
+../templates/base/baseindex.html
 
 <p class="card-text">
     Earn points by volunteering, attending meetings, and going to events. 
