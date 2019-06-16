@@ -1,0 +1,334 @@
+{% extends "base/baseindex.html" %}
+
+{% load static %}
+
+
+{# Meta #}
+{% block description %}
+    Spring 2018 Events Gallery | SWE - University of Louisiana at Lafayette
+{% endblock %}
+
+{% block title %}
+    Spring '18 Gallery | SWE - University of Louisiana at Lafayette
+{% endblock %}
+
+
+
+{# Heading #}
+{% block headerBackground %}
+    url(' {% static 'events/img/carousel/spring18/header.JPG' %} ')
+{% endblock %}
+{% block gradient %}{% endblock %}
+{% block headerHeading %} Spring 2018 Events Gallery {% endblock %}
+
+{# no subheading, leave this empty #}
+{% block headerSubheading %} {% endblock %}
+
+
+{% block headerButton %}
+    <div class="headerButton">
+        <div class="clearfix">
+            <div class="dropdown show">
+                <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    See Other Event Pictures
+                </a>
+                {# ignore can not resolve file error, url will be properly routed #}
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="/events">Spring '19</a>
+                    <a class="dropdown-item" href="/events/fall18">Fall '18</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+
+{# First Block #}
+{% block firstBlockComment %}<!--Thank You Block-->{% endblock %}
+{% block firstBlockImage %}{% static 'getinvolved/heart.png' %}{% endblock %}
+{% block firstBlockTextTag %}
+    <h4 class="post-subtitle text-center cursive-font">
+        Thank you to all our amazing volunteers
+        <br>
+        <br>
+        Without your effort and dedication, none of this would have been possible
+    </h4>
+{% endblock %}
+
+
+
+{# Second Block #}
+{% block secondBlockComment %}<!--Gallery Block-->{% endblock %}
+{% block secondBlock %}
+
+    <div class="container-fluid" style="background-color: #F5F5F5">
+        <div class="whitespace">
+            <h4 class="post-subtitle text-center">
+                Resume Workshop
+            </h4>
+            <h6 class="post-subtitle text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                vulputate.
+            </h6>
+            <div class="container gallery-container" style="background-color: #F5F5F5">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/spring18/resume-workshop/r1.jpg' %}">
+                                <img src="{% static 'events/img/carousel/spring18/resume-workshop/r1.jpg' %}">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/spring18/resume-workshop/r2.jpg' %}">
+                                <img src="{% static 'events/img/carousel/spring18/resume-workshop/r2.jpg' %}">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/spring18/resume-workshop/r3.jpg' %}">
+                                <img src="{% static 'events/img/carousel/spring18/resume-workshop/r3.jpg' %}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="whitespace">
+            <h4 class="post-subtitle text-center">
+                International Hour
+            </h4>
+            <h6 class="post-subtitle text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                vulputate.
+            </h6>
+            <div class="container gallery-container">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/spring18/int-hour/inth1.png' %}">
+                                <img src="{% static 'events/img/carousel/spring18/int-hour/inth1.png' %}">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/spring18/int-hour/inth2.png' %}">
+                                <img src="{% static 'events/img/carousel/spring18/int-hour/inth2.png' %}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #F5F5F5">
+        <div class="whitespace">
+            <div class="container">
+                <h4 class="post-subtitle text-center">
+                    Engineering & Technology Week
+                </h4>
+                <h6 class="post-subtitle text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                    vulputate.
+                </h6>
+                <div class="container gallery-container" style="background-color: #F5F5F5">
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/spring18/ent/ent1.jpeg' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/spring18/ent/ent1.jpeg' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-6" style="object-fit: cover">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/spring18/ent/ent2.JPG' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/spring18/ent/ent2.JPG' %}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="whitespace">
+            <h4 class="post-subtitle text-center">
+                The Big Event
+            </h4>
+            <h6 class="post-subtitle text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                vulputate.
+            </h6>
+            <div class="container gallery-container">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/spring18/big-event/be1.jpg' %}">
+                                <img src="{% static 'events/img/carousel/spring18/big-event/be1.jpg' %}">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/spring18/big-event/be2.jpg' %}">
+                                <img src="{% static 'events/img/carousel/spring18/big-event/be2.jpg' %}">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/spring18/big-event/be3.jpg' %}">
+                                <img src="{% static 'events/img/carousel/spring18/big-event/be3.jpg' %}">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/spring18/big-event/be4.jpg' %}">
+                                <img src="{% static 'events/img/carousel/spring18/big-event/be4.jpg' %}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #F5F5F5">
+        <div class="whitespace">
+            <div class="container">
+                <h4 class="post-subtitle text-center">
+                    Science Olympiad
+                </h4>
+                <h6 class="post-subtitle text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                    vulputate.
+                </h6>
+                <div class="container gallery-container" style="background-color: #F5F5F5">
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/spring18/sciol/sci1.jpg' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/spring18/sciol/sci1.jpg' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/spring18/sciol/sci2.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/spring18/sciol/sci2.jpg' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/spring18/sciol/sci3.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/spring18/sciol/sci3.jpg' %}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="whitespace">
+            <h4 class="post-subtitle text-center">
+                SWE Partnership with NSBE Jr. Day
+            </h4>
+            <h6 class="post-subtitle text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                vulputate.
+            </h6>
+            <div class="container gallery-container">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/spring18/nsbe/nsbe1.JPG' %}">
+                                <img src="{% static 'events/img/carousel/spring18/nsbe/nsbe1.JPG' %}">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/spring18/nsbe/nsbe2.JPG' %}">
+                                <img src="{% static 'events/img/carousel/spring18/nsbe/nsbe2.JPG' %}">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/spring18/nsbe/nsbe3.JPG' %}">
+                                <img src="{% static 'events/img/carousel/spring18/nsbe/nsbe3.JPG' %}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #F5F5F5">
+        <div class="whitespace">
+            <div class="container">
+                <h4 class="post-subtitle text-center">
+                    SWE Volunteering at AFMS Show
+                </h4>
+                <h6 class="post-subtitle text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                    vulputate.
+                </h6>
+                <div class="container gallery-container" style="background-color: #F5F5F5">
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/spring18/afms/afms1.jpg' %}">
+                                    <img style="object-fit: fill"
+                                         src="{% static 'events/img/carousel/spring18/afms/afms1.jpg' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/spring18/afms/afms2.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/spring18/afms/afms2.jpg' %}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{# About page only has two sections, so leave these empty #}
+{% block thirdBlock %}
+    {% block thirdBlockComment %} {% endblock %}
+{% endblock %}
+{% block fourthBlock %}
+    {% block fourthBlockComment %} {% endblock %}
+{% endblock %}
+

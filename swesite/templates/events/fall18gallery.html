@@ -1,0 +1,554 @@
+{% extends "base/baseindex.html" %}
+
+{% load static %}
+
+
+{# Meta #}
+{% block description %}
+    Fall 2018 Events Gallery | SWE - University of Louisiana at Lafayette
+{% endblock %}
+
+{% block title %}
+    Fall '18 Gallery | SWE - University of Louisiana at Lafayette
+{% endblock %}
+
+
+
+{# Heading #}
+{% block headerBackground %}
+    url(' {% static 'events/img/carousel/fall18/fall18header.jpg' %} ')
+{% endblock %}
+
+{% block gradient %}{% endblock %}
+
+{% block headerHeading %} Fall 2018 Events Gallery {% endblock %}
+
+{# no subheading, leave this empty #}
+{% block headerSubheading %} {% endblock %}
+
+
+{% block headerButton %}
+    <div class="headerButton">
+        <div class="clearfix">
+            <div class="dropdown show">
+                <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    See Other Event Pictures
+                </a>
+                {# ignore can not resolve file error, url will be properly routed #}
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="/events">Spring '19</a>
+                    <a class="dropdown-item" href="/events/spring18">Spring '18</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+
+{# First Block #}
+{% block firstBlockComment %}<!--Thank You Block-->{% endblock %}
+{% block firstBlockImage %}{% static 'getinvolved/heart.png' %}{% endblock %}
+{% block firstBlockTextTag %}
+    <h4 class="post-subtitle text-center cursive-font">
+        Thank you to all our amazing volunteers
+        <br>
+        <br>
+        Without your effort and dedication, none of this would have been possible
+    </h4>
+{% endblock %}
+
+
+
+{# Second Block #}
+{% block secondBlockComment %}<!--Gallery Block-->{% endblock %}
+{% block secondBlock %}
+    <div class="container-fluid" style="background-color: #F5F5F5">
+        <div class="whitespace">
+            <h4 class="post-subtitle text-center">
+                Kona Ice - 7/25 & 8/22
+            </h4>
+            <h6 class="post-subtitle text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                vulputate.
+            </h6>
+            <div class="container gallery-container" style="background-color: #F5F5F5">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/kona-ice/ki1.jpg' %}">
+                                <img style="object-fit: fill"
+                                     src="{% static 'events/img/carousel/fall18/kona-ice/ki1.jpg' %}">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/kona-ice/ki2.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/fall18/kona-ice/ki2.jpg' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/kona-ice/ki3.jpg' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/fall18/kona-ice/ki3.jpg' %}">
+                                </a>
+                            </div>
+
+                            <div class="col-sm-3 col-md-3">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/kona-ice/ki4.jpg' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/fall18/kona-ice/ki4.jpg' %}"
+                                         alt="Tunnel">
+                                </a>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/kona-ice/ki5.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/fall18/kona-ice/ki5.jpg' %}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="whitespace">
+            <h4 class="post-subtitle text-center">
+                First General Meeting - 8/30
+            </h4>
+            <h6 class="post-subtitle text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                vulputate.
+            </h6>
+            <div class="container gallery-container">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/first-meeting/fm1.jpg' %}">
+                                <img src="{% static 'events/img/carousel/fall18/first-meeting/fm1.jpg' %}">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/first-meeting/fm2.jpg' %}">
+                                <img src="{% static 'events/img/carousel/fall18/first-meeting/fm2.jpg' %}">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6" style="object-fit: cover">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/first-meeting/fm3.jpg' %}">
+                                <img src="{% static 'events/img/carousel/fall18/first-meeting/fm3.jpg' %}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #F5F5F5">
+        <div class="whitespace">
+            <div class="container">
+                <h4 class="post-subtitle text-center">
+                    Cane's Give Back Night - 8/30
+                </h4>
+                <h6 class="post-subtitle text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                    vulputate.
+                </h6>
+                <div class="container gallery-container" style="background-color: #F5F5F5">
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/canes/c1.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/fall18/canes/c1.jpg' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-6" style="object-fit: cover">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/canes/c2.jpg' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/fall18/canes/c2.jpg' %}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="whitespace">
+            <h4 class="post-subtitle text-center">
+                College of Engineering Organization Fair - 8/31
+            </h4>
+            <h6 class="post-subtitle text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                vulputate.
+            </h6>
+            <div class="container gallery-container">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/coe/coe1.jpg' %}">
+                                <img src="{% static 'events/img/carousel/fall18/coe/coe1.jpg' %}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #F5F5F5">
+        <div class="whitespace">
+            <div class="container">
+                <h4 class="post-subtitle text-center">
+                    1st Snacks in the Street - 9/10
+                </h4>
+                <h6 class="post-subtitle text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                    vulputate.
+                </h6>
+                <div class="container gallery-container" style="background-color: #F5F5F5">
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/snacks-coolpops/snacks1.jpg' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/fall18/snacks-coolpops/snacks1.jpg' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/snacks-coolpops/snacks2.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/fall18/snacks-coolpops/snacks2.jpg' %}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="whitespace">
+            <h4 class="post-subtitle text-center">
+                Chevron Info Session - 11/19
+            </h4>
+            <h6 class="post-subtitle text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                vulputate.
+            </h6>
+            <div class="container gallery-container">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/chevron/chev1.jpg' %}">
+                                <img src="{% static 'events/img/carousel/fall18/chevron/chev1.jpg' %}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #F5F5F5">
+        <div class="whitespace">
+            <div class="container">
+                <h4 class="post-subtitle text-center">
+                    Zedi Tour - 9/21
+                </h4>
+                <h6 class="post-subtitle text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                    vulputate.
+                </h6>
+                <div class="container gallery-container" style="background-color: #F5F5F5">
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/zedi/zedi1.jpg' %}">
+                                    <img style="object-fit: fill"
+                                         src="{% static 'events/img/carousel/fall18/zedi/zedi1.jpg' %}"
+                                         alt="Rails">
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 imgfit">
+                                    <a class="lightbox"
+                                       href="{% static 'events/img/carousel/fall18/zedi/zedi2.jpg' %}">
+                                        <img src="{% static 'events/img/carousel/fall18/zedi/zedi2.jpg' %}">
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-md-6">
+                                    <a class="lightbox"
+                                       href="{% static 'events/img/carousel/fall18/zedi/zedi3.jpg' %}">
+                                        <img src="{% static 'events/img/carousel/fall18/zedi/zedi3.jpg' %}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="whitespace">
+            <h4 class="post-subtitle text-center">
+                Giarad Park Clean Up - 09/29
+            </h4>
+            <h6 class="post-subtitle text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                vulputate.
+            </h6>
+
+            <div class="container gallery-container">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/girard/g1.jpg' %}">
+                                <img style="object-fit: fill"
+                                     src="{% static 'events/img/carousel/fall18/girard/g1.jpg' %}"
+                                     alt="Rails">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/girard/g2.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/fall18/girard/g2.jpg' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/girard/g3.jpg' %}">
+                                    <img src="{% static 'events/img/carousel/fall18/girard/g3.jpg' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/girard/g4.jpg' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/fall18/girard/g4.jpg' %}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="whitespace">
+            <h4 class="post-subtitle text-center">
+                2nd Snacks In the Street - 10/01
+            </h4>
+            <h6 class="post-subtitle text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                vulputate.
+            </h6>
+            <div class="container gallery-container">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/snacks-donuts/sd1.jpeg' %}">
+                                <img src="{% static 'events/img/carousel/fall18/snacks-donuts/sd1.jpeg' %}">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/snacks-donuts/sd2.jpeg' %}">
+                                <img src="{% static 'events/img/carousel/fall18/snacks-donuts/sd2.jpeg' %}">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/snacks-donuts/sd3.jpeg' %}">
+                                <img src="{% static 'events/img/carousel/fall18/snacks-donuts/sd3.jpeg' %}">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/snacks-donuts/sd4.jpeg' %}">
+                                <img src="{% static 'events/img/carousel/fall18/snacks-donuts/sd4.jpeg' %}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #F5F5F5">
+        <div class="whitespace">
+            <h4 class="post-subtitle text-center">
+                WE18 Conference! - 10/17 to 10/20
+            </h4>
+            <h6 class="post-subtitle text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                vulputate.
+            </h6>
+            <div class="container gallery-container" style="background-color: #F5F5F5">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/we18/we1.JPG' %}">
+                                <img style="object-fit: fill"
+                                     src="{% static 'events/img/carousel/fall18/we18/we1.JPG' %}"
+                                     alt="Rails">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/we18/we2.JPG' %}">
+                                    <img class="imgfit" src="{% static 'events/img/carousel/fall18/we18/we2.JPG' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/we18/we3.JPG' %}">
+                                    <img class="imgfit" src="{% static 'events/img/carousel/fall18/we18/we3.JPG' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/we18/we4.JPG' %}">
+                                    <img class="imgfit" src="{% static 'events/img/carousel/fall18/we18/we4.JPG' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/we18/we5.JPG' %}">
+                                    <img src="{% static 'events/img/carousel/fall18/we18/we5.JPG' %}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="whitespace">
+            <h4 class="post-subtitle text-center">
+                NSBE Jr. Day - 11/3
+            </h4>
+            <h6 class="post-subtitle text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                vulputate.
+            </h6>
+            <div class="container gallery-container">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/nsbe-jr/nsbe1.JPG' %}">
+                                <img src="{% static 'events/img/carousel/fall18/nsbe-jr/nsbe1.JPG' %}">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/nsbe-jr/nsbe2.JPG' %}">
+                                <img src="{% static 'events/img/carousel/fall18/nsbe-jr/nsbe2.JPG' %}">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/nsbe-jr/nsbe3.JPG' %}">
+                                <img src="{% static 'events/img/carousel/fall18/nsbe-jr/nsbe3.JPG' %}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #F5F5F5">
+        <div class="whitespace">
+            <h4 class="post-subtitle text-center">
+                NASA Tour - 11/15
+            </h4>
+            <h6 class="post-subtitle text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                vulputate.
+            </h6>
+            <div class="container gallery-container" style="background-color: #F5F5F5">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <a class="lightbox"
+                               href="{% static 'events/img/carousel/fall18/nasa/nasa1.JPG' %}">
+                                <img style="object-fit: fill"
+                                     src="{% static 'events/img/carousel/fall18/nasa/nasa1.JPG' %}"
+                                     alt="Rails">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/nasa/nasa2.JPG' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/fall18/nasa/nasa2.JPG' %}">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <a class="lightbox"
+                                   href="{% static 'events/img/carousel/fall18/nasa/nasa3.JPG' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/fall18/nasa/nasa3.JPG' %}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{# About page only has two sections, so leave these empty #}
+{% block thirdBlock %}
+    {% block thirdBlockComment %} {% endblock %}
+{% endblock %}
+{% block fourthBlock %}
+    {% block fourthBlockComment %} {% endblock %}
+{% endblock %}
+
+

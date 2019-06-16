@@ -1,14 +1,13 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.template.response import TemplateResponse
 
 
 def events(request):
-    return render(request, 'events/events.html')
+    return TemplateResponse(request, 'events/events.html')
 
 
 def fall18(request):
-    return render(request, 'events/fall18gallery.html')
+    return TemplateResponse(request, 'events/fall18gallery.html')
 
 
 def spring18(request):
-    return render(request, 'events/spring18gallery.html')
+    return TemplateResponse(request, 'events/spring18gallery.html')
