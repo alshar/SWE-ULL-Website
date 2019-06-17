@@ -66,8 +66,10 @@
 
 
 {% block thirdBlock %}
-    {% block thirdBlockComment %} {% endblock %}
+    {% block thirdBlockComment %}<!--Info Block-->{% endblock %}
+    {% include 'volunteerpoints/conferenceinfo.html' %}
 {% endblock %}
 {% block fourthBlock %}
-    {% block fourthBlockComment %} {% endblock %}
+    {% block fourthBlockComment %}<!--Ethics Block-->{% endblock %}
+    {% include 'volunteerpoints/rules.html' %}
 {% endblock %}
