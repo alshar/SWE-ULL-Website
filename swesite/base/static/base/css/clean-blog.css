@@ -18,15 +18,10 @@ p {
 }
 
 
+h1,
 h2,
 h3 {
-    font-weight: 800;
     font-family: 'Lato', sans-serif;
-}
-
-h1 {
-    font-weight: 800;
-    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h4 {
@@ -38,8 +33,6 @@ h4 {
 
 h5 {
     color: #212529;
-    font-weight: 800;
-    font-size: 30px;
     font-family: 'Lato', sans-serif;
 }
 
