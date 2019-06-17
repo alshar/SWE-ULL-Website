@@ -626,3 +626,41 @@ footer .copyright {
     background-color: #551a8b;
     border-color: #551a8b;
 }
+
+/*accordion styles*/
+#accordion .card-header {
+    background-color: #551a8b;
+}
+
+#accordion .card-header:hover {
+    background-color: #48078b;
+}
+
+#accordion .card-header .btn {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-transform: none;
+    font-size: 17px;
+}
+
+#accordion .card-header .btn-link:focus, .btn-link.focus {
+    text-decoration: none;
+}
+
+#accordion .card-header .btn-link:hover {
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+#accordion .card-title {
+    font-weight: 800;
+}
+
+#accordion .card-subtitle {
+    font-weight: 100;
+}
+
+#accordion ul {
+  text-align: left;
+  list-style: inside;
+}
