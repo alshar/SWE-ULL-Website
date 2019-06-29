@@ -56,6 +56,12 @@ a {
     transition: all 0.2s;
 }
 
+h4 a {
+    color: #551A8B;
+    font-weight: 800;
+}
+
+
 #points-table a {
     color: #551A8B;
     font-weight: 800;
@@ -664,3 +670,4 @@ footer .copyright {
   text-align: left;
   list-style: inside;
 }
+
