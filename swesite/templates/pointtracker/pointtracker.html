@@ -1,12 +1,45 @@
 {% extends "base/base.html" %}
 
+{% load static %}
+
 {% block description %} "Point Tracker | SWE - University of Louisiana at Lafayette" {% endblock %}
 
 {% block title %} "SWE ULL | Point Tracker" {% endblock %}
 
 
-{% block body %}
-
-    <h1>Points Tracker Login Page!</h1>
-
+{# Header #}
+{% block headerBackground %}
+    url(' {% static 'base/img/swe-bug-pattern-purple.jpg' %} ')
 {% endblock %}
+
+{% block gradient %}
+    <div class="gradient"></div>
+ {% endblock %}
+
+{% block headerHeading %}
+    Point Tracker
+{% endblock %}
+
+{% block headerSubheading %}
+    Track Volunteer Points and Events You've Been To Here
+{% endblock %}
+
+{% block headerButton %} {% endblock %}
+
+
+
+{% block firstBlockComment %}<!--Login Block-->{% endblock %}
+{% block firstBlock %}
+    {% include 'pointtracker/login.html' %}
+ {% endblock %}
+
+{% block secondBlockComment %}<!--Info Block-->{% endblock %}
+{% block secondBlock %}
+    {% include 'pointtracker/ptinfo.html' %}
+{% endblock %}
+
+{% block thirdBlockComment %} {% endblock %}
+{% block thirdBlock %} {% endblock %}
+
+{% block fourthBlockComment %} {% endblock %}
+{% block fourthBlock %} {% endblock %}
