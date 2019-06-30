@@ -144,48 +144,58 @@
         </div>
     </div>
 {% endblock %}
-
 {% block secondBlockComment %}<!--Card Block-->{% endblock %}
 {% block secondBlock %}
     <div class="container-fluid" style="background-color: #F5F5F5">
         <div class="whitespace">
             <div class="container">
                 <div class="card-deck">
-                    <div class="card">
-                        <!--all pictures are 300x300 internally-->
-                        <img class="card-img-top" src="{% static 'base/img/get-involved.png' %}">
-                        <div class="card-body">
-                            <h5 class="card-title">Get Involved</h5>
-                            <p class="card-text">We take pride in our community outreach and volunteer efforts. Help us
-                                give
-                                back to Acadiana by getting involved with SWE. </p>
-                            <br>
-                            <br>
-                            <a href="{% url 'getinvolved' %}" class="card-link">Get Involved →</a>
+                    <div class="row">
+                        <div class="col col-sm-12 col-md-12 col-lg-4">
+                            <div class="card">
+                                <!--all pictures are 300x300 internally-->
+                                <img class="card-img-top" src="{% static 'base/img/get-involved.png' %}">
+                                <div class="card-body">
+                                    <h5 class="card-title">Get Involved</h5>
+                                    <p class="card-text">We take pride in our community outreach and volunteer efforts.
+                                        Help
+                                        us
+                                        give
+                                        back to Acadiana by getting involved with SWE. </p>
+                                    <br>
+                                    <br>
+                                    <a href="{% url 'getinvolved' %}" class="card-link">Get Involved →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-sm-12 col-md-12 col-lg-4">
+                            <div class="card">
+                                <img class="card-img-top" src="{% static 'base/img/swe-events.jpg' %}">
+                                <div class="card-body">
+                                    <h5 class="card-title">Events</h5>
+                                    <p class="card-text">We organize Industry Tours, Resume Workshops, Q&A Sessions,
+                                        Fundraising
+                                        Initiatives, Community Outreach, and much more throughout the semester.</p>
+                                    <br>
+                                    <a href="{% url 'events' %}" class="card-link">See Events →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-sm-12 col-md-12 col-lg-4">
+                            <div class="card">
+                                <img class="card-img-top" src="{% static 'base/img/volunteer-points.jpg' %}">
+                                <div class="card-body">
+                                    <h5 class="card-title">Volunteer Points</h5>
+                                    <p class="card-text">Earn points by volunteering, attending meetings, and going to
+                                        events.
+                                        After 30 points, we'll pay for you to attend the
+                                        <a href="https://we19.swe.org/">largest career fair</a>
+                                        for Female Engineers in the country </p>
+                                    <a href="{% url 'volunteerpoints' %}" class="card-link">Learn More →</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img class="card-img-top" src="{% static 'base/img/swe-events.jpg' %}">
-                        <div class="card-body">
-                            <h5 class="card-title">Events</h5>
-                            <p class="card-text">We organize Industry Tours, Resume Workshops, Q&A Sessions, Fundraising
-                                Initiatives, Community Outreach, and much more throughout the semester.</p>
-                            <br>
-                            <a href="{% url 'events' %}" class="card-link">See Events →</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="{% static 'base/img/volunteer-points.jpg' %}">
-                        <div class="card-body">
-                            <h5 class="card-title">Volunteer Points</h5>
-                            <p class="card-text">Earn points by volunteering, attending meetings, and going to events.
-                                After 30 points, we'll pay for you to attend the
-                                <a href="https://we19.swe.org/">largest career fair</a>
-                                for Female Engineers in the country </p>
-                            <a href="{% url 'volunteerpoints' %}" class="card-link">Learn More →</a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
