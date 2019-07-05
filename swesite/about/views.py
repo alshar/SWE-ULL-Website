@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-from about.swe_officers_context import swe_officers_primary, swe_officers_secondary, swe_officers_tertiary
+from swesite.contexts.swe_officers_context import swe_officers_primary, swe_officers_secondary, swe_officers_tertiary
 
 
 class about(TemplateView):
