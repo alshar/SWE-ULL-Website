@@ -1,13 +1,20 @@
-from django.template.response import TemplateResponse
+from django.views.generic import TemplateView
+from swesite.contexts.swe_social_context import swe_social
 
 
-def events(request):
-    return TemplateResponse(request, 'events/events.html')
+class events(TemplateView):
+    template_name = 'events/events.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(events, self).get_context_data(**kwargs)
+        context['swe_social'] = swe_social(request=events)
+        return context
 
 
-def fall18(request):
-    return TemplateResponse(request, 'events/fall18gallery.html')
+
+class fall18(TemplateView):
+    template_name = 'events/fall18gallery.html'
 
 
-def spring18(request):
-    return TemplateResponse(request, 'events/spring18gallery.html')
+class spring18(TemplateView):
+    template_name = 'events/spring18gallery.html'
