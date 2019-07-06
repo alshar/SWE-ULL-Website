@@ -1,7 +1,6 @@
 {% extends "base/base.html" %}
 
 {% load static %}
-{# TODO: Add pagination at bottom of this page #}
 {# Meta #}
 {% block description %}
     Events | SWE - University of Louisiana at Lafayette
@@ -246,13 +245,15 @@
                             <div class="col-sm-12 col-md-6">
                                 <a class="lightbox"
                                    href="{% static 'events/img/carousel/spring19/science-olympiad/so1.jpg' %}">
-                                    <img style="object-fit: cover" src="{% static 'events/img/carousel/spring19/science-olympiad/so1.jpg' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/spring19/science-olympiad/so1.jpg' %}">
                                 </a>
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <a class="lightbox"
                                    href="{% static 'events/img/carousel/spring19/science-olympiad/so2.jpg' %}">
-                                    <img style="object-fit: cover" src="{% static 'events/img/carousel/spring19/science-olympiad/so2.jpg' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/spring19/science-olympiad/so2.jpg' %}">
                                 </a>
                             </div>
                         </div>
@@ -260,13 +261,15 @@
                             <div class="col-sm-12 col-md-6">
                                 <a class="lightbox"
                                    href="{% static 'events/img/carousel/spring19/science-olympiad/so4.jpg' %}">
-                                    <img style="object-fit: cover" src="{% static 'events/img/carousel/spring19/science-olympiad/so4.jpg' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/spring19/science-olympiad/so4.jpg' %}">
                                 </a>
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <a class="lightbox"
                                    href="{% static 'events/img/carousel/spring19/science-olympiad/so5.jpg' %}">
-                                    <img style="object-fit: cover" src="{% static 'events/img/carousel/spring19/science-olympiad/so5.jpg' %}">
+                                    <img style="object-fit: cover"
+                                         src="{% static 'events/img/carousel/spring19/science-olympiad/so5.jpg' %}">
                                 </a>
                             </div>
                         </div>
@@ -283,7 +286,8 @@
                 Big Event and Earth Day - 3/30 & 3/31
             </h4>
             <h6 class="post-subtitle text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum vulputate.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneanullamcorper arcu egetnisl elementum
+                vulputate.
             </h6>
             <div class="container gallery-container">
                 <div class="tz-gallery">
@@ -305,7 +309,8 @@
                         <div class="col-sm-4 col-md-4">
                             <a class="lightbox"
                                href="{% static 'events/img/carousel/spring19/big-event/be3.jpg' %}">
-                                <img style="object-fit: cover" src="{% static 'events/img/carousel/spring19/big-event/be3.jpg' %}">
+                                <img style="object-fit: cover"
+                                     src="{% static 'events/img/carousel/spring19/big-event/be3.jpg' %}">
                             </a>
                         </div>
                         <div class="col-sm-4 col-md-4">
@@ -319,6 +324,23 @@
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <nav>
+            <ul class="pagination justify-content-center">
+                <li class="page-item active">
+                    <a class="page-link" href="{% url 'events' %}">Spring '19</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="{% url 'fall18' %}">Fall '18</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="{% url 'spring18' %}">Spring '18</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
 
 {% endblock %}
 

@@ -671,3 +671,12 @@ footer .copyright {
   list-style: inside;
 }
 
+.page-link {
+    color: #551a8b !important;
+}
+.active  .page-link{
+    background: #551A8B !important;
+    border-color: #551A8B !important;
+    color: white !important;
+}
+
