@@ -1,30 +1,30 @@
 <div class="container text-center">
     <div class="whitespace">
-        <h1>More details about WE19:</h1>
-        <h2>test</h2>
-        <h3>test</h3>
-        <h4>test</h4>
-        <h5>test</h5>
-        <h6>test</h6>
-        <p>test</p>
-        {# TODO: Clean this up and add it to the page. This is directly copied from the old website #}
-        Our goal for Spring 2019 is to provide housing for 20 students at the conference. This housing will be in a
-        hotel within walking distance to the conference center in which WE19 will be hosted, with free continental
-        breakfast and Wifi. It will be a shared commodity available from the evening of Wednesday, November 6th to the
-        morning of Sunday, November 10th.
-
-        For this housing, SWE UL is fundraising this spring, through the summer, and into the fall with events such as
-        SWE Snacks on the Street and Give-Back Nights.
-
-        The money raised is directly proportional to the hours spent and preparations made from volunteers. A herculean
-        effort from over a dozen individuals is required to pull together the funding to attend WE19, and that's why
-        volunteers with a minimum of 30 points earn housing to the conference from SWE UL.
-
-        How to get volunteer points? Sign up in the Events page of this website for shifts and show up.
-
-        With remaining funds, SWE UL will also reimburse registration fees after the conference to those volunteers with
-        over 30 points. We will maintain this system on a merit basis, so the more you volunteer, the more financial aid
-        you receive. Any cheating or attempts at cheating will disqualify you from any financial assistance (see more in
-        “The Ethics of the Volunteer Point System”).
+        <h1>More details about {{ swe_volunteer.conference_abbreviation }}</h1>
+        <hr>
+        <ul>
+            <li>
+                <h4>
+                    Our goal for Spring 2019 is to provide housing for {{ swe_volunteer.students_taking }} students
+                </h4>
+            </li>
+            <li>
+                <h4>
+                    Housing will be in a hotel within walking distance to {{ swe_volunteer.conference_abbreviation }}
+                    with free continental breakfast and Wifi
+                </h4>
+            </li>
+            <li>
+                <h4>
+                    Hotel will be available Wednesday, November 6th to Sunday, November 10th
+                </h4>
+            </li>
+            <li>
+                <h4>
+                    To pay for the hotel, SWE UL is organizes fundraising in the spring, summer, and fall with events such
+                    as SWE Snacks on the Street and Give-Back Nights
+                </h4>
+            </li>
+        </ul>
     </div>
 </div>
