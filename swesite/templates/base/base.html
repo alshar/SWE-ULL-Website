@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-{# TODO compress images/make them web-ready #}
 <head>
     <meta name="author" content="Al Sharairi">
     <meta name="description"
@@ -164,7 +163,7 @@
                                         back to Acadiana by getting involved with SWE. </p>
                                     <br>
                                     <br>
-                                    <a href="{% url 'getinvolved' %}" class="card-link">Get Involved →</a>
+                                    <a href="{% url 'getinvolved' %}" target="_blank" rel="noopener" class="card-link">Get Involved →</a>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +176,7 @@
                                         Fundraising
                                         Initiatives, Community Outreach, and much more throughout the semester.</p>
                                     <br>
-                                    <a href="{% url 'events' %}" class="card-link">See Events →</a>
+                                    <a href="{% url 'events' %}" target="_blank" rel="noopener" class="card-link">See Events →</a>
                                 </div>
                             </div>
                         </div>
@@ -189,9 +188,9 @@
                                     <p class="card-text">Earn points by volunteering, attending meetings, and going to
                                         events.
                                         After {{ swe_volunteer.points_needed }} points, we'll pay for you to attend the
-                                        <a href="{{ swe_volunteer.conference_website }}">largest career fair</a>
+                                        <a href="{{ swe_volunteer.conference_website }}" target="_blank" rel="noopener">largest career fair</a>
                                         for Female Engineers in the country </p>
-                                    <a href="{% url 'volunteerpoints' %}" class="card-link">Learn More →</a>
+                                    <a href="{% url 'volunteerpoints' %}" target="_blank" rel="noopener" class="card-link">Learn More →</a>
                                 </div>
                             </div>
                         </div>
@@ -295,7 +294,7 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="{{ swe_social.youtube }}"
+                        <a href="{{ swe_social.youtube }}" target="_blank" rel="noopener"
                            target="_blank" rel="noopener">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
