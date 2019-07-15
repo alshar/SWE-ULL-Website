@@ -77,13 +77,13 @@ for i in range(len(all_events)):
     all_swe_members[i].set_events(all_events[i])
 
 
+"""
+Testing - Ignore
 for member in all_swe_members:
     if member.last_name == "McCrary":
         print(member.__str__())
         print(member.get_events_attended())
-
-"""
-Testing - Ignore
+        
 for member in all_swe_members:
     print(member.__str__())
     print(member.events.items())

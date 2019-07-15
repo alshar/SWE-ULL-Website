@@ -8,4 +8,17 @@ class SWEUserCreation(UserCreationForm):
 
 
 class SWEUserLogin(AuthenticationForm):
-    pass
+    def __init__(self, *args, **kwargs):
+        super(SWEUserLogin, self).__init__(*args, **kwargs)
+        self.helper = FormHelper(self)
+        self.helper.form_method = 'post'
+        self.helper.layout = Layout(
+            Fieldset(
+                'Login',
+                'username',
+                'password'
+            ),
+            ButtonHolder(
+                Submit('submit', 'Submit')
+            )
+        )
