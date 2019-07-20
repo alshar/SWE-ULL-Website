@@ -282,3 +282,5 @@ fabric.properties
 swesite/users/migrations/
 
 swesite/users/swe_points_tracker_secret\.json
+
+requirements\.txt
