@@ -6,6 +6,7 @@
           content= {% block description %} "SWE ULL | Society of Women Engineers University of Louisiana at Lafayette Section" {% endblock %}>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
 
     <meta property="og:title" content="Society of Women Engineers | UL Lafayette">
     <meta property="og:description" content="Society of Women Engineers | University of Louisiana at Lafayette">
@@ -14,7 +15,7 @@
 
     <title> {% block title %} SWE - University of Louisiana at Lafayette {% endblock %}</title>
 
-    {% load static %}
+
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{% static 'base/img/favicon.ico' %}">
