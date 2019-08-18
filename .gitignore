@@ -286,3 +286,7 @@ swesite/users/swe_points_tracker_secret\.json
 requirements\.txt
 
 SWE-ULL-Website-Secret/
+
+*.json
+
+swesite/swe_users/migrations/
