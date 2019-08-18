@@ -1,6 +1,6 @@
 from django.urls import path
-from . import views
+from pointtracker.views import PointTrackerLogin
 
 urlpatterns = [
-    path('', views.PointTrackerLogin.as_view(), name='pointtracker'),
+    path('', PointTrackerLogin.as_view(), name='pointtracker'),
 ]
