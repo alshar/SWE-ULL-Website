@@ -2,7 +2,7 @@ from django.contrib.auth.views import LoginView
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, CreateView
 
-from users.forms import PointTrackerLoginForm, SWEUserCreationForm
+from pointtracker.forms import SWEUserCreationForm, PointTrackerLoginForm
 
 
 class PointTrackerLoginView(LoginView):
