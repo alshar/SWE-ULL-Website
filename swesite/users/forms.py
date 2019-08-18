@@ -18,4 +18,4 @@ class SWEUserChangeForm(UserChangeForm):
 class PointTrackerLoginForm(AuthenticationForm):
     class Meta(AuthenticationForm):
         model = SWEUser
-        fields = ('username', 'email')
+        fields = ('username', 'password')
