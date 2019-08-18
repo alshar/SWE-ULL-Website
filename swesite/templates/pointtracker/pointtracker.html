@@ -14,10 +14,11 @@
 
 {% block gradient %}
     <div class="gradient"></div>
- {% endblock %}
+{% endblock %}
 
 {% block headerHeading %}
-    Coming Soon <hr> Point Tracker
+    ComingSoon
+    <hr> Point Tracker
 {% endblock %}
 
 {% block headerSubheading %}
@@ -30,7 +31,13 @@
 
 {% block firstBlockComment %}<!--Login Block-->{% endblock %}
 {% block firstBlock %}
- {% endblock %}
+    <h2>Login</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Login</button>
+    </form>
+{% endblock %}
 
 {% block secondBlockComment %}<!--Info Block-->{% endblock %}
 {% block secondBlock %} {% endblock %}
