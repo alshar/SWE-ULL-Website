@@ -1,6 +1,5 @@
 from django.views.generic import TemplateView
 
 
-
-class PointTrackerLogin(TemplateView):
+class PointTrackerView(TemplateView):
     template_name = 'pointtracker/pointtracker.html'
