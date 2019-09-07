@@ -1,7 +1,9 @@
 from django.contrib.auth.views import LoginView
-from pointtracker.forms import SWEUserLogin
+from django.views.generic import TemplateView
+
+# from pointtracker.forms import SWEUserLogin
 
 
-class PointTrackerLogin(LoginView):
+class PointTrackerLogin(TemplateView):
     template_name = 'pointtracker/pointtracker.html'
-    authentication_form = SWEUserLogin
+    # authentication_form = SWEUserLogin
