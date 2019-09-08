@@ -76,6 +76,18 @@
                             </div>
                         {% endif %}
 
+                        {% if data.img_paths|length == 2 %}
+                            <div class="row">
+                                {% for path in data.img_paths %}
+                                    <div class="col-sm-12 col-md-6">
+                                        <a class="lightbox"
+                                           href="{% get_static_prefix %}{{ path }}">
+                                            <img src="{% get_static_prefix %}{{ path }}">
+                                        </a>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
     <div class="container-fluid" style="background-color: #F5F5F5">
         <div class="whitespace">
             <h4 class="post-subtitle text-center">
