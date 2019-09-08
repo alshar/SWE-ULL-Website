@@ -20,7 +20,7 @@
 {% block gradient %} {% endblock %}
 
 {% block headerHeading %}
-    Events
+    Current Events
 {% endblock %}
 
 {% block headerSubheading %}
@@ -37,7 +37,7 @@
 {% block firstBlockComment %}<!--Current Events Block-->{% endblock %}
 
 {% block firstBlockImgTag %}
-    
+
 {% endblock %}
 
 {% block firstBlockText %}
@@ -298,7 +298,10 @@
         <nav>
             <ul class="pagination justify-content-center">
                 <li class="page-item active">
-                    <a class="page-link" href="{% url 'events' %}">Spring '19</a>
+                    <a class="page-link" href="{% url 'events' %}">Current Events</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="{% url 'spring19' %}">Spring '19</a>
                 </li>
                 <li class="page-item">
                     <a class="page-link" href="{% url 'fall18' %}">Fall '18</a>
