@@ -49,6 +49,33 @@
 {# Second Block #}
 {% block secondBlockComment %}<!--Gallery Block-->{% endblock %}
 {% block secondBlock %}
+    {% for event, data in fall_19.items %}
+        <div class="{% cycle 'container-fluid' 'container' %}"
+                {% cycle 'style="background-color: #F5F5F5"' '' as block_style %}>
+            <div class="whitespace">
+                <h4 class="post-subtitle text-center">
+                    {{ data.display_title }} - {{ data.display_date }}
+                </h4>
+
+                {% if data.display_desc %}
+                    <h6 class="post-subtitle text-center">
+                        {{ data.display_desc }}
+                    </h6>
+                {% endif %}
+
+                <div class="container gallery-container" {{ block_style }}>
+                    <div class="tz-gallery">
+                        {% if data.img_paths|length == 1 %}
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                    <a class="lightbox"
+                                       href="{% get_static_prefix %}{{ data.img_paths.0 }}">
+                                        <img src="{% get_static_prefix %}{{ data.img_paths.0 }}">
+                                    </a>
+                                </div>
+                            </div>
+                        {% endif %}
+
     <div class="container-fluid" style="background-color: #F5F5F5">
         <div class="whitespace">
             <h4 class="post-subtitle text-center">
