@@ -88,6 +88,51 @@
                                 {% endfor %}
                             </div>
                         {% endif %}
+
+                        {% if data.img_paths|length >= 3 %}
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                    <a class="lightbox"
+                                       href="{% get_static_prefix %}{{ data.img_paths.0 }}">
+                                        <img src="{% get_static_prefix %}{{ data.img_paths.0 }}">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                {% for path in data.img_paths %}
+                                    {% if forloop.counter == 1 %}
+                                        {# there's no "continue" for django for loops #}
+                                        {# this is my janky way if implementing one #}
+                                    {% else %}
+                                        <div
+                                                {% if data.img_paths|length == 3 %}
+                                                    class="col-sm-12 col-md-6"
+                                                {% endif %}
+                                                {% if data.img_paths|length == 4 %}
+                                                    class="col-sm-12 col-md-4"
+                                                {% endif %}
+                                                {% if data.img_paths|length == 5 %}
+                                                    class="col-sm-12 col-md-3"
+                                                {% endif %}
+                                        >
+                                            <a class="lightbox"
+                                               href="{% get_static_prefix %}{{ path }}">
+                                                <img src="{% get_static_prefix %}{{ path }}">
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+
+                        {% endif %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    {% endfor %}
+
     <div class="container-fluid" style="background-color: #F5F5F5">
         <div class="whitespace">
             <h4 class="post-subtitle text-center">
@@ -287,7 +332,7 @@
             </div>
         </div>
     </div>
-    </div>
+
 
     <div class="container">
         <div class="whitespace">

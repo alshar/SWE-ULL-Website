@@ -13,7 +13,8 @@ def fall_19(request):
             'display_date': '9/6',
             'img_paths': [
                 'events/img/carousel/fall19/les_bbq/les_bbq_1.JPG',
-                'events/img/carousel/fall19/les_bbq/les_bbq_2.JPG'
+                'events/img/carousel/fall19/les_bbq/les_bbq_2.JPG',
+
             ]
         }
 
