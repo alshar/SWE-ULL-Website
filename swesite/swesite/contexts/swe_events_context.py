@@ -4,7 +4,7 @@ def fall_19(request):
             'display_title': 'First General Meeting',
             'display_date': '9/11',
             'img_paths': [
-                'events/img/carousel/fall19/meeting_1/meeting_1_1.png'
+                'events/img/carousel/fall19/meeting_1/meeting_1_1.png',
             ]
         },
 
