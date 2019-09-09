@@ -1,6 +1,19 @@
-var data = {
-  labels: ['Bananas', 'Apples', 'Grapes'],
-  series: [20, 15, 40]
+var genderData = {
+  labels: ['Female', 'Male'],
+  series: [97, 34]
+};
+
+var majorData = {
+    labels: [
+        'Chemical Engineering',
+        'Electrical Engineering',
+        'Computer Science',
+        'Industrial Technology',
+        'Civil Engineering',
+        'Biology',
+        'Mechanical Engineering',
+        'Petroleum Engineering',
+    ],
 };
 
 var options = {
@@ -24,6 +37,6 @@ var responsiveOptions = [
   }]
 ];
 
-new Chartist.Pie('#gender-chart', data, options, responsiveOptions);
+new Chartist.Pie('#gender-chart', genderData, options, responsiveOptions);
 
 new Chartist.Pie('#major-chart', data, options, responsiveOptions);
