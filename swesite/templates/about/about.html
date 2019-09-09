@@ -54,13 +54,25 @@
     Professional development through events
     <br>
     And countless volunteer opportunities
-    
 {% endblock %}
 
 
 
-{# Second Block #}
 {% block secondBlock %}
+    <div class="container">
+        <div class="whitespace">
+            <div class="row">
+                <div id="gender-chart" class="col-sm-12 col-md-6 ct-chart ct-minor-seventh">
+                </div>
+                <div id="major-chart" class="col-sm-12 col-md-6 ct-chart ct-minor-seventh">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block thirdBlock %}
     <div class="container-fluid" style="background-color: #F5F5F5">
         <div class="whitespace">
             <div class="container officerContainer text-center">
@@ -194,13 +206,11 @@
     </div>
 {% endblock %}
 
-{# About page only has two sections, so leave these empty #}
-{% block thirdBlock %}
-{% endblock %}
 {% block fourthBlock %}
 {% endblock %}
 
 {# Page JS #}
 {% block page_js %}
     <script src="{% static 'base/assets/chartist-js/chartist.min.js' %}"></script>
+    <script src="{% static 'about/demographic_charts/demographic_charts.js' %}"></script>
 {% endblock %}
