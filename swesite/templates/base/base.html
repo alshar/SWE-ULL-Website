@@ -16,7 +16,6 @@
     <title> {% block title %} SWE - University of Louisiana at Lafayette {% endblock %}</title>
 
 
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="{% static 'base/img/favicon.ico' %}">
 
@@ -37,6 +36,8 @@
     <!-- Lightbox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.css">
 
+    {# Custom page-level styles #}
+    {% block page_css %}{% endblock %}
 
 </head>
 
@@ -327,6 +328,10 @@
 <script>
     baguetteBox.run('.tz-gallery');
 </script>
+
+{# Custom page-level js#}
+{% block page_js %}{% endblock %}
+
 
 </body>
 
