@@ -34,7 +34,6 @@
 
 
 {# First Block #}
-{% block firstBlockComment %}<!--Current Events Block-->{% endblock %}
 
 {% block firstBlockImage %}{% static 'getinvolved/heart.png' %}{% endblock %}
 
@@ -45,7 +44,6 @@
 
 
 {# Second Block #}
-{% block secondBlockComment %}<!--Gallery Block-->{% endblock %}
 {% block secondBlock %}
     {% for event, data in fall_19.items %}
         <div class="{% cycle 'container-fluid' 'container' %}"
@@ -156,8 +154,6 @@
 
 {# About page only has two sections, so leave these empty #}
 {% block thirdBlock %}
-    {% block thirdBlockComment %} {% endblock %}
 {% endblock %}
 {% block fourthBlock %}
-    {% block fourthBlockComment %} {% endblock %}
 {% endblock %}
