@@ -12,6 +12,10 @@
 {% endblock %}
 
 
+{# Page Styles #}
+{% block page_css %}
+    <link rel="stylesheet" href="{% static 'base/assets/chartist-js/chartist.min.css' %}">
+{% endblock %}
 
 {# Header #}
 {% block headerBackground %}
@@ -196,3 +200,7 @@
 {% block fourthBlock %}
 {% endblock %}
 
+{# Page JS #}
+{% block page_js %}
+    <script src="{% static 'base/assets/chartist-js/chartist.min.js' %}"></script>
+{% endblock %}
