@@ -1,5 +1,13 @@
 def fall_19(request):
     context = {
+        'bake_sale_1': {
+            'display_title': 'Bake Sale!',
+            'display_date': '9/20',
+            'img_paths': [
+                'events/img/carousel/fall19/bake_sale_1/flyer.png'
+            ]
+        },
+
         'meeting_1': {
             'display_title': 'First General Meeting',
             'display_date': '9/11',
