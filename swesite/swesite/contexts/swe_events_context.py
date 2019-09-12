@@ -5,7 +5,6 @@ def fall_19(request):
             'display_date': 'See Flyer for Dates',
             'img_paths': [
                 'events/img/carousel/fall19/bake_sale_1/flyer.png',
-                'events/img/carousel/fall19/meeting_1/meeting_1_1.png'
             ]
         },
         # 'bake_sale_1': {
@@ -16,13 +15,19 @@ def fall_19(request):
         #     ]
         # },
         #
-        # 'meeting_1': {
-        #     'display_title': 'First General Meeting',
-        #     'display_date': '9/11',
-        #     'img_paths': [
-        #         'events/img/carousel/fall19/meeting_1/meeting_1_1.png',
-        #     ]
-        # },
+        'meeting_1': {
+            'display_title': 'First General Meeting',
+            'display_date': '9/11',
+            'display_description': '',
+            'img_paths': [
+                'events/img/carousel/fall19/meeting_1/meeting_1_1.png',
+                'events/img/carousel/fall19/meeting_1/m_1.JPG',
+                'events/img/carousel/fall19/meeting_1/m_2.JPG',
+                'events/img/carousel/fall19/meeting_1/m_3.JPG',
+                'events/img/carousel/fall19/meeting_1/m_4.JPG',
+
+            ]
+        },
 
         'les_bbq': {
             'display_title': 'Louisiana Engineering Society BBQ',
