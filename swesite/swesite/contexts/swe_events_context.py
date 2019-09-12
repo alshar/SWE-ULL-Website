@@ -20,7 +20,7 @@ def fall_19(request):
             'display_date': '9/11',
             'display_description': '',
             'img_paths': [
-                'events/img/carousel/fall19/meeting_1/m_5.JPG',
+                'events/img/carousel/fall19/meeting_1/m_5.jpg',
                 'events/img/carousel/fall19/meeting_1/m_1.JPG',
                 'events/img/carousel/fall19/meeting_1/m_2.JPG',
                 'events/img/carousel/fall19/meeting_1/m_3.JPG',
