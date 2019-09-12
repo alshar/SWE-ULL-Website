@@ -39,7 +39,10 @@ This is the mobile responive website I built for my school's Society of Women En
 
 * Big thanks to Mozilla's wonderful [Getting started with the Web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) guide. I went from knowing nothing about web develpoment to making this website in a few months, and I will forever be in your debt becasue of it
 
+* [SWE's Branding Guidelines](https://swe.org/membership/member-resources/swe-brand-guidelines-logos-and-templates/)
+for backgrounds, color values, and design inspiration 
+
 
 ## License
 
-This project is licensed under the MIT License
+* This project is licensed under the MIT License
