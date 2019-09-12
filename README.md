@@ -1,4 +1,4 @@
-# Society of Women Engineers | University of Louisiana at Lafayette Website
+# Society of Women Engineers | ULL Website
 https://www.sweull.org/
 
 This is the mobile responive website I built my school's Society of Women Engineers section.
