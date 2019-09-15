@@ -21,6 +21,8 @@
 {% endblock %}
 
 {% block headerSubheading %}
+    You need {{ swe_volunteer.points_needed }} points to qualify for financial assistance to
+    {{ swe_volunteer.conference_abbreviation }}
 {% endblock %}
 
 {% block headerButton %} {% endblock %}
@@ -29,11 +31,26 @@
 {% block firstBlock %}
     <div class="container">
         <div class="whitespace">
-            <p>events visited will go here</p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Event Attended</th>
+                        <th scope="col" class="text-center">Point(s) Earned</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for event, points_earned in events_attended.items %}
+                        <tr>
+                            <td>{{ event }}</td>
+                            <td class="text-center">{{ points_earned }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-
-    <div id="member-point-chart"></div>
 
 {% endblock %}
 

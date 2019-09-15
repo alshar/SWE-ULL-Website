@@ -4,6 +4,7 @@ from django.views.generic import FormView
 
 from pointtracker.forms import PointTrackerLoginForm
 from swesite.contexts.swe_social_context import swe_social
+from swesite.contexts.swe_volunteer_context import swe_volunteer
 from users.spreadsheet import points_sheet
 
 
@@ -15,6 +16,7 @@ class PointTrackerLoginView(FormView):
     def get_context_data(self, **kwargs):
         context = super(PointTrackerLoginView, self).get_context_data(**kwargs)
         context['swe_social'] = swe_social(request=PointTrackerLoginView)
+        context['swe_volunteer'] = swe_volunteer(request=PointTrackerLoginView)
         return context
 
     def form_valid(self, form):
@@ -39,8 +41,17 @@ class PointTrackerLoginView(FormView):
             """
             member_data = points_sheet.get_all_records()[member_row - 2]
 
+            """
+               (assumes a 0 in the event column means member did not attend event)
+            """
+            events_attended = {
+                event: points_earned for event, points_earned in member_data.items()
+                if points_earned != "" and points_earned != 0 and isinstance(points_earned, int) and event != "total"
+            }
+
             context = self.get_context_data(**kwargs)
             context['member_data'] = member_data
+            context['events_attended'] = events_attended
 
             return render(request, 'pointtracker/member_point_sheet.html', context=context)
         else:
