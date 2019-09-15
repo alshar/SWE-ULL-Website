@@ -1,6 +1,6 @@
 {% extends "base/base.html" %}
 
-{% load static %}
+{% load static crispy_forms_tags %}
 
 {% block description %} "Point Tracker | SWE - University of Louisiana at Lafayette" {% endblock %}
 
@@ -30,12 +30,7 @@
 
 
 {% block firstBlock %}
-    <h2>Login</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Login</button>
-    </form>
+    {% crispy form %}
 {% endblock %}
 
 {% block secondBlock %} {% endblock %}
