@@ -21,15 +21,13 @@ class PointTrackerLoginView(FormView):
         return super(PointTrackerLoginView, self).form_valid(form)
 
     def post(self, request, *args, **kwargs):
-        form = self.get_form()
-
         ulid = request.POST['ulid'].strip().lower()
         first_name = request.POST['first_name'].strip().lower()
         last_name = request.POST['last_name'].strip().lower()
 
         if self.member_exists(ulid=ulid, first_name=first_name, last_name=last_name):
             member_row = self.get_member_row(ulid=ulid)
-            member_data = points_sheet.get_all_records(member_row - 2)
+            member_data = points_sheet.get_all_records()[member_row - 2]
 
             context = self.get_context_data(**kwargs)
             context['member_data'] = member_data
