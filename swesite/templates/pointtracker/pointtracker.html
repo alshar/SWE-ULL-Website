@@ -1,10 +1,10 @@
 {% extends "base/base.html" %}
 
-{% load static %}
+{% load static crispy_forms_tags %}
 
 {% block description %} "Point Tracker | SWE - University of Louisiana at Lafayette" {% endblock %}
 
-{% block title %} "SWE ULL | Point Tracker" {% endblock %}
+{% block title %} Point Tracker | SWE - University of Louisiana at Lafayette {% endblock %}
 
 
 {# Header #}
@@ -14,10 +14,10 @@
 
 {% block gradient %}
     <div class="gradient"></div>
- {% endblock %}
+{% endblock %}
 
 {% block headerHeading %}
-    Coming Soon <hr> Point Tracker
+    Point Tracker
 {% endblock %}
 
 {% block headerSubheading %}
@@ -27,13 +27,25 @@
 {% block headerButton %} {% endblock %}
 
 
-
 {% block firstBlock %}
-    {% include 'pointtracker/login.html' %}
- {% endblock %}
+    <div class="container">
+        <div class="whitespace">
+            <h4 class="text-center">
+                Point Tracker Log In
+            </h4>
+            {% csrf_token %}
+            {% crispy form %}
+            <br>
+            <h6 class="text-center">
+                Make sure to use the <b>exact</b> first name, last name, and ULID you used to sign up
+            </h6>
+        </div>
+    </div>
+{% endblock %}
 
 {% block secondBlock %} {% endblock %}
 
 {% block thirdBlock %} {% endblock %}
 
 {% block fourthBlock %} {% endblock %}
+

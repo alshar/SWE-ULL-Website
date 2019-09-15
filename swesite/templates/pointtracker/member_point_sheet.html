@@ -1,0 +1,74 @@
+{% extends "base/base.html" %}
+
+{% load static crispy_forms_tags %}
+
+{% block description %} "Point Tracker | SWE - University of Louisiana at Lafayette" {% endblock %}
+
+{% block title %} "SWE ULL | Point Tracker" {% endblock %}
+
+
+{# Header #}
+{% block headerBackground %}
+    url(' {% static 'base/img/swe-bug-pattern-purple.jpg' %} ')
+{% endblock %}
+
+{% block gradient %}
+    <div class="gradient"></div>
+{% endblock %}
+
+{% block headerHeading %}
+    You have {{ member_data.total }} points
+{% endblock %}
+
+{% block headerSubheading %}
+    You need {{ swe_volunteer.points_needed }} points to qualify for financial assistance to
+    {{ swe_volunteer.conference_abbreviation }}
+{% endblock %}
+
+{% block headerButton %} {% endblock %}
+
+
+{% block firstBlock %}
+    <div class="container">
+        <div class="whitespace">
+            <h4 class="text-center">
+                Hey {{ member_data.first_name }}, here's a list of all the volunteer points you've earned that
+                count towards getting financial assistance for {{ swe_volunteer.conference_abbreviation }}
+            </h4>
+            <h4 class="text-center">
+                You can sign up for <a href="{% url 'events' %}">upcoming events</a> to earn even more points
+            </h4>
+            <br>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Event Attended</th>
+                        <th scope="col" class="text-center">Point(s) Earned</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for event, points_earned in events_attended.items %}
+                        <tr>
+                            <td>{{ event }}</td>
+                            <td class="text-center">{{ points_earned }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+                <br>
+                <h4 class="text-center">
+                    If you attended an event and it's missing, <a href="mailto:{{ swe_social.email }}">let us know</a>,
+                    we're happy to help
+                </h4>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block secondBlock %} {% endblock %}
+
+{% block thirdBlock %} {% endblock %}
+
+{% block fourthBlock %} {% endblock %}

@@ -22,14 +22,15 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('pointtracker/', include('pointtracker.urls')),
-    path('', include('base.urls')),
     path('about/', include('about.urls')),
     path('getinvolved/', include('getinvolved.urls')),
     path('events/', include('events.urls')),
-    path('volunteerpoints/', include('volunteerpoints.urls'))
+    path('volunteerpoints/', include('volunteerpoints.urls')),
 
+    path('users/', include('django.contrib.auth.urls')),
+
+    path('', include('base.urls')),
 ]
 
 """
