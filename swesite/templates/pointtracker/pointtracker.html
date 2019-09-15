@@ -4,7 +4,7 @@
 
 {% block description %} "Point Tracker | SWE - University of Louisiana at Lafayette" {% endblock %}
 
-{% block title %} "SWE ULL | Point Tracker" {% endblock %}
+{% block title %} Point Tracker | SWE - University of Louisiana at Lafayette {% endblock %}
 
 
 {# Header #}
@@ -30,12 +30,17 @@
 {% block firstBlock %}
     <div class="container">
         <div class="whitespace">
+            <h4 class="text-center">
+                Point Tracker Log In
+            </h4>
             {% csrf_token %}
             {% crispy form %}
+            <br>
+            <h6 class="text-center">
+                Make sure to use the <b>exact</b> first name, last name, and ULID you used to sign up
+            </h6>
         </div>
     </div>
-
-
 {% endblock %}
 
 {% block secondBlock %} {% endblock %}
