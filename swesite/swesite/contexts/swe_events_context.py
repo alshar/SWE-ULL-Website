@@ -1,6 +1,6 @@
 def fall_19(request):
     context = {
-        'upcoming_events': {
+        'bake_sale_1': {
             'display_title': 'Upcoming Events',
             'display_date': 'See Flyer for Dates',
             'img_paths': [
