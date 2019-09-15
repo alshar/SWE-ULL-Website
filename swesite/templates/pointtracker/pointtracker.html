@@ -17,8 +17,7 @@
 {% endblock %}
 
 {% block headerHeading %}
-    ComingSoon
-    <hr> Point Tracker
+    Point Tracker
 {% endblock %}
 
 {% block headerSubheading %}
@@ -29,8 +28,14 @@
 
 
 {% block firstBlock %}
-    {% csrf_token %}
-    {% crispy form %}
+    <div class="container">
+        <div class="whitespace">
+            {% csrf_token %}
+            {% crispy form %}
+        </div>
+    </div>
+
+
 {% endblock %}
 
 {% block secondBlock %} {% endblock %}
@@ -38,3 +43,4 @@
 {% block thirdBlock %} {% endblock %}
 
 {% block fourthBlock %} {% endblock %}
+

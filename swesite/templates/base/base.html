@@ -38,6 +38,8 @@
     <!-- Lightbox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.css">
 
+    <!-- Chartist -->
+    <link rel="stylesheet" href="{% static 'base/assets/chartist-js/chartist.min.css' %}">
     {# Custom page-level styles #}
     {% block page_css %}{% endblock %}
 
@@ -342,6 +344,9 @@
 <script>
     baguetteBox.run('.tz-gallery');
 </script>
+
+<!-- Chartist -->
+<script src="{% static 'base/assets/chartist-js/chartist.min.js' %}"></script>
 
 {# Custom page-level js#}
 {% block page_js %}{% endblock %}
