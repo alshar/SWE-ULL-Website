@@ -10,11 +10,12 @@
 
     <meta property="og:title" content="Society of Women Engineers | UL Lafayette">
     <meta property="og:description" content="Society of Women Engineers | University of Louisiana at Lafayette">
-    <meta property="og:url" content="https://sweull.pythonanywhere.com/">
+    <meta property="og:url" content="https://www.sweull.org">
     <meta property="og:image" content="{% static 'base/img/ogswe.jpg' %}">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="200">
 
     <title> {% block title %} SWE - University of Louisiana at Lafayette {% endblock %}</title>
-
 
 
     <!-- Favicon -->
@@ -37,6 +38,8 @@
     <!-- Lightbox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.css">
 
+    {# Custom page-level styles #}
+    {% block page_css %}{% endblock %}
 
 </head>
 
@@ -123,7 +126,6 @@
 <br>
 
 <!-- Main Content -->
-{% block firstBlockComment %}<!--Mission Block-->{% endblock %}
 {% block firstBlock %}
     <div class="container">
         <div class="whitespace">
@@ -148,7 +150,6 @@
         </div>
     </div>
 {% endblock %}
-{% block secondBlockComment %}<!--Card Block-->{% endblock %}
 {% block secondBlock %}
     <div class="container-fluid" style="background-color: #F5F5F5">
         <div class="whitespace">
@@ -206,7 +207,6 @@
     </div>
 {% endblock %}
 
-{% block thirdBlockComment%}<!--Donation Block-->{% endblock %}
 {% block thirdBlock %}
     <div class="container">
         <div class="whitespace">
@@ -244,7 +244,6 @@
     </div>
 {% endblock %}
 
-{% block fourthBlockComment %}<!--Sponsors Block-->{% endblock %}
 {% block fourthBlock %}
     <div class="container-fluid" style="background-color: #F5F5F5">
         <div class="whitespace">
@@ -274,12 +273,12 @@
     </div>
 {% endblock %}
 
-
+{# todo: put all icons on one line #}
 <!-- Footer -->
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="col-lg-12 col-md-12 col-sm-12">
                 <ul class="list-inline text-center">
                     </li>
                     <li class="list-inline-item">
@@ -308,10 +307,18 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="{{ swe_social.orgsync }}" target="_blank" rel="noopener">
+                        <a href="{{ swe_social.instagram }}" target="_blank" rel="noopener">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fas fa-sync-alt fa-stack-1x fa-inverse" title="OrgSync"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse" title="Instagram"></i>
+                </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="{{ swe_social.engage }}" target="_blank" rel="noopener">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-sync-alt fa-stack-1x fa-inverse" title="Engage"></i>
                 </span>
                         </a>
                     </li>
@@ -335,6 +342,10 @@
 <script>
     baguetteBox.run('.tz-gallery');
 </script>
+
+{# Custom page-level js#}
+{% block page_js %}{% endblock %}
+
 
 </body>
 

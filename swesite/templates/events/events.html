@@ -20,7 +20,7 @@
 {% block gradient %} {% endblock %}
 
 {% block headerHeading %}
-    Events
+    Current Events
 {% endblock %}
 
 {% block headerSubheading %}
@@ -28,299 +28,136 @@
 
 
 {% block headerButton %}
-    <div class="headerButton">
-        <div class="clearfix">
-            <div class="dropdown show">
-                <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink"
-                   data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    See Past Event Pictures
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="{% url 'fall18' %}">Fall '18</a>
-                    <a class="dropdown-item" href="{% url 'spring18' %}">Spring '18</a>
-                </div>
-            </div>
-        </div>
-    </div>
+
 {% endblock %}
 
 
 
 {# First Block #}
-{% block firstBlockComment %}<!--Current Events Block-->{% endblock %}
 
-{% block firstBlockImage %}
-    {% static 'events/img/org-sync.png' %}
-{% endblock %}
+{% block firstBlockImage %}{% static 'getinvolved/heart.png' %}{% endblock %}
 
 {% block firstBlockText %}
-    See upcoming events on our
-    <a style="color: #551A8B; font-weight: 800;" href="{{ swe_social.orgsync }}" target="_blank">OrgSync</a>
-    page
-
-    <br>
-    <br>
-    <br>
-
-    Check out some pictures of our Spring 2019 events!
+    See upcoming events, and events we've already organized this semester here
 {% endblock %}
 
 
 
 {# Second Block #}
-{% block secondBlockComment %}<!--Gallery Block-->{% endblock %}
 {% block secondBlock %}
-    <div class="container-fluid" style="background-color: #F5F5F5">
-        <div class="whitespace">
-            <h4 class="post-subtitle text-center">
-                First General Meeting - 1/23
-            </h4>
-            <h6 class="post-subtitle text-center">
+    {% for event, data in fall_19.items %}
+        <div class="{% cycle 'container-fluid' 'container' %}"
+                {% cycle 'style="background-color: #F5F5F5"' '' as block_style %}>
+            <div class="whitespace text-center">
+                <h4 class="post-subtitle text-center">
+                    {{ data.display_title }} - {{ data.display_date }}
+                </h4>
 
-            </h6>
-            <div class="container gallery-container" style="background-color: #F5F5F5">
-                <div class="tz-gallery">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12">
-                            <a class="lightbox"
-                               href="{% static 'events/img/carousel/spring19/first-meeting/fm5.jpg' %}">
-                                <img style="object-fit: fill"
-                                     src="{% static 'events/img/carousel/spring19/first-meeting/fm5.jpg' %}"
-                                     alt="Rails">
-                            </a>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-3 col-md-3">
-                                <a class="lightbox"
-                                   href="{% static 'events/img/carousel/spring19/first-meeting/fm2.jpg' %}">
-                                    <img src="{% static 'events/img/carousel/spring19/first-meeting/fm2.jpg' %}">
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-md-3">
-                                <a class="lightbox"
-                                   href="{% static 'events/img/carousel/spring19/first-meeting/fm1.png' %}">
-                                    <img src="{% static 'events/img/carousel/spring19/first-meeting/fm1.png' %}">
-                                </a>
-                            </div>
+                {% if data.display_description %}
+                    <h6 class="post-subtitle text-center">
+                        {{ data.display_description }}
+                    </h6>
+                {% endif %}
 
-                            <div class="col-sm-3 col-md-3">
-                                <a class="lightbox"
-                                   href="{% static 'events/img/carousel/spring19/first-meeting/fm3.jpg' %}">
-                                    <img src="{% static 'events/img/carousel/spring19/first-meeting/fm3.jpg' %}"
-                                         alt="Tunnel">
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-md-3">
-                                <a class="lightbox"
-                                   href="{% static 'events/img/carousel/spring19/first-meeting/fm4.jpg' %}">
-                                    <img src="{% static 'events/img/carousel/spring19/first-meeting/fm4.jpg' %}">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                {% if event == 'meeting_1' %}
+                    <h6 class="post-subtitle text-center">
+                        In case you couldn't make it, see the full presentation <a
+                            href="https://docs.google.com/presentation/d/18N-AIfqxE5bDBB1adfxtCJz6ZePQFg7lh6yVrF7Ys5M/edit#slide=id.p1">
+                        <span style="font-weight: 400;">here</span>
+                    </a>
+                    </h6>
+                {% endif %}
 
-    <div class="container">
-        <div class="whitespace">
-            <h4 class="post-subtitle text-center">
-                BASF Industry Tour - 2/08
-            </h4>
-            <h6 class="post-subtitle text-center">
+                {% if event == 'bake_sale_1' %}
+                    <h4 class="post-subtitle text-center">
+                        Sign up to volunteer for the bake sale
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfueVxsi9y11Xg9jxIzJsgl3zXgKvIx0KVqkY8vFQDBBAcMpg/viewform">
+                            <span style="font-weight: 400;">here</span>
+                            <i class="fas fa-birthday-cake"></i>
 
-            </h6>
-            <div class="tz-gallery">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12">
-                        <a class="lightbox"
-                           href="{% static 'events/img/carousel/spring19/basf/basf1.jpg' %}">
-                            <img style="object-fit: fill"
-                                 src="{% static 'events/img/carousel/spring19/basf/basf1.jpg' %}">
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                    </h4>
+                {% endif %}
 
-    <div class="container-fluid" style="background-color: #F5F5F5">
-        <div class="whitespace">
-            <div class="container">
-                <h4 class="post-subtitle text-center">
-                    Westlake Chemical Info Session - 2/21
-                </h4>
-                <h6 class="post-subtitle text-center">
-
-                </h6>
-                <div class="container gallery-container" style="background-color: #F5F5F5">
+                <div class="container gallery-container" {{ block_style }}>
                     <div class="tz-gallery">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12">
-                                <a class="lightbox"
-                                   href="{% static 'events/img/carousel/spring19/westlake/wl1.jpg' %}">
-                                    <img src="{% static 'events/img/carousel/spring19/westlake/wl1.jpg' %}">
-                                </a>
+                        {% if data.img_paths|length == 1 %}
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                    <a class="lightbox"
+                                       href="{% get_static_prefix %}{{ data.img_paths.0 }}">
+                                        <img src="{% get_static_prefix %}{{ data.img_paths.0 }}">
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6 col-md-6">
-                                <a class="lightbox"
-                                   href="{% static 'events/img/carousel/spring19/westlake/wl2.jpg' %}">
-                                    <img src="{% static 'events/img/carousel/spring19/westlake/wl2.jpg' %}">
-                                </a>
+                        {% endif %}
+
+                        {% if data.img_paths|length == 2 %}
+                            <div class="row">
+                                {% for path in data.img_paths %}
+                                    <div class="col-sm-12 col-md-6">
+                                        <a class="lightbox"
+                                           href="{% get_static_prefix %}{{ path }}">
+                                            <img class="imgfit" src="{% get_static_prefix %}{{ path }}">
+                                        </a>
+                                    </div>
+                                {% endfor %}
                             </div>
-                            <div class="col-sm-6 col-md-6" style="object-fit: cover">
-                                <a class="lightbox"
-                                   href="{% static 'events/img/carousel/spring19/westlake/wl3.JPG' %}">
-                                    <img src="{% static 'events/img/carousel/spring19/westlake/wl3.JPG' %}">
-                                </a>
+                        {% endif %}
+
+                        {% if data.img_paths|length >= 3 %}
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                    <a class="lightbox"
+                                       href="{% get_static_prefix %}{{ data.img_paths.0 }}">
+                                        <img class="imgfit" src="{% get_static_prefix %}{{ data.img_paths.0 }}">
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                            <div class="row">
+                                {% for path in data.img_paths %}
+                                    {% if forloop.counter == 1 %}
+                                        {# there's no "continue" for django for loops #}
+                                        {# this is my janky way if implementing one #}
+                                    {% else %}
+                                        <div
+                                                {% if data.img_paths|length == 3 %}
+                                                    class="col-sm-12 col-md-6"
+                                                {% endif %}
+                                                {% if data.img_paths|length == 4 %}
+                                                    class="col-sm-12 col-md-4"
+                                                {% endif %}
+                                                {% if data.img_paths|length == 5 %}
+                                                    class="col-sm-12 col-md-3"
+                                                {% endif %}
+                                        >
+                                            <a class="lightbox"
+                                               href="{% get_static_prefix %}{{ path }}">
+                                                <img class="imgfit" src="{% get_static_prefix %}{{ path }}">
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+
+                        {% endif %}
                     </div>
                 </div>
+
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <div class="whitespace">
-            <h4 class="post-subtitle text-center">
-                Snacks on the Street: King Cake - 2/28
-            </h4>
-            <h6 class="post-subtitle text-center">
+    {% endfor %}
 
-            </h6>
-            <div class="container gallery-container">
-                <div class="tz-gallery">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12">
-                            <a class="lightbox"
-                               href="{% static 'events/img/carousel/spring19/snacks-king-cake/snack1.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/snacks-king-cake/snack1.jpg' %}">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                            <a class="lightbox"
-                               href="{% static 'events/img/carousel/spring19/snacks-king-cake/snacks2.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/snacks-king-cake/snacks2.jpg' %}">
-                            </a>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <a class="lightbox"
-                               href="{% static 'events/img/carousel/spring19/snacks-king-cake/snacks3.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/snacks-king-cake/snacks3.jpg' %}">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid" style="background-color: #F5F5F5">
-        <div class="whitespace">
-            <div class="container">
-                <h4 class="post-subtitle text-center">
-                    Science Olympiad - 3/09
-                </h4>
-                <h6 class="post-subtitle text-center">
-
-                </h6>
-                <div class="container gallery-container" style="background-color: #F5F5F5">
-                    <div class="tz-gallery">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6">
-                                <a class="lightbox"
-                                   href="{% static 'events/img/carousel/spring19/science-olympiad/so1.jpg' %}">
-                                    <img style="object-fit: cover"
-                                         src="{% static 'events/img/carousel/spring19/science-olympiad/so1.jpg' %}">
-                                </a>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                <a class="lightbox"
-                                   href="{% static 'events/img/carousel/spring19/science-olympiad/so2.jpg' %}">
-                                    <img style="object-fit: cover"
-                                         src="{% static 'events/img/carousel/spring19/science-olympiad/so2.jpg' %}">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6">
-                                <a class="lightbox"
-                                   href="{% static 'events/img/carousel/spring19/science-olympiad/so4.jpg' %}">
-                                    <img style="object-fit: cover"
-                                         src="{% static 'events/img/carousel/spring19/science-olympiad/so4.jpg' %}">
-                                </a>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                <a class="lightbox"
-                                   href="{% static 'events/img/carousel/spring19/science-olympiad/so5.jpg' %}">
-                                    <img style="object-fit: cover"
-                                         src="{% static 'events/img/carousel/spring19/science-olympiad/so5.jpg' %}">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="container">
-        <div class="whitespace">
-            <h4 class="post-subtitle text-center">
-                Big Event and Earth Day - 3/30 & 3/31
-            </h4>
-            <h6 class="post-subtitle text-center">
-
-            </h6>
-            <div class="container gallery-container">
-                <div class="tz-gallery">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12">
-                            <a class="lightbox"
-                               href="{% static 'events/img/carousel/spring19/big-event/be1.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/big-event/be1.jpg' %}">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4 col-md-4">
-                            <a class="lightbox"
-                               href="{% static 'events/img/carousel/spring19/big-event/be2.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/big-event/be2.jpg' %}">
-                            </a>
-                        </div>
-                        <div class="col-sm-4 col-md-4">
-                            <a class="lightbox"
-                               href="{% static 'events/img/carousel/spring19/big-event/be3.jpg' %}">
-                                <img style="object-fit: cover"
-                                     src="{% static 'events/img/carousel/spring19/big-event/be3.jpg' %}">
-                            </a>
-                        </div>
-                        <div class="col-sm-4 col-md-4">
-                            <a class="lightbox"
-                               href="{% static 'events/img/carousel/spring19/big-event/be4.jpg' %}">
-                                <img src="{% static 'events/img/carousel/spring19/big-event/be4.jpg' %}">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="container">
         <nav>
             <ul class="pagination justify-content-center">
                 <li class="page-item active">
-                    <a class="page-link" href="{% url 'events' %}">Spring '19</a>
+                    <a class="page-link" href="{% url 'events' %}">Current Events</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="{% url 'spring19' %}">Spring '19</a>
                 </li>
                 <li class="page-item">
                     <a class="page-link" href="{% url 'fall18' %}">Fall '18</a>
@@ -337,8 +174,6 @@
 
 {# About page only has two sections, so leave these empty #}
 {% block thirdBlock %}
-    {% block thirdBlockComment %} {% endblock %}
 {% endblock %}
 {% block fourthBlock %}
-    {% block fourthBlockComment %} {% endblock %}
 {% endblock %}

@@ -28,27 +28,11 @@
 
 
 {% block headerButton %}
-    <div class="headerButton">
-        <div class="clearfix">
-            <div class="dropdown show">
-                <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink"
-                   data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    See Other Event Pictures
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="{% url 'events' %}">Spring '19</a>
-                    <a class="dropdown-item" href="{% url 'spring18' %}">Spring '18</a>
-                </div>
-            </div>
-        </div>
-    </div>
 {% endblock %}
 
 
 
 {# First Block #}
-{% block firstBlockComment %}<!--Thank You Block-->{% endblock %}
 {% block firstBlockImage %}{% static 'getinvolved/heart.png' %}{% endblock %}
 {% block firstBlockTextTag %}
     <h4 class="post-subtitle text-center">
@@ -62,7 +46,6 @@
 
 
 {# Second Block #}
-{% block secondBlockComment %}<!--Gallery Block-->{% endblock %}
 {% block secondBlock %}
     <div class="container-fluid" style="background-color: #F5F5F5">
         <div class="whitespace">
@@ -532,14 +515,17 @@
     <nav>
         <ul class="pagination justify-content-center mb-0 pb-3" style="background-color: #F5F5F5">
             <li class="page-item">
-                <a class="page-link" href="{% url 'events' %}">Spring '19</a>
-            </li>
-            <li class="page-item active">
-                <a class="page-link" href="{% url 'fall18' %}">Fall '18</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="{% url 'spring18' %}">Spring '18</a>
-            </li>
+                    <a class="page-link" href="{% url 'events' %}">Current Events</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="{% url 'spring19' %}">Spring '19</a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="{% url 'fall18' %}">Fall '18</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="{% url 'spring18' %}">Spring '18</a>
+                </li>
         </ul>
     </nav>
 
@@ -548,10 +534,8 @@
 
 {# About page only has two sections, so leave these empty #}
 {% block thirdBlock %}
-    {% block thirdBlockComment %} {% endblock %}
 {% endblock %}
 {% block fourthBlock %}
-    {% block fourthBlockComment %} {% endblock %}
 {% endblock %}
 
 

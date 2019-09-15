@@ -1,16 +1,12 @@
-from django.contrib.auth.views import LoginView
-from django.urls import reverse_lazy
-from django.views.generic import TemplateView, CreateView
+from django.views.generic import TemplateView
 
-from pointtracker.forms import SWEUserCreationForm, PointTrackerLoginForm
+from swesite.contexts.swe_social_context import swe_social
 
 
-class PointTrackerLoginView(LoginView):
+class PointTrackerLogin(TemplateView):
     template_name = 'pointtracker/pointtracker.html'
-    form_class = PointTrackerLoginForm
 
-
-class PointTrackerSignUpView(CreateView):
-    form_class = SWEUserCreationForm
-    success_url = reverse_lazy('pointtracker')
-    template_name = 'pointtracker/signup.html'
+    def get_context_data(self, **kwargs):
+        context = super(PointTrackerLogin, self).get_context_data(**kwargs)
+        context['swe_social'] = swe_social(request=PointTrackerLogin)
+        return context

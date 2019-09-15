@@ -12,6 +12,10 @@
 {% endblock %}
 
 
+{# Page Styles #}
+{% block page_css %}
+    <link rel="stylesheet" href="{% static 'base/assets/chartist-js/chartist.min.css' %}">
+{% endblock %}
 
 {# Header #}
 {% block headerBackground %}
@@ -33,7 +37,6 @@
 
 
 {# First Block #}
-{% block firstBlockComment %}<!--Local Mission Block-->{% endblock %}
 
 {% block firstBlockImage %}
     {% static 'base/img/swe-ull-color-logo.png' %}
@@ -51,14 +54,25 @@
     Professional development through events
     <br>
     And countless volunteer opportunities
-    
 {% endblock %}
 
 
 
-{# Second Block #}
-{% block secondBlockComment %}<!--Officers Block-->{% endblock %}
 {% block secondBlock %}
+{#    <div class="container">#}
+{#        <div class="whitespace">#}
+{#            <div class="row">#}
+{#                <div id="gender-chart" class="col-sm-12 col-md-6 ct-chart ct-minor-seventh">#}
+{#                </div>#}
+{#                <div id="major-chart" class="col-sm-12 col-md-6 ct-chart ct-minor-seventh">#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{% endblock %}
+
+
+{% block thirdBlock %}
     <div class="container-fluid" style="background-color: #F5F5F5">
         <div class="whitespace">
             <div class="container officerContainer text-center">
@@ -92,7 +106,7 @@
                                     </div>
                                 {% else %}
                                     <div class="btn-group btn-group-sm d-flex" role="group">
-                                        <a class="btn btn-dark w-100" href="{{ value.email }}">
+                                        <a class="btn btn-dark w-100" href="mailto:{{ value.email }}">
                                             <i class="fa fa-envelope fa-lg"></i>
                                         </a>
                                     </div>
@@ -130,7 +144,7 @@
                                     </div>
                                 {% else %}
                                     <div class="btn-group btn-group-sm d-flex" role="group">
-                                        <a class="btn btn-dark w-100" href="{{ value.email }}">
+                                        <a class="btn btn-dark w-100" href="mailto:{{ value.email }}">
                                             <i class="fa fa-envelope fa-lg"></i>
                                         </a>
                                     </div>
@@ -168,7 +182,7 @@
                                     </div>
                                 {% else %}
                                     <div class="btn-group btn-group-sm d-flex" role="group">
-                                        <a class="btn btn-dark w-100" href="{{ value.email }}">
+                                        <a class="btn btn-dark w-100" href="mailto:{{ value.email }}">
                                             <i class="fa fa-envelope fa-lg"></i>
                                         </a>
                                     </div>
@@ -192,11 +206,11 @@
     </div>
 {% endblock %}
 
-{# About page only has two sections, so leave these empty #}
-{% block thirdBlock %}
-    {% block thirdBlockComment %} {% endblock %}
-{% endblock %}
 {% block fourthBlock %}
-    {% block fourthBlockComment %} {% endblock %}
 {% endblock %}
 
+{# Page JS #}
+{% block page_js %}
+    <script src="{% static 'base/assets/chartist-js/chartist.min.js' %}"></script>
+    <script src="{% static 'about/demographic_charts/demographic_charts.js' %}"></script>
+{% endblock %}

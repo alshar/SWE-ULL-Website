@@ -40,7 +40,6 @@
 
 
 {# First Block #}
-{% block firstBlockComment %}<!--WE19 Block-->{% endblock %}
 
 {% block firstBlockImgTag %}
     <img class="img-fluid mx-auto d-block" style="height: 125px"
@@ -60,17 +59,14 @@
         you'll earn by attending them.</p>
 {% endblock %}
 
-{% block secondBlockComment %}<!--Volunteer Point Table Block-->{% endblock %}
 {% block secondBlock %}
     {% include 'volunteerpoints/pointvaluetable.html' %}
 {% endblock %}
 
 
 {% block thirdBlock %}
-    {% block thirdBlockComment %}<!--Info Block-->{% endblock %}
     {% include 'volunteerpoints/conferenceinfo.html' %}
 {% endblock %}
 {% block fourthBlock %}
-    {% block fourthBlockComment %}<!--Ethics Block-->{% endblock %}
     {% include 'volunteerpoints/rules.html' %}
 {% endblock %}
