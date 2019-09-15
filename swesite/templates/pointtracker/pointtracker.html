@@ -28,8 +28,8 @@
 {% block headerButton %} {% endblock %}
 
 
-
 {% block firstBlock %}
+    {% csrf_token %}
     {% crispy form %}
 {% endblock %}
 
