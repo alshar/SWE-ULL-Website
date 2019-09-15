@@ -1,1 +1,44 @@
-<p>POINT SHEET</p>
+{% extends "base/base.html" %}
+
+{% load static crispy_forms_tags %}
+
+{% block description %} "Point Tracker | SWE - University of Louisiana at Lafayette" {% endblock %}
+
+{% block title %} "SWE ULL | Point Tracker" {% endblock %}
+
+
+{# Header #}
+{% block headerBackground %}
+    url(' {% static 'base/img/swe-bug-pattern-purple.jpg' %} ')
+{% endblock %}
+
+{% block gradient %}
+    <div class="gradient"></div>
+{% endblock %}
+
+{% block headerHeading %}
+    You have {{ member_data.total }} points
+{% endblock %}
+
+{% block headerSubheading %}
+{% endblock %}
+
+{% block headerButton %} {% endblock %}
+
+
+{% block firstBlock %}
+    <div class="container">
+        <div class="whitespace">
+            <p>events visited will go here</p>
+        </div>
+    </div>
+
+    <div id="member-point-chart"></div>
+
+{% endblock %}
+
+{% block secondBlock %} {% endblock %}
+
+{% block thirdBlock %} {% endblock %}
+
+{% block fourthBlock %} {% endblock %}
