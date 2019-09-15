@@ -1,1 +1,65 @@
-<p>member not found</p>
+{% extends "base/base.html" %}
+
+{% load static %}
+
+{% block description %} "Member Not found | SWE - University of Louisiana at Lafayette" {% endblock %}
+
+{% block title %} "Member Not Found | Point Tracker" {% endblock %}
+
+
+{# Header #}
+{% block headerBackground %}
+    url(' {% static 'base/img/swe-bug-pattern-purple.jpg' %} ')
+{% endblock %}
+
+{% block gradient %}
+    <div class="gradient"></div>
+{% endblock %}
+
+{% block headerHeading %}
+    Well, this is awkward
+{% endblock %}
+
+{% block headerSubheading %}
+    We couldn't find you in our records
+{% endblock %}
+
+{% block headerButton %}
+    <div class="clearfix">
+        <div class="headerButton">
+            <a class="btn btn-primary" href="{% url 'pointtracker' %}">
+                {% block headerButtonText %}
+                    Back to Login
+                {% endblock %}
+            </a>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block firstBlockImgTag %}{% endblock %}
+
+{% block firstBlockTextTag %}
+    <h2 class="post-subtitle text-center">
+        Reasons why we might not have been able to find you:
+    </h2>
+    <ul class="list-group list-group-flush text-center  ">
+        <li class="list-group-item bold-links">
+            You haven't signed up for this semester. You can do that <a href="{% url 'getinvolved' %}">here</a>
+        </li>
+        <li class="list-group-item">
+            You didn't enter the values you used when you signed up. <br>
+            You need to login with the <b>same</b> first name, last name, and ULID you used when you signed up.
+        </li>
+        <li class="list-group-item bold-links">
+            If you're still having trouble, feel free to <a href="mailto:{{ swe_social.email }}">email us</a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block secondBlock %} {% endblock %}
+
+{% block thirdBlock %} {% endblock %}
+
+{% block fourthBlock %} {% endblock %}
+

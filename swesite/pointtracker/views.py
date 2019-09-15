@@ -34,7 +34,9 @@ class PointTrackerLoginView(FormView):
 
             return render(request, 'pointtracker/member_point_sheet.html', context=context)
         else:
-            return render(request, 'pointtracker/member_not_found.html')
+
+            context = self.get_context_data(**kwargs)
+            return render(request, 'pointtracker/member_not_found.html', context=context)
 
     def member_exists(self, **kwargs):
         ulid = kwargs['ulid']
