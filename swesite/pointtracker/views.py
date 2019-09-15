@@ -27,6 +27,16 @@ class PointTrackerLoginView(FormView):
 
         if self.member_exists(ulid=ulid, first_name=first_name, last_name=last_name):
             member_row = self.get_member_row(ulid=ulid)
+
+            """
+                get_all_records() doesn't include the heading, 
+                and puts the first member at 0
+                member_row is the member's actual row number in the spreadsheet, including the heading, 
+                AND the rows start at 1
+                so member_row - 2 must be used
+                
+                if confused, look at the values in debug mode
+            """
             member_data = points_sheet.get_all_records()[member_row - 2]
 
             context = self.get_context_data(**kwargs)
