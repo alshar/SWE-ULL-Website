@@ -8,7 +8,7 @@ class PointTrackerLoginForm(forms.Form):
     ulid = forms.CharField(
         label="ULID",
         required=True,
-        max_length=10
+        max_length=9
     )
 
     first_name = forms.CharField(
