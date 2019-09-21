@@ -5,7 +5,7 @@ from django.views.generic import FormView
 from pointtracker.forms import PointTrackerLoginForm
 from swesite.contexts.swe_social_context import swe_social
 from swesite.contexts.swe_volunteer_context import swe_volunteer
-from users.spreadsheet import points_sheet
+from users.spreadsheet import points_sheet, client, creds
 
 
 class PointTrackerLoginView(FormView):
@@ -26,6 +26,9 @@ class PointTrackerLoginView(FormView):
         ulid = request.POST['ulid'].strip().lower()
         first_name = request.POST['first_name'].strip().lower()
         last_name = request.POST['last_name'].strip().lower()
+
+        if creds.access_token_expired:
+            client.login()
 
         if self.member_exists(ulid=ulid, first_name=first_name, last_name=last_name):
             member_row = self.get_member_row(ulid=ulid)
@@ -75,4 +78,3 @@ class PointTrackerLoginView(FormView):
     def get_member_row(self, **kwargs):
         return points_sheet.find(kwargs['ulid']).row
 
-# points_sheet.get_all_records()[points_sheet.find("c00004424").row - 2]
