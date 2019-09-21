@@ -54,27 +54,32 @@
             Financial assistance for travel to conferences in different cities
         </div>
         <div class="list-group-item">
-                Professional development through events
+            Professional development through events
         </div>
         <div class="list-group-item">
-                And countless volunteer opportunities
+            And countless volunteer opportunities
         </div>
     </div>
+
+
+
 {% endblock %}
 
 
 
 {% block secondBlock %}
-    {#    <div class="container">#}
-    {#        <div class="whitespace">#}
-    {#            <div class="row">#}
-    {#                <div id="gender-chart" class="col-sm-12 col-md-6 ct-chart ct-minor-seventh">#}
-    {#                </div>#}
-    {#                <div id="major-chart" class="col-sm-12 col-md-6 ct-chart ct-minor-seventh">#}
-    {#                </div>#}
-    {#            </div>#}
-    {#        </div>#}
-    {#    </div>#}
+    <div class="container">
+        <div class="whitespace">
+            <div class="row">
+                <div id="gender-chart" class="col-sm-12 col-md-12 ct-chart ct-major-twelfth"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div id="major-chart" class="col-sm-12 col-md-12 ct-chart ct-major-twelfth"></div>
+            </div>
+        </div>
+    </div>
+    </div>
 {% endblock %}
 
 
@@ -219,4 +224,7 @@
 {% block page_js %}
     <script src="{% static 'base/assets/chartist-js/chartist.min.js' %}"></script>
     <script src="{% static 'about/demographic_charts/demographic_charts.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.min.js">
+
+    </script>
 {% endblock %}
