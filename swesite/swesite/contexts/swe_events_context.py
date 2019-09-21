@@ -9,7 +9,7 @@ def fall_19(request):
         # },
         'bake_sale_1': {
             'display_title': 'Bake Sale',
-            'display_date': '9/20',
+            'display_date': '9/20/19',
             'img_paths': [
                 'events/img/carousel/fall19/bake_sale_1/bs_1.JPG',
                 'events/img/carousel/fall19/bake_sale_1/bs_2.JPG'
@@ -18,7 +18,7 @@ def fall_19(request):
 
         'meeting_1': {
             'display_title': 'First General Meeting',
-            'display_date': '9/11',
+            'display_date': '9/11/19',
             'display_description': '',
             'img_paths': [
                 'events/img/carousel/fall19/meeting_1/m_5.jpg',
@@ -33,7 +33,7 @@ def fall_19(request):
 
         'les_bbq': {
             'display_title': 'Louisiana Engineering Society BBQ',
-            'display_date': '9/6',
+            'display_date': '9/6/19',
             'img_paths': [
                 'events/img/carousel/fall19/les_bbq/les_bbq_1.JPG',
                 'events/img/carousel/fall19/les_bbq/les_bbq_2.JPG',
