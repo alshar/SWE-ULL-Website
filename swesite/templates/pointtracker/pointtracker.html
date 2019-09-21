@@ -1,8 +1,5 @@
 {% extends "base/base.html" %}
 
-{% comment %}
-{% extends "base/base.html" %}
-
 {% load static crispy_forms_tags %}
 
 {% block description %} "Point Tracker | SWE - University of Louisiana at Lafayette" {% endblock %}
@@ -51,46 +48,4 @@
 {% block thirdBlock %} {% endblock %}
 
 {% block fourthBlock %} {% endblock %}
-
-{% endcomment %}
-
-
-
-{% load static crispy_forms_tags %}
-
-{% block description %} "Point Tracker | SWE - University of Louisiana at Lafayette" {% endblock %}
-
-{% block title %} Point Tracker | SWE - University of Louisiana at Lafayette {% endblock %}
-
-
-{# Header #}
-{% block headerBackground %}
-    url(' {% static 'base/img/swe-bug-pattern-purple.jpg' %} ')
-{% endblock %}
-
-{% block gradient %}
-    <div class="gradient"></div>
-{% endblock %}
-
-{% block headerHeading %}
-    Point Tracker is Down for Maintenance
-{% endblock %}
-
-{% block headerSubheading %}
- Sorry about that! We'll send an email out when everything is fixed!
-{% endblock %}
-
-{% block headerButton %} {% endblock %}
-
-
-{% block firstBlock %}
-    <hr>
-{% endblock %}
-
-{% block secondBlock %} {% endblock %}
-
-{% block thirdBlock %} {% endblock %}
-
-{% block fourthBlock %} {% endblock %}
-
 
