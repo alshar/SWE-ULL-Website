@@ -49,7 +49,10 @@ class PointTrackerLoginView(FormView):
             """
             events_attended = {
                 event: points_earned for event, points_earned in member_data.items()
-                if points_earned != "" and points_earned != 0 and isinstance(points_earned, int) and event != "total"
+                    if points_earned != "" and
+                       points_earned != 0 and
+                       isinstance(points_earned, (int, float)) and
+                       event != "total"
             }
 
             context = self.get_context_data(**kwargs)
@@ -77,4 +80,3 @@ class PointTrackerLoginView(FormView):
 
     def get_member_row(self, **kwargs):
         return points_sheet.find(kwargs['ulid']).row
-
