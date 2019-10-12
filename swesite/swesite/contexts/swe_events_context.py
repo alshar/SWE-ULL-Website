@@ -4,7 +4,7 @@ def fall_19(request):
             'display_title': 'Upcoming Events',
             'display_date': 'See Flyer for Dates',
             'img_paths': [
-                'events/img/carousel/fall19/donuts_sits/donuts_sits_flyer_new.jpg',
+                'events/img/carousel/fall19/parish/parish_flyer.jpg',
             ]
         },
 
