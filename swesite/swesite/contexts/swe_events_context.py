@@ -1,10 +1,20 @@
 def fall_19(request):
     context = {
-        'upcoming_events': {
-            'display_title': 'Upcoming Events',
-            'display_date': 'See Flyer for Dates',
+        # 'upcoming_events': {
+        #     'display_title': 'Upcoming Events',
+        #     'display_date': 'See Flyer for Dates',
+        #     'img_paths': [
+        #         'events/img/carousel/fall19/parish/parish_flyer.jpg',
+        #     ]
+        # },
+
+        'parish': {
+            'display_title': 'Parish Brewery Tour',
+            'display_date': '10/19/20',
             'img_paths': [
-                'events/img/carousel/fall19/parish/parish_flyer.jpg',
+                'events/img/carousel/fall19/parish/parish_1.jpg',
+                'events/img/carousel/fall19/parish/parish_2.jpg',
+                'events/img/carousel/fall19/parish/parish_3.png',
             ]
         },
 
