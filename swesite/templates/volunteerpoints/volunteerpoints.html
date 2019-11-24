@@ -41,30 +41,14 @@
 
 {# First Block #}
 
-{% block firstBlockImgTag %}
+{% comment %}{% block firstBlockImgTag %}
     <img class="img-fluid mx-auto d-block" style="height: 125px"
          src="{% block firstBlockImage %}{% static 'volunteerpoints/img/we19.jpg' %}{% endblock %}"
          alt="SWE 19 logo">
-{% endblock %}
+{% endblock %}{% endcomment %}
 
 {% block firstBlockText %}
-    Our SWE section is going to
-    <a href="{{ swe_volunteer.conference_website }}" target="_blank"
-       rel="noopener">{{ swe_volunteer.conference_abbreviation }}</a>, the largest career
-    fair
-    for Female Engineers in the country, and we want to pay for {{ swe_volunteer.students_taking }} students to come
-    with us.
-    <p>
-        To qualify for financial assistance for {{ swe_volunteer.conference_abbreviation }}, you need to
-        earn {{ swe_volunteer.points_needed }}
-        volunteer points. The table below outlines the
-        kinds of events we organize throughout the semester, and how many volunteer points
-        you'll earn by attending them.
-    </p>
-    <p>
-    Planning on going to {{ swe_volunteer.conference_abbreviation }} with us?  Fill out
-        <a href="https://forms.gle/r2VKmSxsYbHPA4WLA" target="_blank" rel="noopener">this form</a>
-    </p>
+    Here's a breakdown of how you can earn volunteer points with us.
 {% endblock %}
 
 {% block secondBlock %}
@@ -73,8 +57,8 @@
 
 
 {% block thirdBlock %}
-    {% include 'volunteerpoints/conferenceinfo.html' %}
-{% endblock %}
-{% block fourthBlock %}
     {% include 'volunteerpoints/rules.html' %}
+{% endblock %}
+
+{% block fourthBlock %}
 {% endblock %}
