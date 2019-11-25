@@ -13,8 +13,8 @@ def fall_19(request):
             'display_date': '11/7/20 to 11/9/20',
             'display_description': '30 UL Lafayette Students Attended. 25 Total Interviews with 16 Different Companies',
             'img_paths': [
-                'events/img/carousel/fall19/we_19/we19_1.jpg',
-                'events/img/carousel/fall19/we_19/we19_2.jpg',
+                'events/img/carousel/fall19/we_19/we19_1.JPG',
+                'events/img/carousel/fall19/we_19/we19_2.JPG',
             ]
         },
 
