@@ -24,4 +24,4 @@ client = gspread.authorize(creds)
 # you don't need to mess with anything above
 
 # get_worksheet() is ordinal and starts at 0. the point data is on the second sheet.
-points_sheet = client.open('fall_19_member_list_point_tracker').get_worksheet(1)
+points_sheet = client.open('spring_20_member_list_point_tracker').get_worksheet(0)
