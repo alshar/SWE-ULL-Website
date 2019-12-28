@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.urls import reverse, reverse_lazy
+from django.urls import reverse_lazy
 from django.views.generic import FormView
 
 from pointtracker.forms import PointTrackerLoginForm
@@ -23,10 +23,13 @@ class PointTrackerLoginView(FormView):
         return super(PointTrackerLoginView, self).form_valid(form)
 
     def post(self, request, *args, **kwargs):
+
+        # clean data
         ulid = request.POST['ulid'].strip().lower()
         first_name = request.POST['first_name'].strip().lower()
         last_name = request.POST['last_name'].strip().lower()
 
+        # re-validate token if it's expired
         if creds.access_token_expired:
             client.login()
 
@@ -49,10 +52,11 @@ class PointTrackerLoginView(FormView):
             """
             events_attended = {
                 event: points_earned for event, points_earned in member_data.items()
-                    if points_earned != "" and
-                       points_earned != 0 and
-                       isinstance(points_earned, (int, float)) and
-                       event != "total"
+
+                if points_earned != "" and
+                   points_earned != 0 and
+                   isinstance(points_earned, (int, float)) and
+                   event != "total"
             }
 
             context = self.get_context_data(**kwargs)
