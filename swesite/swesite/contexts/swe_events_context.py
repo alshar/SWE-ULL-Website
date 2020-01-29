@@ -8,6 +8,15 @@ def fall_20(request):
         #     ]
         # },
 
+        'election': {
+            'display_title': 'Officer Election',
+            'display_date': '4/1/20',
+            'display_description': '',
+            'img_paths': [
+                'events/img/carousel/spring20/election.png',
+            ]
+        },
+
         'hot_choc': {
             'display_title': 'Snacks in the Street - Hot Chocolate',
             'display_date': '2/3/20',
