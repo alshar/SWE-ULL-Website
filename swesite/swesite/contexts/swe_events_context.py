@@ -1,3 +1,29 @@
+def fall_20(request):
+    context = {
+        # 'upcoming_events': {
+        #     'display_title': 'Upcoming Events',
+        #     'display_date': 'See Flyer for Dates',
+        #     'img_paths': [
+        #         'events/img/carousel/fall19/parish/parish_flyer.jpg',
+        #     ]
+        # },
+
+        'we19': {
+            'display_title': 'WE19',
+            'display_date': '11/7/20 to 11/9/20',
+            'display_description': '30 UL Lafayette Students Attended. 25 Total Interviews with 16 Different Companies',
+            'img_paths': [
+                'events/img/carousel/fall19/we_19/we19_1.JPG',
+                'events/img/carousel/fall19/we_19/we19_2.JPG',
+            ]
+        },
+
+
+    }
+
+    return context
+
+
 def fall_19(request):
     context = {
         # 'upcoming_events': {

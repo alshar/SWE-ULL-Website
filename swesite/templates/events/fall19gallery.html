@@ -1,13 +1,12 @@
 {% extends "base/base.html" %}
 
 {% load static %}
-{# Meta #}
 {% block description %}
-    Events | SWE - University of Louisiana at Lafayette
+    Fall 2019 Gallery | SWE - University of Louisiana at Lafayette
 {% endblock %}
 
 {% block title %}
-    Events | SWE - University of Louisiana at Lafayette
+    Fall 2019 Gallery | SWE - University of Louisiana at Lafayette
 {% endblock %}
 
 
@@ -20,7 +19,7 @@
 {% block gradient %} {% endblock %}
 
 {% block headerHeading %}
-    Current Events
+    Fall 2019 Gallery
 {% endblock %}
 
 {% block headerSubheading %}
@@ -38,14 +37,14 @@
 {% block firstBlockImage %}{% static 'getinvolved/heart.png' %}{% endblock %}
 
 {% block firstBlockText %}
-    See upcoming events, and events we've already organized this semester here
+    Thank you to all our amazing volunteers!
 {% endblock %}
 
 
 
 {# Second Block #}
 {% block secondBlock %}
-    {% for event, data in fall_20.items %}
+    {% for event, data in fall_19.items %}
         <div class="{% cycle 'container-fluid' 'container' %}"
                 {% cycle 'style="background-color: #F5F5F5"' '' as block_style %}>
             <div class="whitespace text-center">
@@ -68,14 +67,14 @@
                     </h6>
                 {% endif %}
 
-{#                {% if event == 'upcoming_events' %}#}
-{#                    <h6 class="post-subtitle text-center">#}
-{#                        Sign up to join us <a#}
-{#                            href="https://forms.gle/fJhiaAtUSBNZ1HKb9">#}
-{#                        <span style="font-weight: 900; color: #6b0392">here!</span>#}
-{#                    </a>#}
-{#                    </h6>#}
-{#                {% endif %}#}
+                {#                {% if event == 'upcoming_events' %}#}
+                {#                    <h6 class="post-subtitle text-center">#}
+                {#                        Sign up to join us <a#}
+                {#                            href="https://forms.gle/fJhiaAtUSBNZ1HKb9">#}
+                {#                        <span style="font-weight: 900; color: #6b0392">here!</span>#}
+                {#                    </a>#}
+                {#                    </h6>#}
+                {#                {% endif %}#}
 
 
                 <div class="container gallery-container" {{ block_style }}>
@@ -152,10 +151,10 @@
     <div class="container">
         <nav>
             <ul class="pagination justify-content-center">
-                <li class="page-item active">
+                <li class="page-item">
                     <a class="page-link" href="{% url 'events' %}">Current Events</a>
                 </li>
-                <li class="page-item">
+                <li class="page-item active">
                     <a class="page-link" href="{% url 'fall19' %}">Fall '19</a>
                 </li>
                 <li class="page-item">
