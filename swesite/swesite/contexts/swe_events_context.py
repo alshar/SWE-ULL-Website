@@ -8,13 +8,21 @@ def fall_20(request):
         #     ]
         # },
 
-        'we19': {
-            'display_title': 'WE19',
-            'display_date': '11/7/20 to 11/9/20',
-            'display_description': '30 UL Lafayette Students Attended. 25 Total Interviews with 16 Different Companies',
+        'hot_choc': {
+            'display_title': 'Snacks in the Street - Hot Chocolate',
+            'display_date': '2/3/20',
+            'display_description': '',
             'img_paths': [
-                'events/img/carousel/fall19/we_19/we19_1.JPG',
-                'events/img/carousel/fall19/we_19/we19_2.JPG',
+                'events/img/carousel/spring20/hot_choc_1.png',
+            ]
+        },
+
+        '1gm': {
+            'display_title': '1st General Meeting',
+            'display_date': '2/5/20',
+            'display_description': '',
+            'img_paths': [
+                'events/img/carousel/spring20/1st_gm.png',
             ]
         },
 
