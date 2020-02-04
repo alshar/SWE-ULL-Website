@@ -45,7 +45,7 @@
 
 {# Second Block #}
 {% block secondBlock %}
-    {% for event, data in fall_20.items %}
+    {% for event, data in spring_20.items %}
         <div class="{% cycle 'container-fluid' 'container' %}"
                 {% cycle 'style="background-color: #F5F5F5"' '' as block_style %}>
             <div class="whitespace text-center">
@@ -59,32 +59,11 @@
                     </h6>
                 {% endif %}
 
-                {% if event == '1gm' %}
+                {% if data.form_text and data.form_url %}
                     <h6 class="post-subtitle text-center">
-                        Sign up for a chance to win a gift card <a
-                            href="https://docs.google.com/forms/u/1/d/18prLcNZQzFO83K7zoeJtNRVK1pWGZHn9z6m-6n2AtrU/edit?usp=drive_web">
+                        {{ data.form_text }} <a
+                            href="{{ data.form_url }}">
                         <span style="font-weight: 900; color: #6b0392">here</span>
-                        Officer Application <a
-                            href="https://forms.gle/apKxArsi4B11wjNk7">
-                        <span style="font-weight: 900; color: #6b0392">here</span>
-                    </a>
-                    </h6>
-                {% endif %}
-
-                {% if event == 'election' %}
-                    <h6 class="post-subtitle text-center">
-                        Officer Application <a
-                            href="https://forms.gle/apKxArsi4B11wjNk7">
-                        <span style="font-weight: 900; color: #6b0392">here</span>
-                    </a>
-                    </h6>
-                {% endif %}
-
-                {% if event == 'hot_choc' %}
-                    <h6 class="post-subtitle text-center">
-                        Sign up to volunteer <a
-                            href="https://forms.gle/zddgUhQkf5EhkYMfA">
-                        <span style="font-weight: 900; color: #6b0392">here!</span>
                     </a>
                     </h6>
                 {% endif %}
@@ -93,8 +72,8 @@
                 <div class="container gallery-container" {{ block_style }}>
                     <div class="tz-gallery">
                         {% if data.img_paths|length == 1 %}
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-12 col-md-12 col-lg-6">
                                     <a class="lightbox"
                                        href="{% get_static_prefix %}{{ data.img_paths.0 }}">
                                         <img src="{% get_static_prefix %}{{ data.img_paths.0 }}">
