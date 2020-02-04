@@ -1,52 +1,47 @@
-def spring_20(request):
-    context = {
-        # 'upcoming_events': {
-        #     'display_title': 'Upcoming Events',
-        #     'display_date': 'See Flyer for Dates',
-        #     'img_paths': [
-        #         'events/img/carousel/fall19/parish/parish_flyer.jpg',
-        #     ]
-        # },
+SPRING_20_CONTEXT = {
+    # 'upcoming_events': {
+    #     'display_title': 'Upcoming Events',
+    #     'display_date': 'See Flyer for Dates',
+    #     'img_paths': [
+    #         'events/img/carousel/fall19/parish/parish_flyer.jpg',
+    #     ]
+    # },
 
-        'election': {
-            'display_title': 'Officer Election',
-            'display_date': '4/1/20',
-            'display_description': '',
-            'img_paths': [
-                'events/img/carousel/spring20/election.png',
-            ],
-            'form_text': 'Officer Application',
-            'form_url': 'https://forms.gle/apKxArsi4B11wjNk7'
-        },
+    'election': {
+        'display_title': 'Officer Election',
+        'display_date': '4/1/20',
+        'display_description': '',
+        'img_paths': [
+            'events/img/carousel/spring20/election.png',
+        ],
+        'form_text': 'Officer Application',
+        'form_url': 'https://forms.gle/apKxArsi4B11wjNk7'
+    },
 
-        'paint': {
-            'display_title': 'SWE Square Painting',
-            'display_date': '2/8/20',
-            'display_description': 'Help us paint the SWE Square. Max 3 people',
-            'img_paths': [
-                'events/img/carousel/spring20/paint_1.png',
-            ],
-            'form_text': 'Sign up to volunteer',
-            'form_url': 'https://forms.gle/WvVGR3rSURghceaS8'
-        },
+    'paint': {
+        'display_title': 'SWE Square Painting',
+        'display_date': '2/8/20',
+        'display_description': 'Help us paint the SWE Square. Max 3 people',
+        'img_paths': [
+            'events/img/carousel/spring20/paint_1.png',
+        ],
+        'form_text': 'Sign up to volunteer',
+        'form_url': 'https://forms.gle/WvVGR3rSURghceaS8'
+    },
 
+    '1gm': {
+        'display_title': '1st General Meeting',
+        'display_date': '2/5/20',
+        'display_description': '',
+        'img_paths': [
+            'events/img/carousel/spring20/1st_gm.png',
+        ],
+        'form_text': 'Sign up for a chance to win a gift card',
+        'form_url': 'https://forms.gle/UQ8uTzKSMqWnm9mM9',
 
-        '1gm': {
-            'display_title': '1st General Meeting',
-            'display_date': '2/5/20',
-            'display_description': '',
-            'img_paths': [
-                'events/img/carousel/spring20/1st_gm.png',
-            ],
-            'form_text': 'Sign up for a chance to win a gift card',
-            'form_url': 'https://forms.gle/UQ8uTzKSMqWnm9mM9',
+    },
 
-        },
-
-
-    }
-
-    return context
+}
 
 
 def fall_19(request):

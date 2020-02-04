@@ -45,7 +45,7 @@
 
 {# Second Block #}
 {% block secondBlock %}
-    {% for event, data in spring_20.items %}
+    {% for event, data in event_data.items %}
         <div class="{% cycle 'container-fluid' 'container' %}"
                 {% cycle 'style="background-color: #F5F5F5"' '' as block_style %}>
             <div class="whitespace text-center">

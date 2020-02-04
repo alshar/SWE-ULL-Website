@@ -1,14 +1,15 @@
 from django.views.generic import TemplateView
-from swesite.contexts.swe_events_context import fall_19, spring_20
+from swesite.contexts.swe_events_context import fall_19, SPRING_20_CONTEXT
 from swesite.contexts.swe_social_context import swe_social
 
 
+# the html file and context object needs to be changed every semester
 class events(TemplateView):
-    template_name = 'events/events.html'
+    template_name = 'events/spring_20_gallery.html'
 
     def get_context_data(self, **kwargs):
         context = super(events, self).get_context_data(**kwargs)
-        context['spring_20'] = spring_20(request=events)
+        context['event_data'] = SPRING_20_CONTEXT
         context['swe_social'] = swe_social(request=events)
         return context
 
