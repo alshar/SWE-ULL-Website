@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-from swesite.contexts.swe_events_context import fall_19, SPRING_20_CONTEXT
+from swesite.contexts.swe_events_context import SPRING_20_CONTEXT, FALL_19_CONTEXT
 from swesite.contexts.swe_social_context import swe_social
 
 
@@ -15,12 +15,12 @@ class events(TemplateView):
 
 
 class fall19(TemplateView):
-    template_name = 'events/fall19gallery.html'
+    template_name = 'events/fall_19_gallery.html'
 
     def get_context_data(self, **kwargs):
         context = super(fall19, self).get_context_data(**kwargs)
+        context['event_data'] = FALL_19_CONTEXT
         context['swe_social'] = swe_social(request=events)
-        context['fall_19'] = fall_19(request=events)
         return context
 
 
