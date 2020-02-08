@@ -22,17 +22,7 @@ SPRING_20_CONTEXT = {
         'form_url': 'https://forms.gle/WvVGR3rSURghceaS8'
     },
 
-    '1gm': {
-        'display_title': '1st General Meeting',
-        'display_date': '2/5/20',
-        'display_description': '',
-        'img_paths': [
-            'events/img/carousel/spring20/1st_gm.png',
-        ],
-        'form_text': 'Sign up for a chance to win a gift card',
-        'form_url': 'https://forms.gle/UQ8uTzKSMqWnm9mM9',
 
-    },
 
 }
 
