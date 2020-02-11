@@ -11,6 +11,15 @@ SPRING_20_CONTEXT = {
         'form_url': 'https://forms.gle/apKxArsi4B11wjNk7'
     },
 
+    'king_cake': {
+        'display_title': 'King Cake Sale',
+        'display_date': '2/17/20',
+        'img_paths': [
+            'events/img/carousel/spring20/king_cake.png',
+        ],
+
+    },
+
     'paint': {
         'display_title': 'SWE Square Painting',
         'display_date': '2/8/20',
