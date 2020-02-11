@@ -17,6 +17,8 @@ SPRING_20_CONTEXT = {
         'img_paths': [
             'events/img/carousel/spring20/king_cake.png',
         ],
+        'form_text': 'Sign up',
+        'form_url': 'https://forms.gle/apKxArsi4B11wjNk7'
 
     },
 
