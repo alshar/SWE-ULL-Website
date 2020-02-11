@@ -14,15 +14,22 @@ SPRING_20_CONTEXT = {
     'paint': {
         'display_title': 'SWE Square Painting',
         'display_date': '2/8/20',
-        'display_description': 'Help us paint the SWE Square. Max 3 people',
         'img_paths': [
-            'events/img/carousel/spring20/paint_1.png',
+            'events/img/carousel/spring20/paint_1.jpg',
         ],
-        'form_text': 'Sign up to volunteer',
-        'form_url': 'https://forms.gle/WvVGR3rSURghceaS8'
+
     },
 
-
+    '1st_gm': {
+        'display_title': '1st General Meeting',
+        'display_date': '2/5/20',
+        'img_paths': [
+            'events/img/carousel/spring20/1gm_1.jpg',
+            'events/img/carousel/spring20/1gm_2.jpg',
+        ],
+        'form_text': 'See the meeting presentation ',
+        'form_url': 'https://docs.google.com/presentation/d/1OT45-nGyjJsFR_6lm7V3GcJ8UBF_WTk05U0CBhYTuLc/edit?usp=sharing'
+    },
 
 }
 
