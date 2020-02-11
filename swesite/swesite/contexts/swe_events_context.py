@@ -18,7 +18,7 @@ SPRING_20_CONTEXT = {
             'events/img/carousel/spring20/king_cake.png',
         ],
         'form_text': 'Sign up',
-        'form_url': 'https://forms.gle/apKxArsi4B11wjNk7'
+        'form_url': 'https://forms.gle/5kQWUTtFMBJ9EzYH7'
 
     },
 
