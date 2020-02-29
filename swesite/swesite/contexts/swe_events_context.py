@@ -15,10 +15,10 @@ SPRING_20_CONTEXT = {
         'display_title': 'King Cake Sale',
         'display_date': '2/17/20',
         'img_paths': [
-            'events/img/carousel/spring20/king_cake.png',
+            'events/img/carousel/spring20/kc_1.jpg',
+            'events/img/carousel/spring20/kc_2.jpg',
         ],
-        'form_text': 'Sign up',
-        'form_url': 'https://forms.gle/5kQWUTtFMBJ9EzYH7'
+
 
     },
 
