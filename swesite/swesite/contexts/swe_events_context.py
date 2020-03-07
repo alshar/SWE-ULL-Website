@@ -35,10 +35,10 @@ SPRING_20_CONTEXT = {
         'display_title': "International Women's Day",
         'display_date': '3/6/20',
         'img_paths': [
+            'events/img/carousel/spring20/iwd_3.jpg',
             'events/img/carousel/spring20/iwd_1.jpg',
+            'events/img/carousel/spring20/iwd_2.jpg',
         ],
-        'form_text': 'Sign up to Volunteer',
-        'form_url': 'https://forms.gle/fN2e2g4y2cP8V4Qe9'
     },
 
     'king_cake': {
