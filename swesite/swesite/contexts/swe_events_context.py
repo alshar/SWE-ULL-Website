@@ -35,7 +35,7 @@ SPRING_20_CONTEXT = {
         'display_title': "International Women's Day",
         'display_date': '3/6/20',
         'img_paths': [
-            'events/img/carousel/spring20/iwd_3.jpg',
+            'events/img/carousel/spring20/iwd_3.JPG',
             'events/img/carousel/spring20/iwd_1.jpg',
             'events/img/carousel/spring20/iwd_2.jpg',
         ],
