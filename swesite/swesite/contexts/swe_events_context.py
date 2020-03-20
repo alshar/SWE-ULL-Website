@@ -11,25 +11,23 @@ SPRING_20_CONTEXT = {
         'form_url': 'https://forms.gle/apKxArsi4B11wjNk7'
     },
 
-    'sci_olymp': {
-        'display_title': "Science Olympiad",
-        'display_date': '3/14/20',
-        'img_paths': [
-            'events/img/carousel/spring20/sci_1.png',
-        ],
-        'form_text': 'Sign up to participate',
-        'form_url': 'https://forms.gle/hrhRdyiCpzL35S1h6'
-    },
-
-    'e&t': {
-        'display_title': "E&T Week",
-        'display_date': '3/11/20',
-        'form_text': 'Sign up to volunteer',
-        'img_paths': [
-            'events/img/carousel/spring20/en1_1.png'
-        ],
-        'form_url': 'https://forms.gle/NAX3PtshW2P2fJbBA'
-    },
+    # 'sci_olymp': {
+    #     'display_title': "Science Olympiad",
+    #     'display_date': '3/14/20',
+    #     'img_paths': [
+    #         'events/img/carousel/spring20/sci_1.png',
+    #     ],
+    #     'form_text': 'Sign up to participate',
+    # },
+    #
+    # 'e&t': {
+    #     'display_title': "E&T Week",
+    #     'display_date': '3/11/20',
+    #     'form_text': 'Sign up to volunteer',
+    #     'img_paths': [
+    #         'events/img/carousel/spring20/en1_1.png'
+    #     ],
+    # },
 
     'iwd': {
         'display_title': "International Women's Day",
