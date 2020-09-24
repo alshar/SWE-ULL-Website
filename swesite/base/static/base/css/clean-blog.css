@@ -345,9 +345,9 @@ header.masthead .gradient {
     width: 100%;
     background: linear-gradient(-45deg, #fcff34, #cec51a, #9932CC, #551a8b, #551A8B);
     background-size: 500% 500%;
-    -webkit-animation: Gradient 30s ease infinite;
-    -moz-animation: Gradient 30s ease infinite;
-    animation: Gradient 30s ease infinite;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
     opacity: 0.56;
 }
 
