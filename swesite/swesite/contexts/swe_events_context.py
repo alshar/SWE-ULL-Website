@@ -1,6 +1,5 @@
-SPRING_20_CONTEXT = {
-
-    'election': {
+past_events = {
+    '4120_election': {
         'display_title': 'Officer Election',
         'display_date': '4/1/20',
         'display_description': '',
@@ -10,24 +9,6 @@ SPRING_20_CONTEXT = {
         'form_text': 'Officer Application',
         'form_url': 'https://forms.gle/apKxArsi4B11wjNk7'
     },
-
-    # 'sci_olymp': {
-    #     'display_title': "Science Olympiad",
-    #     'display_date': '3/14/20',
-    #     'img_paths': [
-    #         'events/img/carousel/spring20/sci_1.png',
-    #     ],
-    #     'form_text': 'Sign up to participate',
-    # },
-    #
-    # 'e&t': {
-    #     'display_title': "E&T Week",
-    #     'display_date': '3/11/20',
-    #     'form_text': 'Sign up to volunteer',
-    #     'img_paths': [
-    #         'events/img/carousel/spring20/en1_1.png'
-    #     ],
-    # },
 
     'iwd': {
         'display_title': "International Women's Day",
@@ -68,10 +49,6 @@ SPRING_20_CONTEXT = {
         'form_text': 'See the meeting presentation ',
         'form_url': 'https://docs.google.com/presentation/d/1OT45-nGyjJsFR_6lm7V3GcJ8UBF_WTk05U0CBhYTuLc/edit?usp=sharing'
     },
-
-}
-
-FALL_19_CONTEXT = {
 
     'we19': {
         'display_title': 'WE19',

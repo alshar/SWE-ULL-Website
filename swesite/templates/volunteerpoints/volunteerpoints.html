@@ -46,22 +46,82 @@
 {% endblock %}
 
 {% block firstBlockText %}
-    Our SWE section is going to
     <a href="{{ swe_volunteer.conference_website }}" target="_blank"
-       rel="noopener">{{ swe_volunteer.conference_abbreviation }}</a>, the largest career
-    fair
-    for Female Engineers in the country, and we want to help pay for {{ swe_volunteer.students_taking }} students to come
-    with us.
+       rel="noopener">{{ swe_volunteer.conference_abbreviation }}</a>, the largest career fair for Female Engineers in
+    the country, is going virtual!
+    Unfortunately, due to the current circumstances, WE20 has moved completely online. The Career fair WILL still be
+    taking place.
+    <hr>
+    Check out our <a href="{% url 'events' %}">events</a> for important dates about WE20 and more
     <p>
-        To qualify for financial assistance for {{ swe_volunteer.conference_abbreviation }}, you need to
-        earn {{ swe_volunteer.points_needed }}
-        volunteer points. The table below outlines the
-        kinds of events we organize throughout the semester, and how many volunteer points
-        you'll earn by attending them.
+        See below for information about pricing.
     </p>
+
 {% endblock %}
 
 {% block secondBlock %}
+    <div class="container">
+        <div class="whitespace">
+            <div class="whitespace">
+                <div class="table-responsive">
+                    <table id="points-table" class="table table-bordered table-hover">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">SWE Member Status</th>
+                            <th scope="col">Price Before 10/02/2020</th>
+                            <th scope="col">Price After 10/02/2020</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>SWE Member</td>
+                            <td>$75</td>
+                            <td>$125</td>
+                        </tr>
+                        <tr>
+                            <td>Non-SWE Member</td>
+                            <td>$125</td>
+                            <td>$150</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <h4 class="post-subtitle text-center">
+                As a result, we have updated our points system (see below) and will no longer be providing financial
+                help to
+                attend the conference/career fair, but strongly encourage continued participation.
+            </h4>
+            <hr>
+            <h4 class="post-subtitle text-center">
+                Points earned in the Fall 2020 and Spring 2021 semesters will be considered for a prize give away at the
+                end
+                of
+                each semester.
+            </h4>
+            <hr>
+            <h4 class="post-subtitle text-center">
+                Half of the
+                points earned during the Fall 2020 and Spring 2021 semesters will be allowed to carry over into the Fall
+                2021
+                semester for financial aid consideration for the WE21 conference.
+            </h4>
+            <hr>
+            <h4 class="post-subtitle text-center">
+                If you have any further questions, please
+                <a href="mailto:{{ swe_social.email }}"
+                   target="_blank" rel="noopener"
+                   style="color: #551A8B; padding-top: 30vh; font-weight: 800">
+                    email
+                </a> us, or visit <a href="https://swe.org/">SWE's website</a> for more information.
+            </h4>
+            <hr>
+            <h4>
+                We will also be hosting two general meeting (October 8th and 29th) this semester where officers will be
+                available to answer any questions.
+            </h4>
+        </div>
+    </div>
     {% include 'volunteerpoints/pointvaluetable.html' %}
 {% endblock %}
 

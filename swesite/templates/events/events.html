@@ -31,10 +31,6 @@
 
 {% endblock %}
 
-
-
-{# First Block #}
-
 {% block firstBlockImage %}{% static 'getinvolved/heart.png' %}{% endblock %}
 
 {% block firstBlockText %}
@@ -42,104 +38,14 @@
 {% endblock %}
 
 
-
-{# Second Block #}
 {% block secondBlock %}
-    {% for event, data in event_data.items %}
-        <div class="{% cycle 'container-fluid' 'container' %}"
-                {% cycle 'style="background-color: #F5F5F5"' '' as block_style %}>
-            <div class="whitespace text-center">
-                <h4 class="post-subtitle text-center">
-                    {{ data.display_title }} - {{ data.display_date }}
-                </h4>
+    {% include 'events/events_table.html' %}
+{% endblock %}
 
-                {% if data.display_description %}
-                    <h6 class="post-subtitle text-center">
-                        {{ data.display_description }}
-                    </h6>
-                {% endif %}
+{% block thirdBlock %}
+{% endblock %}
 
-                {% if data.form_text and data.form_url %}
-                    <h6 class="post-subtitle text-center">
-                        {{ data.form_text }} <a
-                            href="{{ data.form_url }}">
-                        <span style="font-weight: 900; color: #6b0392">here</span>
-                    </a>
-                    </h6>
-                {% endif %}
-
-
-                <div class="container gallery-container" {{ block_style }}>
-                    <div class="tz-gallery">
-                        {% if data.img_paths|length == 1 %}
-                            <div class="row justify-content-center">
-                                <div class="col-sm-12 col-md-12 col-lg-6">
-                                    <a class="lightbox"
-                                       href="{% get_static_prefix %}{{ data.img_paths.0 }}">
-                                        <img src="{% get_static_prefix %}{{ data.img_paths.0 }}">
-                                    </a>
-                                </div>
-                            </div>
-                        {% endif %}
-
-                        {% if data.img_paths|length == 2 %}
-                            <div class="row">
-                                {% for path in data.img_paths %}
-                                    <div class="col-sm-12 col-md-6">
-                                        <a class="lightbox"
-                                           href="{% get_static_prefix %}{{ path }}">
-                                            <img class="imgfit" src="{% get_static_prefix %}{{ path }}">
-                                        </a>
-                                    </div>
-                                {% endfor %}
-                            </div>
-                        {% endif %}
-
-                        {% if data.img_paths|length >= 3 %}
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12">
-                                    <a class="lightbox"
-                                       href="{% get_static_prefix %}{{ data.img_paths.0 }}">
-                                        <img class="imgfit" src="{% get_static_prefix %}{{ data.img_paths.0 }}">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                {% for path in data.img_paths %}
-                                    {% if forloop.counter == 1 %}
-                                        {# there's no "continue" for django for loops #}
-                                        {# this is my janky way if implementing one #}
-                                    {% else %}
-                                        <div
-                                                {% if data.img_paths|length == 3 %}
-                                                    class="col-sm-12 col-md-6"
-                                                {% endif %}
-                                                {% if data.img_paths|length == 4 %}
-                                                    class="col-sm-12 col-md-4"
-                                                {% endif %}
-                                                {% if data.img_paths|length == 5 %}
-                                                    class="col-sm-12 col-md-3"
-                                                {% endif %}
-                                        >
-                                            <a class="lightbox"
-                                               href="{% get_static_prefix %}{{ path }}">
-                                                <img class="imgfit" src="{% get_static_prefix %}{{ path }}">
-                                            </a>
-                                        </div>
-                                    {% endif %}
-                                {% endfor %}
-                            </div>
-
-                        {% endif %}
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    {% endfor %}
-
-
+{% block fourthBlock %}
     <div class="container">
         <nav>
             <ul class="pagination justify-content-center">
@@ -147,26 +53,11 @@
                     <a class="page-link" href="{% url 'events' %}">Current Events</a>
                 </li>
                 <li class="page-item">
-                    <a class="page-link" href="{% url 'fall19' %}">Fall '19</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="{% url 'spring19' %}">Spring '19</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="{% url 'fall18' %}">Fall '18</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="{% url 'spring18' %}">Spring '18</a>
+                    <a class="page-link" href="{% url 'pastevents' %}">Past Events</a>
                 </li>
             </ul>
         </nav>
     </div>
-
-
 {% endblock %}
 
-{# About page only has two sections, so leave these empty #}
-{% block thirdBlock %}
-{% endblock %}
-{% block fourthBlock %}
-{% endblock %}
+
