@@ -23,5 +23,5 @@ creds = ServiceAccountCredentials.from_json_keyfile_name(os.path.join(DIRNAME, '
 client = gspread.authorize(creds)
 # you don't need to mess with anything above
 
-# get_worksheet() is ordinal and starts at 0. the point data is on the second sheet.
-points_sheet = client.open('spring_20_member_list_point_tracker').get_worksheet(0)
+# get_worksheet() is ordinal and starts at 0
+points_sheet = client.open('fall_2020_member_list').get_worksheet(0)

@@ -6,6 +6,7 @@ from pointtracker.forms import PointTrackerLoginForm
 from swesite.contexts.swe_social_context import swe_social
 from swesite.contexts.swe_volunteer_context import swe_volunteer
 from users.spreadsheet import points_sheet, client, creds
+import re
 
 
 class PointTrackerLoginView(FormView):
@@ -75,9 +76,9 @@ class PointTrackerLoginView(FormView):
         last_name = kwargs['last_name']
 
         try:
-            points_sheet.find(ulid)
-            points_sheet.find(first_name)
-            points_sheet.find(last_name)
+            points_sheet.find(re.compile(f'{ulid}', re.IGNORECASE))
+            points_sheet.find(re.compile(f'{first_name}', re.IGNORECASE))
+            points_sheet.find(re.compile(f'{last_name}', re.IGNORECASE))
             return True
         except:
             return False

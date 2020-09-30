@@ -21,8 +21,8 @@
 {% endblock %}
 
 {% block headerSubheading %}
-    You need {{ swe_volunteer.points_needed }} points to qualify for financial assistance to
-    {{ swe_volunteer.conference_abbreviation }}
+{#    You need {{ swe_volunteer.points_needed }} points to qualify for financial assistance to#}
+{#    {{ swe_volunteer.conference_abbreviation }}#}
 {% endblock %}
 
 {% block headerButton %} {% endblock %}
@@ -32,8 +32,9 @@
     <div class="container">
         <div class="whitespace">
             <h4 class="text-center">
-                Hey {{ member_data.first_name }}, here's a list of all the volunteer points you've earned that
-                count towards getting financial assistance for {{ swe_volunteer.conference_abbreviation }}
+                Hey {{ member_data.first_name }}, here's a list of all the volunteer points you've earned
+{#                that#}
+{#                count towards getting financial assistance for {{ swe_volunteer.conference_abbreviation }}#}
             </h4>
             <h4 class="text-center">
                 You can sign up for <a href="{% url 'events' %}">upcoming events</a> to earn even more points
