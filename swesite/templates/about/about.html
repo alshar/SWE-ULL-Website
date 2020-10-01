@@ -86,9 +86,9 @@
                 <br>
                 {% for officer, value in swe_officers_context.items %}
                     {% if forloop.counter0|modulo:3 == 0 %}
-                        <div class="card-deck">
+                        <div class="row">
                     {% endif %}
-                        <div class="card">
+                        <div class="card col-md-4">
                     <img style="object-fit: cover; height: 29vh" class="card-img-top img-fluid"
                          src="{% static value.headshot %}">
                     <div class="card-body">
@@ -125,6 +125,7 @@
                         </div>
                     {% endif %}
                 {% endfor %}
+            </div>
                 <br>
                 <br>
 

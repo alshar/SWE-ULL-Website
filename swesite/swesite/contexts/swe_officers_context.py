@@ -70,13 +70,22 @@ def swe_officers_context(request):
             'headshot': 'about/officers/ling.png'
         },
         'swe_co_adviser': {
+            'first_name': 'Melanie',
+            'last_name': 'Sanders',
+            'title': 'Co-Adviser',
+            'major': 'M.S. Chemical Engineering',
+            'email': 'msanders@louisiana.edu',
+            'headshot': 'about/officers/sanders.jpg'
+        },
+        'swe_student_adviser': {
             'first_name': 'Kenedi',
             'last_name': 'Habetz',
             'title': 'Student Adviser',
-            'major': ' Chemical Engineering',
+            'major': 'Chemical Engineering',
             'email': 'kenedi@games2geaux.com',
             'headshot': 'about/officers/kenedi.jpg'
         }
+
     }
 
     return context
