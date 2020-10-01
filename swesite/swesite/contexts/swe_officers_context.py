@@ -77,20 +77,20 @@ def swe_officers_tertiary(request):
             'headshot': 'about/officers/al.jpg'
         },
         'swe_adviser': {
-            'first_name': 'Ashley',
-            'last_name': 'Picou Mikolajczyk',
-            'title': 'Adviser',
-            'major': 'Chemical Engineering',
-            'email': 'mikolajczyk@louisiana.edu',
-            'headshot': 'about/officers/ashley.png'
-        },
-        'swe_co_adviser': {
             'first_name': 'Ling (Jessica)',
             'last_name': 'Fei, Ph.D.',
-            'title': 'Co-Adviser',
+            'title': 'Adviser',
             'major': 'Ph.D. Chemical Engineering',
-            'email': 'ling.fei@louisiana.edu',
+            'email': 'mikolajczyk@louisiana.edu',
             'headshot': 'about/officers/ling.png'
+        },
+        'swe_co_adviser': {
+            'first_name': 'Kenedi',
+            'last_name': 'Habetz',
+            'title': 'Student Adviser',
+            'major': ' Chemical Engineering',
+            'email': 'kenedi@games2geaux.com',
+            'headshot': 'about/officers/kenedi.jpg'
         },
 
     }
