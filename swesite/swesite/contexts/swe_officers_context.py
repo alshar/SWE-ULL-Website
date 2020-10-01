@@ -1,4 +1,4 @@
-def swe_officers_primary(request):
+def swe_officers_context(request):
     context = {
         'swe_president': {
             'first_name': 'Brianna',
@@ -27,14 +27,6 @@ def swe_officers_primary(request):
             'linkedin': 'http://linkedin.com/in/sarah-young-87b2b0193',
             'headshot': 'about/officers/sarah.png'
         },
-
-    }
-
-    return context
-
-
-def swe_officers_secondary(request):
-    context = {
         'swe_treasurer': {
             'first_name': 'Nhung (Anna)',
             'last_name': 'Nguyen',
@@ -60,13 +52,6 @@ def swe_officers_secondary(request):
             'email': 'kayla.richard1@louisiana.edu',
             'headshot': 'about/officers/kayla.jpg'
         },
-
-    }
-    return context
-
-
-def swe_officers_tertiary(request):
-    context = {
         'swe_technical_director': {
             'first_name': 'Al',
             'last_name': 'Sharairi',
@@ -91,7 +76,7 @@ def swe_officers_tertiary(request):
             'major': ' Chemical Engineering',
             'email': 'kenedi@games2geaux.com',
             'headshot': 'about/officers/kenedi.jpg'
-        },
-
+        }
     }
+
     return context

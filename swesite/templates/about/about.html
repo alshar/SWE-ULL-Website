@@ -1,6 +1,6 @@
 {% extends "base/base.html" %}
 
-{% load static %}
+{% load static about_tags %}
 
 {# Meta #}
 {% block description %}
@@ -54,10 +54,10 @@
             Financial assistance for travel to conferences in different cities
         </div>
         <div class="list-group-item">
-                Professional development through events
+            Professional development through events
         </div>
         <div class="list-group-item">
-                And countless volunteer opportunities
+            And countless volunteer opportunities
         </div>
     </div>
 {% endblock %}
@@ -84,119 +84,47 @@
             <div class="container officerContainer text-center">
                 <h3 class="post-heading">Our Officers & Advisers</h3>
                 <br>
-                <div class="card-deck">
-                    {% for officer, value in swe_officers_primary.items %}
+                {% for officer, value in swe_officers_context.items %}
+                    {% if forloop.counter0|modulo:3 == 0 %}
+                        <div class="card-deck">
+                    {% endif %}
                         <div class="card">
-                            <img style="object-fit: cover; height: 29vh" class="card-img-top img-fluid"
-                                 src="{% static value.headshot %}">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ value.title }}</h5>
-                                <p class="card-subtitle">
-                                    {{ value.first_name }}
-                                    {{ value.last_name }}
-                                </p>
-                                <p class="card-text">
-                                    <i class="fa fa-graduation-cap"></i>
-                                    {{ value.major }}
-                                </p>
-                                {% if value.linkedin %}
-                                    <div class="btn-group btn-group-sm d-flex" role="group">
-                                        <a class="btn btn-dark w-100" href="mailto:{{ value.email }}">
-                                            <i class="fa fa-envelope fa-lg"></i>
-                                        </a>
-                                        <a class="btn btn-dark w-100"
-                                           href="{{ value.linkedin }}"
-                                           target="_blank">
-                                            <i class="fab fa-linkedin fa-lg"></i>
-                                        </a>
-                                    </div>
-                                {% else %}
-                                    <div class="btn-group btn-group-sm d-flex" role="group">
-                                        <a class="btn btn-dark w-100" href="mailto:{{ value.email }}">
-                                            <i class="fa fa-envelope fa-lg"></i>
-                                        </a>
-                                    </div>
-                                {% endif %}
+                    <img style="object-fit: cover; height: 29vh" class="card-img-top img-fluid"
+                         src="{% static value.headshot %}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ value.title }}</h5>
+                        <p class="card-subtitle">
+                            {{ value.first_name }}
+                            {{ value.last_name }}
+                        </p>
+                        <p class="card-text">
+                            <i class="fa fa-graduation-cap"></i>
+                            {{ value.major }}
+                        </p>
+                        {% if value.linkedin %}
+                            <div class="btn-group btn-group-sm d-flex" role="group">
+                                <a class="btn btn-dark w-100" href="mailto:{{ value.email }}">
+                                    <i class="fa fa-envelope fa-lg"></i>
+                                </a>
+                                <a class="btn btn-dark w-100"
+                                   href="{{ value.linkedin }}"
+                                   target="_blank">
+                                    <i class="fab fa-linkedin fa-lg"></i>
+                                </a>
                             </div>
-                        </div>
-                    {% endfor %}
-                </div>
-                <br>
-                <div class="card-deck">
-                    {% for officer, value in swe_officers_secondary.items %}
-                        <div class="card">
-                            <img style="object-fit: cover; height: 29vh" class="card-img-top img-fluid"
-                                 src="{% static value.headshot %}">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ value.title }}</h5>
-                                <p class="card-subtitle">
-                                    {{ value.first_name }}
-                                    {{ value.last_name }}
-                                </p>
-                                <p class="card-text">
-                                    <i class="fa fa-graduation-cap"></i>
-                                    {{ value.major }}
-                                </p>
-                                {% if value.linkedin %}
-                                    <div class="btn-group btn-group-sm d-flex" role="group">
-                                        <a class="btn btn-dark w-100" href="mailto:{{ value.email }}">
-                                            <i class="fa fa-envelope fa-lg"></i>
-                                        </a>
-                                        <a class="btn btn-dark w-100"
-                                           href="{{ value.linkedin }}"
-                                           target="_blank">
-                                            <i class="fab fa-linkedin fa-lg"></i>
-                                        </a>
-                                    </div>
-                                {% else %}
-                                    <div class="btn-group btn-group-sm d-flex" role="group">
-                                        <a class="btn btn-dark w-100" href="mailto:{{ value.email }}">
-                                            <i class="fa fa-envelope fa-lg"></i>
-                                        </a>
-                                    </div>
-                                {% endif %}
+                        {% else %}
+                            <div class="btn-group btn-group-sm d-flex" role="group">
+                                <a class="btn btn-dark w-100" href="mailto:{{ value.email }}">
+                                    <i class="fa fa-envelope fa-lg"></i>
+                                </a>
                             </div>
-                        </div>
-                    {% endfor %}
+                        {% endif %}
+                    </div>
                 </div>
-                <br>
-                <div class="card-deck">
-                    {% for officer, value in swe_officers_tertiary.items %}
-                        <div class="card">
-                            <img style="object-fit: cover; height: 29vh" class="card-img-top img-fluid"
-                                 src="{% static value.headshot %}">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ value.title }}</h5>
-                                <p class="card-subtitle">
-                                    {{ value.first_name }}
-                                    {{ value.last_name }}
-                                </p>
-                                <p class="card-text">
-                                    <i class="fa fa-graduation-cap"></i>
-                                    {{ value.major }}
-                                </p>
-                                {% if value.linkedin %}
-                                    <div class="btn-group btn-group-sm d-flex" role="group">
-                                        <a class="btn btn-dark w-100" href="mailto:{{ value.email }}">
-                                            <i class="fa fa-envelope fa-lg"></i>
-                                        </a>
-                                        <a class="btn btn-dark w-100"
-                                           href="{{ value.linkedin }}"
-                                           target="_blank">
-                                            <i class="fab fa-linkedin fa-lg"></i>
-                                        </a>
-                                    </div>
-                                {% else %}
-                                    <div class="btn-group btn-group-sm d-flex" role="group">
-                                        <a class="btn btn-dark w-100" href="mailto:{{ value.email }}">
-                                            <i class="fa fa-envelope fa-lg"></i>
-                                        </a>
-                                    </div>
-                                {% endif %}
-                            </div>
+                    {% if forloop.counter0|add:1|modulo:3 == 0 %}
                         </div>
-                    {% endfor %}
-                </div>
+                    {% endif %}
+                {% endfor %}
                 <br>
                 <br>
 
