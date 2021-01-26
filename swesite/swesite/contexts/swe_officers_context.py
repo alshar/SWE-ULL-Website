@@ -66,7 +66,7 @@ def swe_officers_context(request):
             'last_name': 'Fei, Ph.D.',
             'title': 'Adviser',
             'major': 'Ph.D. Chemical Engineering',
-            'email': 'mikolajczyk@louisiana.edu',
+            'email': 'ling.fei@louisiana.edu',
             'headshot': 'about/officers/ling.png'
         },
         'swe_co_adviser': {
