@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-from swesite.contexts.swe_events_context import past_events
+from swesite.contexts.swe_events_context import past_events, current_events
 from swesite.contexts.swe_social_context import swe_social
 
 
@@ -9,6 +9,7 @@ class Events(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super(Events, self).get_context_data(**kwargs)
+        context['event_data'] = current_events
         context['swe_social'] = swe_social(request=Events)
         return context
 

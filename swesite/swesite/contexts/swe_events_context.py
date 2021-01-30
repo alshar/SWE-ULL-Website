@@ -1,3 +1,32 @@
+current_events = {
+    '4th_meeting': {
+        'display_title': 'Officer Election',
+        'display_date': 'April 2021 (Exact Date TBA)',
+    },
+
+    '3rd_meeting': {
+        'display_title': 'Mental Health During the Pandemic',
+        'display_date': 'April 2021 (Exact Date TBA)',
+        'display_description': 'Tips on how to keep sane during the pandemic.'
+    },
+
+    '2nd_meeting': {
+        'display_title': 'Online Profiles: How to Improve Your Online Prescience',
+        'display_date': 'March 2021 (Exact Date TBA)',
+        'display_description': 'Tips from career services to improve your Handshake/LinkedIn profile.'
+    },
+
+    '1st_meeting': {
+        'display_title': 'Co-Op Meeting',
+        'display_date': '1/28/21',
+        'display_description': 'Q/A Session with students who have had a Co-Op',
+        'img_paths': [
+            'events/img/carousel/spring21/1st_meeting.jpg',
+        ],
+
+    },
+}
+
 past_events = {
     '4120_election': {
         'display_title': 'Officer Election',
