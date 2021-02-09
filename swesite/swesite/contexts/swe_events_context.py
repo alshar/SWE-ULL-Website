@@ -1,19 +1,30 @@
 current_events = {
-    '4th_meeting': {
+    '5th_meeting': {
         'display_title': 'Officer Election',
         'display_date': 'April 2021 (Exact Date TBA)',
     },
 
-    '3rd_meeting': {
+    '4th_meeting': {
         'display_title': 'Mental Health During the Pandemic',
         'display_date': 'April 2021 (Exact Date TBA)',
         'display_description': 'Tips on how to keep sane during the pandemic.'
     },
 
-    '2nd_meeting': {
+    '3rd_meeting': {
         'display_title': 'Online Profiles: How to Improve Your Online Prescience',
         'display_date': 'March 2021 (Exact Date TBA)',
-        'display_description': 'Tips from career services to improve your Handshake/LinkedIn profile.'
+        'display_description': 'Tips from career services to improve your Handshake/LinkedIn profile.',
+
+    },
+
+    '2nd_meeting': {
+        'display_title': 'Student in Industry',
+        'display_date': '2/11/20 - 5:30PM',
+        'display_description': 'Q/A Session with students who have industry experience.',
+        'img_paths': [
+            'events/img/carousel/spring21/2nd_meeting.jpg',
+        ],
+
     },
 
     '1st_meeting': {
