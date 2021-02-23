@@ -2,18 +2,28 @@ current_events = {
     '5th_meeting': {
         'display_title': 'Officer Election',
         'display_date': 'April 2021 (Exact Date TBA)',
+        'img_paths': [
+            'events/img/carousel/spring21/5th_meeting.jpg',
+        ],
     },
 
     '4th_meeting': {
         'display_title': 'Mental Health During the Pandemic',
         'display_date': 'April 2021 (Exact Date TBA)',
-        'display_description': 'Tips on how to keep sane during the pandemic.'
+        'display_description': 'Tips on how to keep sane during the pandemic.',
+        'img_paths': [
+            'events/img/carousel/spring21/4th_meeting.jpg',
+        ],
+
     },
 
     '3rd_meeting': {
         'display_title': 'Online Profiles: How to Improve Your Online Prescience',
         'display_date': 'March 2021 (Exact Date TBA)',
         'display_description': 'Tips from career services to improve your Handshake/LinkedIn profile.',
+        'img_paths': [
+            'events/img/carousel/spring21/3rd_meeting.jpg',
+        ],
 
     },
 
