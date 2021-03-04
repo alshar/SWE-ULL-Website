@@ -19,7 +19,7 @@ current_events = {
 
     '3rd_meeting': {
         'display_title': 'Online Profiles: How to Improve Your Online Prescience',
-        'display_date': 'March 2021 (Exact Date TBA)',
+        'display_date': 'March 11, 2021',
         'display_description': 'Tips from career services to improve your Handshake/LinkedIn profile.',
         'img_paths': [
             'events/img/carousel/spring21/3rd_meeting.jpg',
@@ -34,6 +34,7 @@ current_events = {
         'img_paths': [
             'events/img/carousel/spring21/2nd_meeting.jpg',
         ],
+        'yt_iframe_url': 'https://www.youtube-nocookie.com/embed/sExbykfAGu4'
 
     },
 
@@ -44,6 +45,7 @@ current_events = {
         'img_paths': [
             'events/img/carousel/spring21/1st_meeting.jpg',
         ],
+        'yt_iframe_url': 'https://www.youtube-nocookie.com/embed/aVrPKtRdGNk'
 
     },
 }

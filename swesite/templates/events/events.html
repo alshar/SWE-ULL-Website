@@ -39,7 +39,7 @@
 
 
 {% block secondBlock %}
-{#    {% include 'events/events_table.html' %}#}
+    {#    {% include 'events/events_table.html' %}#}
 {% endblock %}
 
 {% block thirdBlock %}
@@ -64,6 +64,13 @@
                         <span style="font-weight: 900; color: #6b0392">here</span>
                     </a>
                     </h6>
+                {% endif %}
+
+                {% if data.yt_iframe_url %}
+                    <iframe width="560" height="315" src="{{ data.yt_iframe_url }}"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                 {% endif %}
 
 
