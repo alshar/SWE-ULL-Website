@@ -1,10 +1,12 @@
 current_events = {
     '5th_meeting': {
         'display_title': 'Officer Election',
-        'display_date': 'April 2021 (Exact Date TBA)',
+        'display_date': 'April 8th 8am to April 19th 5pm',
         'img_paths': [
             'events/img/carousel/spring21/5th_meeting.jpg',
         ],
+        'form_text': 'Apply to be an officer (application closes April 7th 8pm)',
+        'form_url': 'https://forms.gle/iRYwSUU6nvzhaoSMA'
     },
 
     '4th_meeting': {
