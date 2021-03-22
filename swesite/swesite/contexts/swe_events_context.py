@@ -6,7 +6,7 @@ current_events = {
             'events/img/carousel/spring21/5th_meeting.jpg',
         ],
         'form_text': 'Apply to be an officer (application closes April 7th 8pm)',
-        'form_url': 'https://forms.gle/iRYwSUU6nvzhaoSMA'
+        'form_url': 'https://forms.gle/zCWzKFWH5Wxgrrsf9'
     },
 
     '4th_meeting': {
