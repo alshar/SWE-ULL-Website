@@ -1,4 +1,13 @@
 current_events = {
+    'cs': {
+        'display_title': 'Career Services Zoom',
+        'display_description': 'Corrected Meeting ID: 3653041323 Password: SWE2021.',
+        'display_date': 'April 22, 2021 5:30pm',
+        'img_paths': [
+            'events/img/carousel/spring21/cs.jpeg',
+        ],
+    },
+
     '5th_meeting': {
         'display_title': 'Officer Election',
         'display_date': 'April 8th 8am to April 19th 5pm',
