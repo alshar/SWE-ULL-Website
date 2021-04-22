@@ -5,8 +5,6 @@ current_events = {
         'img_paths': [
             'events/img/carousel/spring21/5th_meeting.jpg',
         ],
-        'form_text': 'Vote Now!',
-        'form_url': 'https://forms.gle/stJEwVVvbkSDyMxg9'
     },
 
     '4th_meeting': {
