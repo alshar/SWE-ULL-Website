@@ -1,48 +1,48 @@
 def swe_officers_context(request):
     context = {
         'swe_president': {
-            'first_name': 'Brianna',
-            'last_name': 'Bruno',
-            'major': 'Chemical Engineering',
-            'title': 'President',
-            'email': 'brianna.bruno1@louisiana.edu',
-            'linkedin': '',
-            'headshot': 'about/officers/bri.png'
-        },
-        'swe_vp': {
-            'first_name': 'Melanie',
-            'last_name': 'Toups',
-            'title': 'Vice-President',
-            'major': 'Chemical Engineering',
-            'email': 'c00242174@louisiana.edu',
-            'linkedin': '',
-            'headshot': 'about/officers/mel.png'
-        },
-        'swe_secretary': {
             'first_name': 'Sarah',
             'last_name': 'Young',
-            'title': 'Secretary',
             'major': 'Chemical Engineering',
+            'title': 'President',
             'email': 'sarahanyoung@gmail.com',
             'linkedin': 'http://linkedin.com/in/sarah-young-87b2b0193',
             'headshot': 'about/officers/sarah.png'
         },
-        'swe_treasurer': {
-            'first_name': 'Nhung (Anna)',
-            'last_name': 'Nguyen',
-            'title': 'Treasurer',
-            'major': 'Chemical Engineering',
-            'email': 'nhung.nguyen1@louisiana.edu',
-            'linkedin': 'https://www.linkedin.com/in/nhung-nguyen-407081196',
-            'headshot': 'about/officers/nh.png'
-        },
-        'swe_outreach_coordinator': {
+        'swe_vp': {
             'first_name': 'Gracie',
             'last_name': 'Courville',
-            'title': 'Outreach Coordinator',
+            'title': 'Vice-President',
             'major': 'Chemical Engineering',
             'email': 'gracie.courville1@louisiana.edu',
+            'linkedin': '',
             'headshot': 'about/officers/gracie.png'
+        },
+        'swe_secretary': {
+            'first_name': 'Camryn',
+            'last_name': 'Adamson',
+            'title': 'Secretary',
+            'major': 'Chemical Engineering',
+            'email': '',
+            'linkedin': '',
+            'headshot': 'about/officers/camryn.jpeg'
+        },
+        'swe_treasurer': {
+            'first_name': 'April',
+            'last_name': 'Bourlet',
+            'title': 'Treasurer',
+            'major': 'Chemical Engineering',
+            'email': '',
+            'linkedin': '',
+            'headshot': 'about/officers/april.jpeg'
+        },
+        'swe_outreach_coordinator': {
+            'first_name': 'Mary',
+            'last_name': 'Nguyen',
+            'title': 'Outreach Coordinator',
+            'major': 'Chemical Engineering',
+            'email': '',
+            'headshot': 'about/officers/mary.jpeg'
         },
         'swe_fundraising_chair': {
             'first_name': 'Kayla',
@@ -53,13 +53,13 @@ def swe_officers_context(request):
             'headshot': 'about/officers/kayla.jpg'
         },
         'swe_technical_director': {
-            'first_name': 'Al',
-            'last_name': 'Sharairi',
+            'first_name': 'Te Anne',
+            'last_name': 'Yap',
             'title': 'Technical Director',
             'major': 'Computer Science',
-            'email': 'asharairi@gmail.com',
-            'linkedin': 'https://www.linkedin.com/in/al-sharairi/',
-            'headshot': 'about/officers/al.jpg'
+            'email': 'te-anne.yap1@louisiana.edu',
+            'linkedin': 'https://www.linkedin.com/in/tnyap/',
+            'headshot': 'about/officers/anne.jpeg'
         },
         'swe_adviser': {
             'first_name': 'Ling (Jessica)',
